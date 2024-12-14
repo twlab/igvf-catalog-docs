@@ -1,0 +1,59 @@
+---
+title: 'Variant Dashboard'
+icon: 'display'
+---
+
+This powerful tool allows you to explore genetic variant distributions across different populations for a specific genomic region. Here's how to use the various features:
+
+## 1. Dashboard Overview
+
+At the top of the page, you'll see the genomic coordinates you're exploring.
+
+## 2. Control Panel
+
+### Minimum Allele Frequency Slider
+- Adjust this slider to filter variants based on their allele frequency.
+- The current minimum allele frequency is displayed below the slider.
+
+### Statistics Card
+- Shows the total number of variants that meet your current filtering criteria.
+
+### Bin Settings
+- Choose between fixed bins (0-1, step 0.1) or computed bins for the histograms.
+- Fixed bins are uniform across all populations, while computed bins adjust to each population's data distribution.
+
+## 3. Population Distribution Chart
+
+This bar chart shows the number of variants present in each population above your chosen minimum allele frequency.
+
+## 4. Population-Specific Histograms
+
+For each population, you'll see a histogram showing the distribution of allele frequencies:
+- AFR (African/African American)
+- AMI (Amish)
+- AMR (Admixed American)
+- ASJ (Ashkenazi Jewish)
+- EAS (East Asian)
+- FIN (Finnish)
+- NFE (Non-Finnish European)
+- SAS (South Asian)
+
+These histograms help you visualize how common or rare variants are within each population.
+
+## 5. Geographic Distribution Heatmap
+
+At the bottom of the dashboard, you'll find a heatmap representing the geographic distribution of variants:
+- Each row represents a variant.
+- Each column represents a population.
+- Blue cells indicate rare variants (allele frequency < 5%).
+- Dark blue cells indicate common variants (allele frequency ≥ 5%).
+
+This heatmap allows you to quickly identify patterns in variant distribution across populations.
+
+## Tips for Using the Dashboard
+
+1. Start by setting your desired minimum allele frequency using the slider.
+2. Observe how this affects the total number of variants in the Statistics card.
+3. Look at the Population Distribution chart to see which populations have the most variants above your threshold.
+4. Explore individual population histograms to understand the frequency distribution within each group.
+5. Use the Geographic Distribution Heatmap to identify patterns across all populations simultaneously.

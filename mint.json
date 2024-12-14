@@ -1,0 +1,54 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "IGVF Catalog",
+  "logo": {
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "topbarCtaButton": {
+    "name": "Catalog",
+    "url": "https://catalog.igvf.org"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "using-search"
+      ]
+    },
+    {
+      "group": "Nodes",
+      "pages": [
+        "nodes/gene",
+        "nodes/variant",
+        "nodes/protein",
+        "nodes/transcript",
+        "nodes/disease"
+      ]
+    },
+    {
+      "group": "Regions",
+      "pages": [
+        "region/region-page",
+        "region/variant-dashboard"
+      ]
+    }
+  ]
+}
