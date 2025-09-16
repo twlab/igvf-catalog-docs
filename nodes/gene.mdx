@@ -2,6 +2,55 @@
 title: 'Gene'
 icon: 'dna'
 ---
+# Genes
+
+The official gene set of the IGVF Catalog is from [GENCODE V43](https://www.gencodegenes.org/human/release_43.html). Gene and Transcripts and Gene Structure (UTRs, Exons etc.)  are loaded from the comprehensive annotation file as nodes.
+
+Sample Gene Object:
+>
+ {
+    "_id": "ENSG00000012048",
+    "chr": "chr17",
+    "start": 43044294,
+    "end": 43170245,
+    "gene_type": "protein_coding",
+    "name": "BRCA1",
+    "strand": "-",
+    "hgnc": "HGNC:1100",
+    "entrez": "ENTREZ:672",
+    "collections": [
+      "ACMG73"
+    ],
+    "study_sets": null,
+    "source": "GENCODE",
+    "version": "v43",
+    "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",
+    "synonyms": [
+      "PSCP",
+      "BRCA1/BRCA2-containing complex, subunit 1",
+      "protein phosphatase 1, regulatory subunit 53",
+      "IRIS",
+      "BRCC1",
+      "early onset breast cancer 1",
+      "breast cancer type 1 susceptibility protein",
+      "RNF53",
+      "BRCA1",
+      "BROVCA1",
+      "FANCS",
+      "breast and ovarian cancer susceptibility protein 1",
+      "BRCAI",
+      "RING finger protein 53",
+      "PNCA4",
+      "breast cancer 1, early onset",
+      "BRCA1 DNA repair associated",
+      "Fanconi anemia, complementation group S",
+      "PPP1R53"
+    ]
+  }
+
+
+
+
 
 ## Predicted Enhancers Table
 
@@ -50,3 +99,15 @@ This table presents genetic variants associated with the gene.
 | rsID | Reference SNP ID(s) for the variant (click for more details) |
 | Source | Origin of the variant information (click for source details if available) |
 | SPDI | A standardized representation of the variant |
+
+Genes are linked to transcripts via gene-transcript edges (also from GENCODE).  They are also linked to other genes, variants, diseases, and genomic elements
+
+## Gene-Gene Edges
+There are two public sources of gene-gene edges; A coxpression matrix from [CoexpressDB](https://coxpresdb.jp/) and genetic interactions from [BioGRID](https://thebiogrid.org)
+
+##  Gene-Variant Edges
+
+eQTLs and splice-QTLs are encoded as gene-variant edges.  Datasets have been loaded from the EBI [eQTL catalogue](https://www.ebi.ac.uk/eqtl/).  Additional QTLs have been loaded from the [African Functional Genomics; AFGR](https://github.com/smontgomlab/AFGR) resource.
+
+IGVF has provided a set of variant-gene expression effect edges using a CRISPR screening technique called [Variant-EFFECTS](https://data.igvf.org/analysis-sets/IGVFDS4359OODY/)
+

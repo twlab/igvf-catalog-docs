@@ -1,7 +1,37 @@
 ---
-title: 'Disease'
+title: 'Ontology Terms'
 icon: 'disease'
 ---
+
+# Ontology Terms
+
+The IGVF Catalog uses a set of ontologies to represent biological and experimental concepts and identities that are useful in annotation entities and contexts.
+
+| Ontology | URL | Description | Usage |
+|----------|-----|-------------|-------|
+| CHEBI	| http://www.ebi.ac.uk/chebi	|	Chemical Entities of Biological Interest | Drugs and Chemicals |
+| Cellosaurus	| https://www.cellosaurus.org/	|	A knowledge resource on cell lines | Biosamples |
+| NCIT	| https://github.com/ncit-obo-org/ncit-obo-edition	|	NCI Thesarus (OBO edition) | Phenotypes and others |
+| EFO	| http://www.ebi.ac.uk/efo	|	Experimental Factor Ontology | Assays and others |
+| CLO	| https://github.com/CLO-Ontology/CLO	|	Cell Line Ontology | Biosamples |
+| GO	| http://geneontology.org/	|	Gene Ontology | Functional Annotations |
+| MONDO	| https://monarch-initiative.github.io/mondo	|	Merge of multiple Disease Ontologies | Diseases and Phenotypes |
+| HPO	| http://www.human-phenotype-ontology.org/	|	Human phenotypic abnormalities | Phenotypes |
+| CL	| https://obophenotype.github.io/cell-ontology/	|	Cell types | Biosamples |
+| ORPHANET	| https://www.orpha.net/	|	Rare diseases | Diseases | 
+| UBERON	| http://uberon.org/	|	Integrated cross-species anatomy ontology | Biosamples |
+| Oncotree	| https://oncotree.mskcc.org/	|	Community-led cancer classification system | Diseases | 
+| VARIO	| https://obofoundry.org/ontology/vario	|	Description of effects, consequences, and mechanisms of variations | Genetic entites |
+| ENCODE	| https://encodeproject.org	|	Special terms created for the ENCODE project | Biosamples |
+| BAO	| http://bioassayontology.org/	|	Bioassay Ontology | Assays targets | 
+| OBA	| https://github.com/obophenotype/bio-attribute-ontology	|	Ontology of Biological Attributes | Assay targets |
+
+The graph nature of the ontologies themselves are represented explicitly by edges between ontology terms representing parentage or other
+relationships.  Additional edges exist between other entities as well.
+
+Many edges are annotated with a link or hyperlink to an ontology term in Uberon, CL, CLO, or Cellosaurus, representing the biological context
+where the measurement or prediction was made.
+
 
 ## Ontology Term Parents Table
 
@@ -43,3 +73,11 @@ To use this feature:
 5. You'll be taken to a new page showing the relationship path between the current term and the one you entered
 
 Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+
+## Protein - GO Annotations
+
+Proteins (technically gene products) are annotated by the Gene Ontology project GAF files; these are represented as edges between proteins and ontology (GO) terms.
+
+## Disease Annotations
+
+Disease-Gene edges are loaded in the IGVF Catalog from [Orphanet](https://www.orpha.net/) and Variant-Disease-Genes annotations are loaded from the [https://clinicalgenome.org/]() database.
