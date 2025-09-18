@@ -16,7 +16,7 @@ Information from [UniProt](https://www.uniprot.org) are also integrated as prope
 
 ## Additional Protein Edge Collections
 ### Complexes-Proteins Edges
-Data protein complexes are imported from [Complex Portal](https://www.ebi.ac.uk/complexportal/) at the EBI
+Data protein complexes are imported from [Complex Portal](https://www.ebi.ac.uk/complexportal/) at the EBI.
 
 ### Motifs-Proteins Edges
 Transcription Factor (TF) Binding Motifs represented by Position Weight Matrices (PWMs) defining the DNA binding preferences for transcription factors from [HOCOMOCO v11](https://hocomoco11.autosome.org/).
@@ -28,6 +28,22 @@ Transcription Factor (TF) Binding Motifs represented by Position Weight Matrices
 
 ### Protein-Protein Edges
 Protein-protein interactions from [BioGRID](https://thebiogrid.org/) and [IntAct](https://www.ebi.ac.uk/intact/) includes direct physical interactions and functional genetic associations.
+
+# Coding variants
+## Identifiers and Primary Sources
+
+The IGVF Catalog has coding variants collection using identifiers combining Ensembl Transcript ID and HGVS nomenclature for both protein and cDNA changes (e.g., `HK1_ENST00000298649_p.Arg380Gly_c.1138C>G`). Each coding variant is also mapped to its genomic location using standardized SPDI identifiers.
+
+The primary source is [dbNSFP v5.1](link), which aggregates scores from dozens of functional prediction algorithms (e.g., SIFT, CADD) for all possible non-synonymous single-nucleotide variants (nsSNVs) and splice-site variants in the human genome. Additionally, predictions on coding variants functions from Mutpred2 and ESM-1v for every possible amino acid change in human proteins are imported as part of the IGVF project.
+
+## Coding variants-Phenotypes Edges
+* IGVF VAMP-seq assays
+* IGVF Mutpred2 predictions
+* IGVF ESM predictions
+
+## Variants-Phenotypes-Coding variants Edges
+* IGVF SGE assays
+
 
 ## GO Terms Table
 
