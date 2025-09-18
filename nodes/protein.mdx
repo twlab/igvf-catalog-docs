@@ -22,7 +22,7 @@ Data protein complexes are imported from [Complex Portal](https://www.ebi.ac.uk/
 Transcription Factor (TF) Binding Motifs represented by Position Weight Matrices (PWMs) defining the DNA binding preferences for transcription factors from [HOCOMOCO v11](https://hocomoco11.autosome.org/).
 
 ### Variants-Proteins Edges
-* Allele-specific TF binding events called from assays such as ChIP-seq from [ADASTRA Bill Cipher] (https://adastra.autosome.org/mabel/downloads?releaseName=Bill%20Cipher) and [GVATdb](https://renlab.sdsc.edu/GVATdb/search.html).
+* Allele-specific TF binding events called from assays such as ChIP-seq from [ADASTRA Bill Cipher](https://adastra.autosome.org/mabel/downloads?releaseName=Bill%20Cipher) and [GVATdb](https://renlab.sdsc.edu/GVATdb/search.html).
 * Predictions of the impact of variants on TF binding from [SEMpl](https://doi.org/10.1093/bioinformatics/btz612).
 * pQTL (Protein Quantitative Trait Loci) studies from the [UK Biobank Pharma Proteomics Project](https://metabolomips.org/ukbbpgwas/) (UKB-PPP) identified genetic variants associated with changes in protein abundance levels.
 
@@ -34,13 +34,13 @@ Protein-protein interactions from [BioGRID](https://thebiogrid.org/) and [IntAct
 
 The IGVF Catalog has coding variants collection using identifiers combining Ensembl Transcript ID and HGVS nomenclature for both protein and cDNA changes (e.g., `HK1_ENST00000298649_p.Arg380Gly_c.1138C>G`). Each coding variant is also mapped to its genomic location using standardized SPDI identifiers.
 
-The primary source is [dbNSFP v5.1](https://www.dbnsfp.org), which aggregates scores from dozens of functional prediction algorithms (e.g., SIFT, CADD) for all possible non-synonymous single-nucleotide variants (nsSNVs) and splice-site variants in the human genome. Additionally, predictions on coding variants functions from [Mutpred2](https://doi.org/10.1038/s41467-020-19669-x) and [ESM-1v](https://github.com/facebookresearch/esm) for every possible amino acid change in human genes are imported as part of the IGVF project.  As part of this import process, all possible genetic indels that could lead to each specific amino acid change were enumerated and included.
+The primary source is [dbNSFP v5.1](https://www.dbnsfp.org), which aggregates scores from dozens of functional prediction algorithms (e.g., SIFT, CADD) for all possible non-synonymous single-nucleotide variants (nsSNVs) and splice-site variants in the human genome. Additionally, predictions on coding variants functions from [Mutpred2](https://doi.org/10.1038/s41467-020-19669-x) and [ESM-1v](https://github.com/facebookresearch/esm) for every possible single amino acid change in human genes are imported as part of the IGVF project.  As part of this import process, all possible genetic indels that could lead to each specific amino acid change were enumerated and included.
 
 ## Coding variants-Phenotypes Edges
 
 * [IGVF VAMP-seq assays](https://data.igvf.org/search/?type=AnalysisSet&status!=deleted&file_set_type=principal+analysis&status=released&preferred_assay_titles=VAMP-seq): Variant Abundance by Massively Parallel Sequencing (VAMP-seq) uses massively parallel sequencing to measure the effects of thousands of missense variants on protein abundance for CYP2C19 and G6PD.
 * [IGVF MultiSTEP assays](https://data.igvf.org/search/?type=AnalysisSet&status!=deleted&file_set_type=principal+analysis&status=released&preferred_assay_titles=VAMP-seq+%28MultiSTEP%29): An advanced version of VAMP-seq tailored for secreted proteins. Measures how missense variants impact secretion and post-translational modifications for coagulation factor IX (F9).
-* [IGVF Mutpred2](https://data.igvf.org/multireport/?type=TabularFile&status!=deleted&workflows.name=Mutpred2+workflow&content_type=coding+variant+effects): predictions for single amino acid substitution variants across all human genes.
+* [IGVF Mutpred2](https://data.igvf.org/multireport/?type=TabularFile&status!=deleted&workflows.name=Mutpred2+workflow&content_type=coding+variant+effects): predictions for all single amino acid substitutions across all human genes.
 * [IGVF ESM-1v](https://data.igvf.org/multireport/?type=TabularFile&status!=deleted&workflows.name=ESM-1v+amino+acid+substitution+scoring+workflow&content_type=coding+variant+effects): predictions for all single amino acid substitutions in all MANE protein sequences.
 
 ## Variants-Phenotypes-Coding variants Edges
