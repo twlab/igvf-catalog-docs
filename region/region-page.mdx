@@ -3,9 +3,30 @@ title: 'View Region'
 icon: 'map'
 ---
 
-## Regulatory Graph
+# Genomic Elements
+The IGVF Catalog contains genomic elements, which are potential functional regions for regulating gene expression. These elements are identified/tested by functional assays (e.g., MPRA), association studies (e.g., caQTLs), and computational predictions (e.g., the [ENCODE-rE2G model](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full)).
 
-The Regulatory Graph displays information about regulatory regions within the genomic coordinates you're viewing.
+Data sources include:
+* [ENCODE Candidate Cis-Regulatory Elements (cCREs)](https://doi.org/10.1038/s41586-020-2493-4): A unified set of genomic elements predicted to have regulatory potential based on a combination of experimental data (e.g., ChIP-seq, DNase-seq) from the ENCODE project.
+
+
+And other additional edge collections are loaded for genomic elements studied in specific contexts:
+
+## Genomic Elements-Genes Edges
+* [IGVF CRISPR FACS screen](link): 
+* [IGVF Perturb-seq assays](link):
+* [ENCODE-rE2G](link)(can't find a good way to generate a portal link): computational model predicts enhancers, and their target genes and cell types across 1700+ ENCODE biosamples
+
+## Genomic Elements-Biosamples Edges
+* [IGVF lentiMPRA assays]()
+* [ENCODE lentiMPRA assays](https://www.encodeproject.org/search/?type=FunctionalCharacterizationExperiment&accession=ENCSR405QCT&accession=ENCSR203UFY&accession=ENCSR336MKI): Elements cloned into the lentiMPRA vector upstream of a minimal promoter, tested potential HepG2, K562, and WTC11 enhancers and promoters of all protein-coding genes.
+
+## Variants-Genomic Elements Edges
+(also on variants page)
+* External caQTL studies: variants associated with genomic elements function 
+from external studies ([PMID:34038741](https://pubmed.ncbi.nlm.nih.gov/34038741/), [PMID:34017130](https://pubmed.ncbi.nlm.nih.gov/34017130/)) and [AFGR](https://github.com/smontgomlab/AFGR?tab=readme-ov-file)(African Functional Genomics Resource)
+* IGVF BlueSTARR: computational model predicts variants affecting the regulatory function in ENCODE cCREs (Candidate Cis-Regulatory Elements)
+* IGVF MPRA
 
 ### Table Columns:
 
