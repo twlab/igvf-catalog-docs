@@ -4,26 +4,28 @@ icon: 'map'
 ---
 
 # Genomic Elements
-The IGVF Catalog contains genomic elements, which are potential functional regions for regulating gene expression. These elements are identified/tested by functional assays (e.g., MPRA), association studies (e.g., caQTLs), and computational predictions (e.g., the [ENCODE-rE2G model](link)).
+The IGVF Catalog contains genomic elements, which are potential functional regions for regulating gene expression. These elements are identified/tested by functional assays (e.g., MPRA), association studies (e.g., caQTLs), and computational predictions (e.g., the [ENCODE-rE2G model](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full)).
 
-## Genomic elements identified/tested by functional assays
-* IGVF Massively Parallel Reporter Assays (MPRA)
-* ENCODE/IGVF CRISPR
+Data sources include:
 * ENCODE Candidate Cis-Regulatory Elements (cCREs)
 
-## Additional Genomic Elements Collections
-## Variants-Genomic Elements Edges
-variants associated with genomic elements from:
-* caQTL studies: Two external studies ([PMID1](link), [PMID2](link)) curated in [ENCODE portal](link) and [AFGR](link)
-* BlueSTARR: computational model predicts variants affecting genomic elements regulatory function 
+And other additional edge collections are loaded for genomic elements studied in specific contexts:
 
 ## Genomic Elements-Genes Edges
-* IGVF CRISPR FACS screen and Perturb-seq assays
-* ENCODE-rE2G: computational model predicts enhancers, and their target genes and cell types across 1700+ ENCODE biosamples
+* [IGVF CRISPR FACS screen](link): 
+* [IGVF Perturb-seq assays](link):
+* [ENCODE-rE2G](link)(can't find a good way to generate a portal link): computational model predicts enhancers, and their target genes and cell types across 1700+ ENCODE biosamples
 
 ## Genomic Elements-Biosamples Edges
-* IGVF lentiMPRA assays
-* ENCODE lentiMPRA assays
+* [IGVF lentiMPRA assays]()
+* [ENCODE lentiMPRA assays](https://www.encodeproject.org/search/?type=FunctionalCharacterizationExperiment&accession=ENCSR405QCT&accession=ENCSR203UFY&accession=ENCSR336MKI): Elements cloned into the lentiMPRA vector upstream of a minimal promoter, tested potential HepG2, K562, and WTC11 enhancers and promoters of all protein-coding genes.
+
+## Variants-Genomic Elements Edges
+(also on variants page)
+* External caQTL studies: variants associated with genomic elements function 
+from external studies ([PMID:34038741](https://pubmed.ncbi.nlm.nih.gov/34038741/), [PMID:34017130](https://pubmed.ncbi.nlm.nih.gov/34017130/)) and [AFGR](https://github.com/smontgomlab/AFGR?tab=readme-ov-file)(African Functional Genomics Resource)
+* IGVF BlueSTARR: computational model predicts variants affecting the regulatory function in ENCODE cCREs (Candidate Cis-Regulatory Elements)
+* IGVF MPRA
 
 ### Table Columns:
 
