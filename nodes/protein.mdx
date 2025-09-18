@@ -3,10 +3,53 @@ title: 'Protein'
 icon: 'meat'
 ---
 
+# Protein
+## Identifiers and Primary Sources
+
+The IGVF Catalog has protein nodes collection with Ensembl Protein IDs (e.g., `ENSP00000384707`) as identifiers from the following [GENCODE](link) releases:
+* **Human:** [GENCODE v43](link)
+* **Mouse:** [GENCODE vM36](link)
+
+Information from [UniProt](https://www.uniprot.org) are also integrated as properties on each node, including UniProt IDs (e.g., `P49711`), protein names, and Database cross-reference (dbxref). The data was imported from the following UniProt releases:
+* **Human:** [portal link with date](link)
+* **Mouse:** [portal link with date](link)
+
+## Additional Protein Edge Collections
+### Complexes-Proteins Edges
+Data protein complexes are imported from [Complex Portal](https://www.ebi.ac.uk/complexportal/) at the EBI
+
+### Motifs-Proteins Edges
+Transcription Factor (TF) Binding Motifs represented by Position Weight Matrices (PWMs) defining the DNA binding preferences for transcription factors from [HOCOMOCO v11](https://hocomoco11.autosome.org/).
+
+### Variants-Proteins Edges
+* Allele-specific TF binding events called from assays such as ChIP-seq from [ADASTRA](link) and [GVATdb](link).
+* Predictions of the impact of variants on TF binding from [SEMpl](link).
+* pQTL (Protein Quantitative Trait Loci) studies from UK Biobank (UKB) identified genetic variants associated with changes in protein abundance levels.
+
+### Protein-Protein Edges
+Protein-protein interactions from [BioGRID](https://thebiogrid.org/) and [IntAct](https://www.ebi.ac.uk/intact/) includes direct physical interactions and functional genetic associations.
+
+## GO Terms Table
+
+This table presents Gene Ontology (GO) terms associated with the protein, describing its functions, processes, and cellular locations.
+
+| Column Name | Description |
+|-------------|-------------|
+| Annotation ID | Unique identifier for the protein |
+| Annotation Name | Protein name from UniProt |
+| GO Term Name | The specific Gene Ontology term |
+| Source | Origin of the GO term information |
+| Gene Product Type | Type of gene product (e.g., protein, RNA) |
+| Gene Product Symbol | Symbol representing the gene product |
+| Qualifier | Additional qualifiers for the GO term (if applicable) |
+| Organism | The organism to which this annotation applies |
+| Evidence | Code indicating the type of evidence for this annotation |
+| GO ID | Unique identifier for the GO term |
+
 
 ## TF-binding Motif Table
 
-This table shows information about transcription factor binding motifs associated with the protein.
+This table shows information about transcription factor binding motifs associated with the protein from [HOCOMOCO v11](link).
 
 | Column | Description |
 |--------|-------------|
@@ -18,7 +61,7 @@ This table shows information about transcription factor binding motifs associate
 
 ## Protein Complexes Table
 
-This table displays information about protein complexes that include the protein you're viewing.
+This table displays information about protein complexes that include the protein you're viewing from [EBI complex](link).
 
 | Column | Description |
 |--------|-------------|
@@ -34,9 +77,29 @@ This table displays information about protein complexes that include the protein
 | Reactome Xref | Cross-references to Reactome database |
 | Source | Origin of the complex data (click for more details) |
 
-## GO Terms Table
+## Associated Variants Table
 
-This table presents Gene Ontology (GO) terms associated with the protein, describing its functions, processes, and cellular locations.
+This table presents variants associated with the protein from pQTL studies, or from allele-specific binding events for transcription factors.
+
+NEED to find an example
+
+## Protein-Protein Interactions Table
+
+This table presents protein-protein interactions for this protein from Biogrid and IntAct, includes direct physical interactions or functional genetic associations.
+
+| Column | Description |
+|--------|-------------|
+| Interacting Protein |	The name of the interacting protein |
+| Interaction Type | A numerical code classifying the interaction (hover for full text) |
+| Detection Method | The specific technique used to identify the interaction (e.g., affinity chromatography technology) |
+| Confidence (BioGRID) | A confidence score assigned by BioGRID. Higher scores generally indicate stronger supporting evidence |
+| Confidence (IntAct) | A confidence score from the IntAct database |
+| PMIDs | The publication(s) that reported the interaction |
+| Source | Database source of the interaction |
+
+## Related Variants Table
+
+## Related Genes & Proteins Table
 
 ## Gene View
 
