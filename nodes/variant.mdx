@@ -3,7 +3,26 @@ title: 'Variant'
 icon: 'virus'
 ---
 
-## Enhancer-Gene Model Prediction Table
+# Variant
+
+The **IGVF Catalog** contains *variant* nodes primarily sourced from [FAVOR](https://favor.genohub.org/).  
+Variants not present in FAVOR but present in the other variant collections below were also loaded.  
+Variants may be identified using **SPDI**, **HGVS**, or their **genomic position**.
+
+---
+
+## Variant Edges
+
+| Source                | Edge Description                                                                                       | Datasets                                                                                                                                                                                                 |
+|---------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **TopLD**                 | Variant-to-variant edges describing variants in **linkage disequilibrium (LD)**.                  | [TopLD](http://topld.genetics.unc.edu/)                                                                                                                                                                            |
+| **caQTL**                   | Variant-to-genomic element edges describing **variants associated with chromatin accessibility**. | [ENCODE](http://encodeproject.org/ENCFF103XRK), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                         |
+| **eQTL**                    | Variant-to-gene edges describing **variants associated with gene expression**.                   | [EBI eQTL](https://www.ebi.ac.uk/eqtl/), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                |
+| **sQTL**                    | Variant-to-gene edges describing **variants associated with alternative splicing**.               | [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                                                        |
+| **Variant-EFFECTS**         | Variant-to-gene edges describing **causal effects of variants on endogenous gene expression** from genome editing experiments. | [Variant-EFFECTS datasets (Jesse Engreitz, Stanford)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=Variant-EFFECTS&samples.classifications=cell+line&lab.title=Jesse+Engreitz%2C+Stanford) |
+| **STARR-seq**                | Variant-to-biosample edges describing **allele-specific regulatory activity** in the K562 cell line. | [STARR-seq datasets (Tim Reddy, Duke)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=STARR-seq&lab.title=Tim+Reddy%2C+Duke&collections=IGVF_catalog_v1.0)                   |
+| **BlueSTARR**              | Variant-to-genomic element edges describing **predicted regulatory activity** in ENCODE cCRE sequences using a STARR-seq–trained model. | [BlueSTARR dataset (Bill Majoros, Duke)](https://data.igvf.org/prediction-sets/IGVFDS2340WJRV/)                   |
+| **MPRA**                   | Variant-to-genomic element edges describing **variant activity within genomic elements** tested in MPRA. | [lentiMPRA datasets (Nadav Ahituv, UCSF)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0)                                                                 |## Enhancer-Gene Model Prediction Table
 
 This table shows which genes are predicted to be regulated by enhancers overlapping the variant you're viewing.
 
@@ -55,3 +74,5 @@ If the variant affects a protein-coding region, this table provides predictions 
 | Prediction Scores | Various tools' predictions of the variant's impact (higher scores generally indicate more severe impacts) |
 
 Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+
+
