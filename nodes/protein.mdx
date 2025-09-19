@@ -3,10 +3,75 @@ title: 'Protein'
 icon: 'meat'
 ---
 
+# Protein
+## Identifiers and Primary Sources
+
+The IGVF Catalog has protein nodes collection with Ensembl Protein IDs (e.g., `ENSP00000384707`) as identifiers from the following [GENCODE](link) releases:
+* **Human:** [GENCODE v43](https://www.gencodegenes.org/human/release_43.html)
+* **Mouse:** [GENCODE vM36](https://www.gencodegenes.org/mouse/release_M36.html)
+
+Information from [UniProt](https://www.uniprot.org) are also integrated as properties on each node, including UniProt IDs (e.g., `P49711`), protein names, and Database cross-reference (dbxref). The data was imported from the following UniProt files (downloaded in May 2024):
+* **Human:** [uniprot_sprot_human.dat.gz](https://data.igvf.org/reference-files/IGVFFI4731NANO/), [uniprot_trembl_human.dat.gz](https://data.igvf.org/reference-files/IGVFFI8551EYSR/) 
+* **Mouse:** [uniprot_sprot_rodents.dat.gz](https://data.igvf.org/reference-files/IGVFFI3157HIUW/), [uniprot_trembl_rodents.dat.gz](https://data.igvf.org/reference-files/IGVFFI6972ORPG/)
+
+## Additional Protein Edge Collections
+### Complexes-Proteins Edges
+Data protein complexes are imported from [Complex Portal](https://www.ebi.ac.uk/complexportal/) at the EBI.
+
+### Motifs-Proteins Edges
+Transcription Factor (TF) Binding Motifs represented by Position Weight Matrices (PWMs) defining the DNA binding preferences for transcription factors from [HOCOMOCO v11](https://hocomoco11.autosome.org/).
+
+### Variants-Proteins Edges
+| Source  | Class | Edge Description | Datasets |
+|---------|-------|------------------|----------|
+| External | statistical assessment | Allele-specific TF binding events called from assays such as ChIP-seq | [ADASTRA Bill Cipher](https://adastra.autosome.org/mabel/downloads?releaseName=Bill%20Cipher)  |
+| External | statistical assessment | Allele-specific TF binding events called SNP-SELEX | [GVATdb](https://renlab.sdsc.edu/GVATdb/search.html) |
+| IGVF     | prediction | Predictions of the impact of variants on binding to 223 TFs binding using [SEMVAR](https://doi.org/10.1093/bioinformatics/btz612) | [SEMpl](https://data.igvf.org/search/?type=PredictionSet&status=released&file_set_type=binding+effect&lab.title=Alan+Boyle%2C+UMich&collections=IGVF_catalog_v1.0) |
+| external | statsistical assessment | pQTL (Protein Quantitative Trait Loci) studies on blood plasma protein abundance levels| [UK BioBank Pharma Proteomics Project](https://metabolomips.org/ukbbpgwas/) |
+
+### Protein-Protein Edges
+Protein-protein interactions from [BioGRID](https://thebiogrid.org/) and [IntAct](https://www.ebi.ac.uk/intact/) includes direct physical interactions and functional genetic associations.
+
+# Coding variants
+## Identifiers and Primary Sources
+
+The IGVF Catalog has coding variants collection using identifiers combining Ensembl Transcript ID and HGVS nomenclature for both protein and cDNA changes (e.g., `HK1_ENST00000298649_p.Arg380Gly_c.1138C>G`). Each coding variant is also mapped to its genomic location using standardized SPDI identifiers.
+
+The primary source is [dbNSFP v5.1](https://www.dbnsfp.org), which aggregates scores from dozens of functional prediction algorithms (e.g., SIFT, CADD) for all possible non-synonymous single-nucleotide variants (nsSNVs) and splice-site variants in the human genome. Additionally, predictions on coding variants functions from [Mutpred2](https://doi.org/10.1038/s41467-020-19669-x) and [ESM-1v](https://github.com/facebookresearch/esm) for every possible single amino acid change in human genes are imported as part of the IGVF project.  As part of this import process, all possible genetic indels that could lead to each specific amino acid change were enumerated and included.
+
+## Coding Variant Edges
+| Source | Class | Edge Description | Datasets |
+|--------|-------|------------------|----------|
+| IGVF   | observed data | Variant Abundance by Massively Parallel Sequencing (VAMP-seq) uses massively parallel sequencing to measure the effects of thousands of missense variants on protein abundance for CYP2C19 and G6PD.| [VAMP-seq assays](https://data.igvf.org/search/?type=AnalysisSet&status!=deleted&file_set_type=principal+analysis&status=released&preferred_assay_titles=VAMP-seq) |
+| IGVF   | observed data | An advanced version of VAMP-seq tailored for secreted proteins. Measures how missense variants impact secretion and post-translational modifications for coagulation factor IX (F9). | [MultiSTEP assays](https://data.igvf.org/search/?type=AnalysisSet&status!=deleted&file_set_type=principal+analysis&status=released&preferred_assay_titles=VAMP-seq+%28MultiSTEP%29) |
+| IGVF   | prediction | Predictions for all single amino acid substitutions across all human genes. | [Mutpred2](https://data.igvf.org/multireport/?type=TabularFile&status!=deleted&workflows.name=Mutpred2+workflow&content_type=coding+variant+effects) |
+| IGVF   | prediction | Predictions for all single amino acid substitutions in all MANE protein sequences | [ESM-1v](https://data.igvf.org/multireport/?type=TabularFile&status!=deleted&workflows.name=ESM-1v+amino+acid+substitution+scoring+workflow&content_type=coding+variant+effects) |
+
+## Variants-Phenotypes-Coding variants Edges
+* [IGVF SGE assays](https://data.igvf.org/search/?type=AnalysisSet&status!=deleted&preferred_assay_titles=SGE&file_set_type=principal+analysis&status=released): CRISPR-based assays that systematically introduce and evaluate the functional impact of hundreds to thousands of variants in PALB2, CTCF, RAD51D, SFPQ, XRCC2, and BRCA2.
+
+
+## GO Terms Table
+
+This table presents Gene Ontology (GO) terms associated with the protein, describing its functions, processes, and cellular locations.
+
+| Column Name | Description |
+|-------------|-------------|
+| Annotation ID | Unique identifier for the protein |
+| Annotation Name | Protein name from UniProt |
+| GO Term Name | The specific Gene Ontology term |
+| Source | Origin of the GO term information |
+| Gene Product Type | Type of gene product (e.g., protein, RNA) |
+| Gene Product Symbol | Symbol representing the gene product |
+| Qualifier | Additional qualifiers for the GO term (if applicable) |
+| Organism | The organism to which this annotation applies |
+| Evidence | Code indicating the type of evidence for this annotation |
+| GO ID | Unique identifier for the GO term |
+
 
 ## TF-binding Motif Table
 
-This table shows information about transcription factor binding motifs associated with the protein.
+This table shows information about transcription factor binding motifs associated with the protein from [HOCOMOCO v11](link).
 
 | Column | Description |
 |--------|-------------|
@@ -18,7 +83,7 @@ This table shows information about transcription factor binding motifs associate
 
 ## Protein Complexes Table
 
-This table displays information about protein complexes that include the protein you're viewing.
+This table displays information about protein complexes that include the protein you're viewing from [EBI complex](link).
 
 | Column | Description |
 |--------|-------------|
@@ -34,9 +99,33 @@ This table displays information about protein complexes that include the protein
 | Reactome Xref | Cross-references to Reactome database |
 | Source | Origin of the complex data (click for more details) |
 
-## GO Terms Table
+## Associated Variants Table
 
-This table presents Gene Ontology (GO) terms associated with the protein, describing its functions, processes, and cellular locations.
+This table presents variants associated with the protein from pQTL studies, or from allele-specific binding events for transcription factors.
+
+NEED to find an example
+
+## Protein-Protein Interactions Table
+
+This table presents protein-protein interactions for this protein from [Biogrid](https://thebiogrid.org) and [IntAct](https://www.ebi.ac.uk/intact/home), includes direct physical interactions or functional genetic associations.
+
+| Column | Description |
+|--------|-------------|
+| Interacting Protein |	The name of the interacting protein |
+| Interaction Type | A numerical code classifying the interaction (hover for full text) |
+| Detection Method | The specific technique used to identify the interaction (e.g., affinity chromatography technology) |
+| Confidence (BioGRID) | A confidence score assigned by BioGRID. Higher scores generally indicate stronger supporting evidence |
+| Confidence (IntAct) | A confidence score from the IntAct database |
+| PMIDs | The publication(s) that reported the interaction |
+| Source | Database source of the interaction |
+
+## Related Variants Table
+
+DECIDED TO REMOVE THIS TABLE
+
+## Related Genes & Proteins Table
+
+DECIDED TO REMOVE THIS TABLE
 
 ## Gene View
 

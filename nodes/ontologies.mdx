@@ -1,0 +1,95 @@
+---
+title: 'Ontology Terms'
+icon: 'disease'
+---
+
+# Ontology Terms
+
+The IGVF Catalog uses a set of ontologies to represent biological and experimental concepts and identities that are useful in annotation entities and contexts.
+
+| Ontology | URL | Description | Usage |
+|----------|-----|-------------|-------|
+| CHEBI	| http://www.ebi.ac.uk/chebi	|	Chemical Entities of Biological Interest | Drugs and Chemicals |
+| Cellosaurus	| https://www.cellosaurus.org/	|	A knowledge resource on cell lines | Biosamples |
+| NCIT	| https://github.com/ncit-obo-org/ncit-obo-edition	|	NCI Thesarus (OBO edition) | Phenotypes and others |
+| EFO	| http://www.ebi.ac.uk/efo	|	Experimental Factor Ontology | Assays and others |
+| CLO	| https://github.com/CLO-Ontology/CLO	|	Cell Line Ontology | Biosamples |
+| GO	| http://geneontology.org/	|	Gene Ontology | Functional Annotations |
+| MONDO	| https://monarch-initiative.github.io/mondo	|	Merge of multiple Disease Ontologies | Diseases and Phenotypes |
+| HPO	| http://www.human-phenotype-ontology.org/	|	Human phenotypic abnormalities | Phenotypes |
+| CL	| https://obophenotype.github.io/cell-ontology/	|	Cell types | Biosamples |
+| ORPHANET	| https://www.orpha.net/	|	Rare diseases | Diseases | 
+| UBERON	| http://uberon.org/	|	Integrated cross-species anatomy ontology | Biosamples |
+| Oncotree	| https://oncotree.mskcc.org/	|	Community-led cancer classification system | Diseases | 
+| VARIO	| https://obofoundry.org/ontology/vario	|	Description of effects, consequences, and mechanisms of variations | Genetic entites |
+| ENCODE	| https://encodeproject.org	|	Special terms created for the ENCODE project | Biosamples |
+| BAO	| http://bioassayontology.org/	|	Bioassay Ontology | Assays targets | 
+| OBA	| https://github.com/obophenotype/bio-attribute-ontology	|	Ontology of Biological Attributes | Assay targets |
+
+The graph nature of the ontologies themselves are represented explicitly by edges between ontology terms representing parentage or other
+relationships.  Additional edges exist between other entities as well.
+
+Many edges are annotated with a link or hyperlink to an ontology term in Uberon, CL, CLO, or Cellosaurus, representing the biological context
+where the measurement or prediction was made.
+
+
+## Disease-Gene Association Network
+A graph showing the Disease and Genes it's linked to (only Disease ontologies)
+
+## Ontology Term Parents Table
+
+This table shows the parent terms of the current ontology term you're viewing.
+
+| Column | Description |
+|--------|-------------|
+| Relationship Type | Describes how this term relates to its parent |
+| Term ID | Unique identifier for the parent term (click to view its page) |
+| Name | Name of the parent term (hover to see full text if it's long) |
+| Description | Description of the parent term (hover to see full text if it's long) |
+| Source | Origin of the term information (click for more details) |
+| Subontology | Subgroup of the ontology this term belongs to |
+| Synonyms | Alternative names for the term (click to expand if there are many) |
+
+## Ontology Term Children Table
+
+This table displays the child terms of the current ontology term.
+
+| Column | Description |
+|--------|-------------|
+| Relationship Type | Describes how this term relates to its child |
+| Term ID | Unique identifier for the child term (click to view its page) |
+| Name | Name of the child term (hover to see full text if it's long) |
+| Description | Description of the child term (hover to see full text if it's long) |
+| Source | Origin of the term information (click for more details) |
+| Subontology | Subgroup of the ontology this term belongs to |
+| Synonyms | Alternative names for the term (click to expand if there are many) |
+
+## Transitive Closure
+
+At the bottom of the page, you'll see a link labeled "Enter Closure End". This feature allows you to explore the relationship between the current term and any other term in the ontology.
+
+To use this feature:
+1. Click on "Enter Closure End"
+2. A prompt will appear asking you to enter another ontology term
+3. Type in the term ID (e.g., UBERON_0014892)
+4. Press Enter or click OK
+5. You'll be taken to a new page showing the relationship path between the current term and the one you entered
+
+Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+
+## Associated Variants (Disease terms)
+
+Variant-Disease-Genes annotations are loaded from the [ClinGen](https://clinicalgenome.org/) database, also found on the Variant pages
+
+
+## Genes (Disease terms)
+
+Disease-Gene edges are loaded in the IGVF Catalog from [Orphanet](https://www.orpha.net/, also found on the Gene pages 
+
+
+## Protein - GO Annotations
+
+Proteins (technically gene products) are annotated by the Gene Ontology project GAF files; 
+these are represented as edges between proteins and ontology (GO) terms. These are displayed in on the Protein 
+
+

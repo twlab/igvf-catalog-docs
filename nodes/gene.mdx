@@ -2,8 +2,22 @@
 title: 'Gene'
 icon: 'dna'
 ---
+# Genes
+
+The  official gene sets of the IGVF Catalog is from the following [GENCODE](link) releases:
+* **Human:** [GENCODE v43](https://www.gencodegenes.org/human/release_43.html)
+* **Mouse:** [GENCODE vM36](https://www.gencodegenes.org/mouse/release_M36.html)
+
+Gene and Transcripts and Gene Structure (UTRs, Exons etc.)  are loaded from the comprehensive annotation file as nodes.
+This includes all protein-coding, lncRNA and all other gene types annotated by GENCODE
+
+## Coding Variant Functional and Prediction scores
+
+[protein page]
 
 ## Predicted Enhancers Table
+
+[E2G predictions docs]
 
 This table shows enhancers that are predicted to regulate the gene you're viewing.
 
@@ -29,7 +43,7 @@ This table displays information about proteins associated with the gene.
 
 ## Transcripts Table
 
-This table shows different transcripts (RNA versions) of the gene.
+This table shows different transcripts (RNA versions) of the gene. Genes are linked to transcripts via gene-transcript edges (also from GENCODE).
 
 | Column | Description |
 |--------|-------------|
@@ -40,7 +54,12 @@ This table shows different transcripts (RNA versions) of the gene.
 | Source | Origin of the transcript information (click for source details if available) |
 | Version | Version number of the transcript information |
 
-## Variants Table
+## Variants Table.  
+Variants are linked to genes via both functional characterization experiments and QTLs.
+[IGVFDS4359OODY](https://data.igvf.org/analysis-sets/IGVFDS4359OODY/) shows the effect of 183 variants in the PPIF promoter 
+measured _via_ a CRISPR method called Variant-EFFECTS.  
+eQTLs and splice-QTLs are encoded as gene-variant edges.  Datasets have been loaded from the EBI [eQTL catalogue](https://www.ebi.ac.uk/eqtl/).  
+Additional QTLs have been loaded from the [African Functional Genomics; AFGR](https://github.com/smontgomlab/AFGR) resource.
 
 This table presents genetic variants associated with the gene.
 
@@ -50,3 +69,17 @@ This table presents genetic variants associated with the gene.
 | rsID | Reference SNP ID(s) for the variant (click for more details) |
 | Source | Origin of the variant information (click for source details if available) |
 | SPDI | A standardized representation of the variant |
+
+## Pathways Enrichment
+
+Pathways and the genes containing them are loaded from [Reactome](https://reactome.org/). 
+
+
+## Other Edge Types (UI in development)
+### Gene-Gene Edges
+There are two public sources of gene-gene edges; A coxpression matrix from [CoexpressDB](https://coxpresdb.jp/) and genetic interactions from [BioGRID](https://thebiogrid.org)
+
+### Gene-Variant-Drug (PharmGKB)
+
+The PharmGKB resource, also known as [ClinPgx](https://www.clinpgx.org/) has relationships between genes (and their variants) and drug effects
+
