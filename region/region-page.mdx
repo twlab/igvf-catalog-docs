@@ -9,17 +9,21 @@ The IGVF Catalog contains genomic elements, which are potential functional regio
 Data sources include:
 * [ENCODE Candidate Cis-Regulatory Elements (cCREs)](https://doi.org/10.1038/s41586-020-2493-4): A unified set of genomic elements predicted to have regulatory potential based on a combination of experimental data (e.g., ChIP-seq, DNase-seq) from the ENCODE project.
 
-
-And other additional edge collections are loaded for genomic elements studied in specific contexts:
+Additional genomic elements are added when studied in specific contexts, for example accessible elements used in predictive modeels or elements tested in an MPRA experiment or CRISPR screen
 
 ## Genomic Elements-Genes Edges
-* [IGVF CRISPR FACS screen](link): 
-* [IGVF Perturb-seq assays](link):
-* [ENCODE-rE2G](link)(can't find a good way to generate a portal link): computational model predicts enhancers, and their target genes and cell types across 1700+ ENCODE biosamples
+| Source  | Class | Edge Description | Datasets |
+|---------|-------|------------------|----------|
+| ENCODE  | prediction | Biosample specific enhancer-gene predictions using [rE2G pipeline](https://www.encodeproject.org/pipelines/ENCPL835OUC/)| [ENCODE-rE2G](https://www.encodeproject.org/search/?type=Annotation&status=released&annotation_type=element+gene+regulatory+interaction+predictions&lab.title=Jesse+Engreitz%2C+Stanford)| 
+| IGVF    | observed data | CRISPRa and CRISPRi Perturb-seq integrating a guide (sgRNA) library targeting transcription start sites in 24 genes in CD8-positive, alpha-beta memory T primary cells |[IGVF Perturb-seq assays](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=Perturb-seq&lab.title=Charles+Gersbach%2C+Duke&collections=IGVF_catalog_v1.0) |
+| IGVF    | observed data | CRISPRi CRISPRa CRISPRko FACS screen of CCR7 and IL7R inCD8-positive, alpha-beta memory T primary cells | [IGVF CRISPR FACS screen](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=CRISPR+FACS+screen&lab.title=Charles+Gersbach%2C+Duke&collections=IGVF_catalog_v1.0) |
+
 
 ## Genomic Elements-Biosamples Edges
-* [IGVF lentiMPRA assays]()
-* [ENCODE lentiMPRA assays](https://www.encodeproject.org/search/?type=FunctionalCharacterizationExperiment&accession=ENCSR405QCT&accession=ENCSR203UFY&accession=ENCSR336MKI): Elements cloned into the lentiMPRA vector upstream of a minimal promoter, tested potential HepG2, K562, and WTC11 enhancers and promoters of all protein-coding genes.
+| Source  | Class | Edge Description | Datasets |
+|---------|-------|------------------|----------|
+| ENCODE  | observed data | lentiMPRA testing potential HepG2, K562, and WTC11 enhancers and promoters of all protein-coding genes. | [ENCODE lentiMPRA](https://www.encodeproject.org/search/?type=FunctionalCharacterizationExperiment&accession=ENCSR405QCT&accession=ENCSR203UFY&accession=ENCSR336MKI)| 
+| IGVF    | observed data | lentiMPRA in 5 biosamples measuring effect of element (and variants) on gene expression | [IGVF lentiMPRA](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0) |
 
 ## Variants-Genomic Elements Edges
 (also on variants page)
