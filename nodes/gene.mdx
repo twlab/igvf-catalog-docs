@@ -2,6 +2,7 @@
 title: 'Gene'
 icon: 'dna'
 ---
+
 # Genes
 
 The  official gene sets of the IGVF Catalog is from the following [GENCODE](link) releases:
@@ -14,21 +15,6 @@ This includes all protein-coding, lncRNA and all other gene types annotated by G
 ## Coding Variant Functional and Prediction scores
 
 [protein page]
-
-## Predicted Enhancers Table
-
-[E2G predictions docs]
-
-This table shows enhancers that are predicted to regulate the gene you're viewing.
-
-| Column | Description |
-|--------|-------------|
-| Cell Type | The specific cell type for the prediction |
-| Score | The strength of the prediction (higher is stronger) |
-| Model | The predictive model used |
-| Dataset | The source dataset (click for more information) |
-| Enhancer Type | The type of enhancer predicted |
-| Enhancer Region | The genomic coordinates of the predicted enhancer (click to view the region) |
 
 ## Proteins Table
 
@@ -61,14 +47,23 @@ measured _via_ a CRISPR method called Variant-EFFECTS.
 eQTLs and splice-QTLs are encoded as gene-variant edges.  Datasets have been loaded from the EBI [eQTL catalogue](https://www.ebi.ac.uk/eqtl/).  
 Additional QTLs have been loaded from the [African Functional Genomics; AFGR](https://github.com/smontgomlab/AFGR) resource.
 
-This table presents genetic variants associated with the gene.
+## Enhancer-Gene Prediction
+
+This table reports predicted enhancers for this gene from the ENCODE-rE2G model and their relevant cell types. Each row reports one predicted enhancer and cell type.
 
 | Column | Description |
 |--------|-------------|
-| Region | Genomic location of the variant (click to view the region) |
-| rsID | Reference SNP ID(s) for the variant (click for more details) |
-| Source | Origin of the variant information (click for source details if available) |
-| SPDI | A standardized representation of the variant |
+| Cell Type | Cell type in which the enhancer is predicted to regulate the gene |
+| Score | Strength of the prediction (range: 0 to 1, higher indicates a more confident prediction) |
+| Start | Genomic start coordinate of the enhancer |
+| End | Genomic end coordinate of the enhancer |
+| Dataset | Source dataset (click for more details) |
+| Model | Predictive model. Currently: ENCODE-rE2G |
+| Distance (Enhancer to Gene) | Genomic distance between the enhancer and gene body |
+
+Score ranges from 0 (no prediction) to 1 (confident prediction). Currently, this table includes predictions from the ENCODE-rE2G model across 1700 ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+
+The table is initially sorted by Score in descending order, showing the strongest predictions first.
 
 ## Pathways Enrichment
 
@@ -83,3 +78,165 @@ There are two public sources of gene-gene edges; A coxpression matrix from [Coex
 
 The PharmGKB resource, also known as [ClinPgx](https://www.clinpgx.org/) has relationships between genes (and their variants) and drug effects
 
+## Gene Structure
+
+This table provides detailed structural information about this gene including exons, introns, UTRs, and coding sequences.
+
+| Column | Description |
+|--------|-------------|
+| Type | Type of genomic element (exon, intron, UTR, etc.) |
+| Transcript | Transcript identifier this element belongs to |
+| Exon Number | Number of the exon (if applicable) |
+| Start | Genomic start coordinate |
+| End | Genomic end coordinate |
+| Strand | Strand orientation (+ or -) |
+| Source | Origin of the structural information (click for source details) |
+
+## Gene Interactions & Coexpression
+
+This table displays genes that interact with or are coexpressed with this gene.
+
+| Column | Description |
+|--------|-------------|
+| Related Gene | Gene that interacts with or is coexpressed with this gene (click for details) |
+| Source | Source of the interaction data |
+| Z-Score (CoXPresdb) | Coexpression z-score from CoXPresdb |
+| Interaction (BioGRID) | Type of interaction from BioGRID |
+| Detection (BioGRID) | Detection method used in BioGRID |
+| PMIDs | PubMed IDs supporting the interaction |
+| BioGRID Confidence | Confidence score from BioGRID database |
+| IntAct Confidence | Confidence score from IntAct database |
+
+## Related Variant
+
+This table shows variants that are related to this gene through various evidence sources including eQTL, sQTL, and other regulatory mechanisms.
+
+| Column | Description |
+|--------|-------------|
+| rsID | Reference SNP ID(s) for the variant (click for variant details) |
+| Chromosome | Chromosome where the variant is located |
+| Position | Genomic position of the variant |
+| Ref | Reference allele |
+| Alt | Alternative allele |
+| HGVS | HGVS notation for the variant |
+| Evidence Sources | Types of evidence linking the variant to this gene |
+| Biological Context | Biological contexts where the relationship is observed |
+| Max -log10(p-value) | Maximum -log10(p-value) across all evidence sources |
+
+## Related Genes & Protein
+
+This table displays genes and proteins that are related to this gene through various biological relationships.
+
+| Column | Description |
+|--------|-------------|
+| Related Entity | Name of the related gene or protein (click for details) |
+| Type | Whether the related entity is a Gene or Protein |
+| Location | Genomic location (for genes) or N/A (for proteins) |
+| Description | Description or alternative names for the entity |
+
+Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+
+## Interactive Visualizations
+
+The gene page includes several interactive visualization components that provide rich insights into gene function, variants, and relationships.
+
+### Functional Score Distribution
+
+An interactive histogram showing the distribution of functional/predictive scores for coding variants in this gene. 
+
+**Features:**
+- Displays score distributions across different data sources (REVEL, ClinVar, etc.)
+- Hover over bars to see exact counts
+- Automatically updates when selecting different data sources from the table above
+- X-axis shows functional scores (typically 0-1 range)
+- Y-axis shows count of variants
+
+This visualization helps identify patterns in variant pathogenicity predictions and the overall functional landscape of the gene.
+
+### Biobank OR Plot
+
+A forest plot visualization showing odds ratios (OR) from biobank studies for different variant classifications.
+
+**Features:**
+- Displays logOR values with confidence intervals as horizontal lines
+- Different colors represent different evidence types:
+  - **Blue**: ClinVar classifications
+  - **Green**: Calibrated predictions 
+  - **Red**: Author labels
+- Hover over data points to see exact logOR and confidence interval values
+- Vertical dashed line at logOR = 0 for reference
+- Interactive legend on the right side
+
+Each row represents a different variant classification (e.g., "Pathogenic Very Strong", "Likely Pathogenic") with its associated odds ratio from biobank data.
+
+### Coding Variants Preview
+
+An interactive, horizontally scrollable browser for exploring coding variants with functional scores.
+
+**Features:**
+- **Scrollable Interface**: Navigate through variants using horizontal scroll
+- **Label Preferences**: Choose between rsID, SPDI notation, or rsID-only filtering
+- **Auto-selection**: Variants are automatically selected as you scroll
+- **Detailed View**: Selected variant shows:
+  - Complete variant details (chromosome, position, ref/alt alleles)
+  - HGVS notation and SPDI format
+  - rsID when available
+  - Functional scores from multiple sources with visual score bars
+- **Score Visualization**: Each score is displayed with a progress bar and numerical value
+
+This component allows efficient exploration of the functional impact across all coding variants in the gene.
+
+### Gene Interaction Network
+
+An interactive network graph showing gene-gene interactions and co-expression relationships.
+
+**Features:**
+- **Interactive Navigation**: 
+  - Pan by clicking and dragging
+  - Zoom with mouse wheel or zoom buttons
+  - Click nodes to navigate to related genes
+- **Visual Elements**:
+  - Central gene (query) shown in teal
+  - Related genes shown in coral/orange
+  - Edge thickness represents interaction strength
+  - Node hover effects with black borders
+- **Data Integration**: Combines multiple interaction databases (BioGRID, CoXPresdb, etc.)
+- **Force-Directed Layout**: Nodes automatically arrange based on interaction strength
+- **Legend**: Shows node type meanings
+
+The network helps visualize the functional context and regulatory relationships of the gene.
+
+### Pathway Enrichment Tree
+
+A hierarchical tree visualization showing pathway associations organized by biological processes.
+
+**Features:**
+- **Interactive Navigation**:
+  - Horizontal panning with click-and-drag
+  - Arrow button for quick navigation
+  - Scroll bar at bottom for position reference
+- **Hierarchical Structure**:
+  - Root: "Pathways"
+  - Groups: "Top-level pathways" and "GO biological processes"  
+  - Leaves: Individual pathways
+- **Visual Coding**:
+  - Different colors for pathway types
+  - Rounded rectangles with connecting lines
+  - Hover tooltips with detailed information
+- **Legend**: Color-coded explanation of pathway types
+
+This visualization helps understand the biological processes and pathways this gene participates in.
+
+### Biobank OR Plot Details
+
+The Biobank OR Plot specifically shows:
+
+**Data Sources:**
+- **ClinVar**: Clinical variant classifications
+- **Calibrated Predictions**: Computationally calibrated pathogenicity scores
+- **Author Labels**: Original author classifications from functional studies
+
+**Interpretation:**
+- Points to the right of the reference line (logOR > 0) suggest increased disease risk
+- Confidence intervals show statistical uncertainty
+- Multiple data sources provide complementary evidence for variant impact

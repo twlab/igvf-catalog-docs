@@ -36,18 +36,56 @@
     {
       "group": "Nodes",
       "pages": [
-        "nodes/gene",
+        {
+          "group": "Gene",
+          "pages": [
+            "nodes/gene",
+            "nodes/transcript"
+          ]
+        },
         "nodes/variant",
-        "nodes/protein",
-        "nodes/transcript",
-        "nodes/disease"
+        {
+          "group": "Protein",
+          "pages": [
+            "nodes/protein",
+            "nodes/motif"
+          ]
+        },
+        "nodes/phenotype",
+        "nodes/drug",
+        "nodes/pathway",
+        "nodes/go-term",
+        "nodes/complex",
+        "nodes/pmid",
+        "nodes/ontologies",
+        "nodes/disease",
+        "nodes/study"
       ]
     },
     {
       "group": "Regions",
       "pages": [
         "region/region-page",
-        "region/variant-dashboard"
+        "region/variant-dashboard",
+        "region/ancestry"
+      ]
+    },
+    {
+      "group": "Catalog Pages",
+      "pages": [
+        "pages/home",
+        "pages/search",
+        "pages/lexical",
+        "pages/browse",
+        "pages/apps",
+        "pages/cypher",
+        "pages/files",
+        "pages/chat",
+        "pages/stories",
+        "pages/glossary",
+        "pages/sources",
+        "pages/settings",
+        "pages/live-graph"
       ]
     }
   ]

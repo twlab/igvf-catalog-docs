@@ -1,0 +1,17 @@
+---
+title: 'Data Sources'
+icon: 'layers'
+---
+
+# `/sources`
+
+The Data Sources page inventories the external resources that feed IGVF catalog panels and documents the normalisation steps applied before display.
+
+## Data Sources Table
+- The table renders the curated list of external resources, grouping entries by the catalog object types they inform (genes, variants, pathways, biosamples, etc.).
+- Each row links out to the authoritative resource (e.g., ENCODE, GENCODE, Reactome, ClinVar) so researchers can trace provenance back to the originating database.
+
+## Transformation Notes
+- The intro section summarises the schema mapping, filtering, and enrichment steps applied to API responses before they are drawn in tables or dashboards. These transformations match what the UI reveals through per-panel X-ray tools.
+
+Maintaining this attribution context is critical when data versions, curation status, or licensing differ across consortia, so the Sources page doubles as a reference for how each panel is harmonised.

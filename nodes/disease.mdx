@@ -1,0 +1,29 @@
+---
+title: 'Disease'
+icon: 'stethoscope'
+---
+
+# Disease Nodes
+
+Disease pages resolve ontology-backed disorders and layer IGVF relationship data on top of the shared node shell.
+
+## Association Network
+- The page pulls up to 50 disease–gene links from `api/catalog/diseases/genes` (Homo sapiens) and renders them with a force-directed canvas.
+- Node radius scales with connection count; teal nodes are diseases, coral nodes are genes. Hovering shows tooltip context and clicking a gene routes to its `/ENSG*` page.
+- Edge opacity reflects assertion strength (Pathogenic > Likely pathogenic > … > Benign), signalling confidence before consulting tabular evidence.
+
+## Ontology Relationships
+- Parent and child term tables expose relationship type, target term ID/name, description, source URI, subontology, and synonyms.
+- Tables support column sorting and sticky headers, and synonym lists stay expandable for lengthy vocabularies.
+- When related terms exist, the "Enter Closure End" prompt opens `/[node_id]/closure/[end_id]` so curators can explore the transitive closure graph without leaving the page.
+
+## Page Data Tables
+- **Associated Variant**: ClinGen assertions from `api/diseases/variants` list rsIDs (linked to `/rs*` views), implicated genes, assertion labels, supporting PMIDs (expandable), and the reporting source/URL.
+- **Files & Filesets**: IGVF/ENCODE entries from `api/files-filesets` scoped by `sample_term`. Columns cover fileset accession, assay titles, method/class, software, sample summaries, ontology samples/donors (converted to internal links), and source labels.
+- Both tables offer search, pagination (25 rows per request), CSV export, and X-Ray instrumentation.
+
+## External Sources
+- Disease definitions cite Orphanet (and related ontologies) through the catalog's external attribution list.
+- Variant assertions reference ClinGen, giving reviewers a direct line back to the curation authority.
+
+Together the disease node experience ties ontology metadata to IGVF gene, variant, and assay evidence while keeping provenance explicit.

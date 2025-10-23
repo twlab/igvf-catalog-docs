@@ -68,10 +68,9 @@ This table presents Gene Ontology (GO) terms associated with the protein, descri
 | Evidence | Code indicating the type of evidence for this annotation |
 | GO ID | Unique identifier for the GO term |
 
+## TF-Binding Motif
 
-## TF-binding Motif Table
-
-This table shows information about transcription factor binding motifs associated with the protein from [HOCOMOCO v11](link).
+This table shows information about transcription factor binding motifs associated with the protein. from HOCOMOCO v11.
 
 | Column | Description |
 |--------|-------------|
@@ -81,7 +80,7 @@ This table shows information about transcription factor binding motifs associate
 | Length | Length of the motif |
 | Motif Source | Source of the motif data (click for more details) |
 
-## Protein Complexes Table
+## Protein Complex
 
 This table displays information about protein complexes that include the protein you're viewing from [EBI complex](link).
 
@@ -99,12 +98,6 @@ This table displays information about protein complexes that include the protein
 | Reactome Xref | Cross-references to Reactome database |
 | Source | Origin of the complex data (click for more details) |
 
-## Associated Variants Table
-
-This table presents variants associated with the protein from pQTL studies, or from allele-specific binding events for transcription factors.
-
-NEED to find an example
-
 ## Protein-Protein Interactions Table
 
 This table presents protein-protein interactions for this protein from [Biogrid](https://thebiogrid.org) and [IntAct](https://www.ebi.ac.uk/intact/home), includes direct physical interactions or functional genetic associations.
@@ -119,39 +112,50 @@ This table presents protein-protein interactions for this protein from [Biogrid]
 | PMIDs | The publication(s) that reported the interaction |
 | Source | Database source of the interaction |
 
-## Related Variants Table
+## Associated Variant Table
 
-DECIDED TO REMOVE THIS TABLE
-
-## Related Genes & Proteins Table
-
-DECIDED TO REMOVE THIS TABLE
-
-## Gene View
-
-This table provides detailed information about genes.
+This table shows variants that are directly associated with this protein, including pQTLs (protein quantitative trait loci) and allele-specific transcription factor binding events.
 
 | Column | Description |
 |--------|-------------|
-| Region | Genomic location of the gene (click to view the region) |
-| Gene Name | Name of the gene (click for more details) |
-| Aliases | Alternative names for the gene |
-| Type | Type of the gene (hover for full text) |
-| HGNC | HUGO Gene Nomenclature Committee identifier |
-| Source | Origin of the gene information (click for source details if available) |
-| Version | Version number of the gene information |
+| Variant (rsID) | The variant identifier, typically an rsID when available |
+| Association Type | The type of association between the variant and protein |
+| Source | Database or study source of the association |
+| Context / Biosample | The biological context or biosample in which the association was observed |
+| Motif | Associated transcription factor binding motif (if applicable) |
+| P-value (-log10) | Statistical significance of the association as -log10(p-value) |
+| Beta (pQTL) | Effect size for protein quantitative trait loci |
+| Standard Error | Standard error of the effect estimate |
+| Class | Classification of the variant or association |
+| Gene | Associated gene symbol |
+| Gene Consequence | The predicted consequence of the variant on the gene |
+| Effect on Binding | Predicted effect on protein binding (if applicable) |
+| Relative Binding Affinity | Relative change in binding affinity |
+| Alt Score | Alternative allele score |
+| Ref Score | Reference allele score |
 
-## Transcript View
+## Related Variant Table
 
-This table shows different transcripts (RNA versions) associated with genes.
+This table displays variants that are related to this protein through various evidence sources including pQTL and other regulatory mechanisms.
 
 | Column | Description |
 |--------|-------------|
-| Region | Genomic location of the transcript (click to view the region) |
-| Transcript ID | Unique identifier for the transcript (click for more details) |
-| Transcript Name | Name of the transcript (click for more information) |
-| Gene Name | Name of the gene this transcript belongs to (click for gene details) |
-| Source | Origin of the transcript information (click for source details if available) |
-| Version | Version number of the transcript information |
+| rsID | The variant's reference SNP cluster ID |
+| Chromosome | The chromosome where the variant is located |
+| Position | The genomic position of the variant |
+| Ref | The reference allele |
+| Alt | The alternative allele |
+| HGVS | Human Genome Variation Society nomenclature for the variant |
+| Evidence Sources | The databases or studies providing evidence for this relationship |
+| Biological Context | The biological contexts in which this relationship was observed |
+| Max -log10(p-value) | Maximum statistical significance across all evidence sources |
 
-Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+## Related Genes & Protein Table
+
+This table shows genes and proteins that are related to this protein through various biological relationships, including protein-protein interactions and regulatory networks.
+
+| Column | Description |
+|--------|-------------|
+| Related Protein | Proteins that have biological relationships with this protein |
+| Related Gene | Genes that have biological relationships with this protein |
+| Related Entities | Other biological entities connected to this protein through various pathways |

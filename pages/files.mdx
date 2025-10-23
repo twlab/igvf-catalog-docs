@@ -1,0 +1,25 @@
+---
+title: 'Files and Filesets'
+icon: 'database'
+---
+
+# `/files`
+
+The Files and Filesets page is the catalog's window into assay outputs. It pages through `https://api-dev.catalog.igvf.org/api/files-filesets`, hydrates the table with IGVF metadata, and links related samples back to ontology nodes.
+
+## Filters
+The filter panel reflects the query parameters passed to the API:
+- **Identifiers**: lookup by file or fileset accession.
+- **Lab**: choose among the labs represented in the dataset (`roderic-guigo`, `jesse-engreitz`, `j-michael-cherry`, `zhiping-weng`, `nadav-ahituv`, `bill-majoros`).
+- **Assay Title, Method, Class**: restrict to the controlled vocabulary values baked into the UI (e.g., MPRA, ATAC-seq, ENCODE-rE2G predictions).
+- **Donor, Sample Term, Sample Summary**: narrow the list with specific donor accessions or ontology terms.
+- **Software, Source**: highlight computational pipelines or distinguish IGVF vs ENCODE-originated datasets.
+
+Applying filters rewrites the query string; resetting clears them to the `all` sentinel recognised by the API.
+
+## Table Behavior
+- Columns include the fileset accession, lab, assay title(s), method, class, software, samples, and source. Values coming from arrays are rendered as comma-separated lists.
+- Sample entries that start with `ontology_terms/` automatically resolve to `/TERM_ID` links so you can open the associated ontology page without leaving the table.
+- Column visibility toggles, search, and paginated loading (25 records per API request) are available within the table toolbar.
+
+These links let bench and computational scientists move from the fileset inventory directly into the biosample context captured elsewhere in the catalog.

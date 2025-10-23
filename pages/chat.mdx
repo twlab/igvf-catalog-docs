@@ -1,0 +1,21 @@
+---
+title: 'Chat Assistant'
+icon: 'message-circle'
+---
+
+# `/chat`
+
+The Chat page exposes the catalog's natural-language interface. It posts prompts to `https://catalog-api-dev.demo.igvf.org/api/llm-query` and renders the LLM answer alongside the exact query that was executed on the back end.
+
+## Conversation Flow
+- Messages stream into a single-column layout with user bubbles on the right and assistant responses on the left. Markdown output preserves links and lists for readability.
+- A persistent beta badge and footer disclaimer remind users to validate critical answers; the UI recreates the scroll position after each exchange.
+- The input area supports Shift+Enter for multi-line prompts and surfaces inline error alerts if the LLM endpoint fails.
+
+## Inspecting the Answer
+Expanding the **Details** panel reveals the structured payload returned by the service:
+- **AQL**: the ArangoDB query issued against the catalog graph.
+- **AQL Result**: the raw JSON rows that fed the natural-language answer.
+- **Original Query**: the normalized formulation of the user prompt.
+
+These fields make it possible to reproduce the answer programmatically or escalate issues with the exact graph query that was run, so researchers can interpret genomic findings or share results with collaborators without losing the underlying evidence.

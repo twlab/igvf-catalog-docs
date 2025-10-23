@@ -1,0 +1,21 @@
+---
+title: 'Region Ancestry'
+icon: 'users'
+---
+
+# `/region/[coordinates]/ancestry`
+
+The ancestry dashboard visualises gnomAD allele frequencies for every variant within the requested genomic interval.
+
+## Data Source
+- The page queries `https://api.catalogkg.igvf.org/api/variants/gnomad-alleles?region={coordinates}` and maps the response into population-specific frequency fields (AFR, AMI, AMR, ASJ, EAS, FIN, NFE, SAS).
+- Variants with a maximum allele frequency below the selected threshold are filtered out before any plots render.
+
+## Controls
+- **Minimum Allele Frequency** slider (0–0.20) filters the variant list; counts in the statistics card update in real time.
+- **Bin Settings** allow switching between fixed deciles (0–1, step 0.1) or dynamically computed bins for the per-population histograms.
+
+## Visualisations
+- The population distribution bar chart summarises how many variants carry non-zero frequency in each ancestry group.
+- Histograms for each population show the distribution of allele frequencies given the current filters and binning mode.
+- The heatmap ranks variants by how many populations keep them below 5% frequency, highlighting rare or population-specific signals so you can decide whether to pursue functional annotations elsewhere in the catalog.

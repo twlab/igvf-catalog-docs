@@ -67,3 +67,19 @@ The Biosample Table provides information about biological samples associated wit
 | Description | Detailed description of the biosample |
 | Biosample Source | Origin of the biosample |
 | Subontology | Subclassification of the biosample, if applicable |
+
+## Enhancer-Gene Prediction(s)
+This table reports whether the query region contains predicted enhancers from the ENCODE-rE2G model, and their target genes and cell types. Each row reports one predicted enhancer, target gene, and cell type. 
+
+| Column | Description |
+| -- | -- |
+| Cell Type | Cell type in which the enhancer is predicted to regulate the gene |
+| Target Gene | Gene predicted to be regulated by the enhancer |
+| Score | Strength of the prediction (range: 0 to 1, higher indicates a more confident prediction) |
+| Dataset | Source dataset  |
+| Model | Predictive model. Currently: ENCODE-rE2G |
+| Variant-Gene Distance | Genomic distance between the variant and gene body |
+
+Currently, this table includes predictions from the ENCODE-rE2G model across 1700+ ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+
+The table is initially sorted by Score in descending order, showing the strongest predictions first.
