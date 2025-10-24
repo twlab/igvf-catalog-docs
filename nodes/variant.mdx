@@ -14,20 +14,20 @@ Variants may be identified using **rsid**, **SPDI**, **HGVS**, or their **genomi
 ## Coding Variant Effects
 
 ### Coding Variant Measurements (table)
-This table presents measurements of effects of coding variants in experimental assays. Currently, this table presents IGVF data from 2 assays. 
+This table presents measurements of effects of coding variants in experimental assays. Currently, this table presents IGVF data from 2 assays.
 
-[VAMP-seq](https://www.nature.com/articles/s41588-018-0122-z) measures the effects of coding variants on protein abundance. Lower scores indicate lower abundance of the alternative allele versus reference allele. 
+[VAMP-seq](https://www.nature.com/articles/s41588-018-0122-z) measures the effects of coding variants on protein abundance. Scores represent the weighted average of the variant across fluorescence bins. Scores are normalized to the median of the synonymous amino acid sequences at 1 and the median of the nonsense variants at 0. Lower scores indicate reduced abundance of the variant protein versus the wild type protein.
 
-[SGE](https://www.nature.com/articles/s41467-023-43041-4) (saturation genome editing) measures the effects of coding variants on **ADD MORE HERE**. 
+[SGE](https://www.nature.com/articles/s41586-018-0461-z) (saturation genome editing) measures the effects of single nucleotide variants and 3-base pair deletions on cell fitness. Scores are the estimated log2 fold change in relative variant abundance per day. Scores are normalized to the median synonymous score at 0. Lower scores represent reduced cell fitness for the specified variant in comparison to synonymous variants.
 
 | Column | Description |
 |--------|-------------|
 | Assay | Experimental assay of variant effects |
-| Score | **DESCRIBE** |
+| Score | Functional Score|
 | Source | Link to source data |
 
 ### Coding Variant Predictions (table)
-This table presents predictions of general coding variants effects (pathogenicity, deleteriousness). Currently, this table presents IGVF predictions by 2 methods. 
+This table presents predictions of general coding variants effects (pathogenicity, deleteriousness). Currently, this table presents IGVF predictions by 2 methods.
 
 MutPred2 predicts pathogenicity/deleteriousness of coding variants. Scores closer to 1 indicate higher deleteriousness/pathogenicity.
 
