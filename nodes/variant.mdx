@@ -7,37 +7,60 @@ icon: 'virus'
 
 The **IGVF Catalog** contains *variant* nodes primarily sourced from [FAVOR](https://favor.genohub.org/).  
 Variants not present in FAVOR but present in the other variant collections below were also loaded.  
-Variants may be identified using **SPDI**, **HGVS**, or their **genomic position**.
+Variants may be identified using **rsid**, **SPDI**, **HGVS**, or their **genomic position**.
 
 ---
 
-## Non-coding Variant Edges
+## Coding Variant Effects
 
-| Source            | Class | Edge Description                                                                                       | Datasets                                                                                                                                                                                                 |
-|-------------------|--------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **TopLD**  | statistical assessment | Variant-to-variant edges describing variants in **linkage disequilibrium (LD)**.                  | [TopLD](http://topld.genetics.unc.edu/)                                                                                                                                                                            |
-| **caQTL**  | statistical assessment | Variant-to-genomic element edges describing **variants associated with chromatin accessibility**. | [ENCODE](http://encodeproject.org/ENCFF103XRK), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                         |
-| **eQTL**   | statistical assessment | Variant-to-gene edges describing **variants associated with gene expression**.                   | [EBI eQTL](https://www.ebi.ac.uk/eqtl/), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                |
-| **sQTL**   | statistical assessment | Variant-to-gene edges describing **variants associated with alternative splicing**.               | [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                                                        |
-| **Variant-EFFECTS**   | observed data | Variant-to-gene edges describing **causal effects of variants on endogenous gene expression** from genome editing experiments. | [Variant-EFFECTS datasets (Jesse Engreitz, Stanford)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=Variant-EFFECTS&samples.classifications=cell+line&lab.title=Jesse+Engreitz%2C+Stanford) |
-| **STARR-seq**  | observed data  | Variant-to-biosample edges describing **allele-specific regulatory activity** in the K562 cell line. | [STARR-seq datasets (Tim Reddy, Duke)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=STARR-seq&lab.title=Tim+Reddy%2C+Duke&collections=IGVF_catalog_v1.0)                   |
-| **BlueSTARR**  | prediction | Variant-to-genomic element edges describing **predicted regulatory activity** in ENCODE cCRE sequences using a STARR-seq–trained model. | [BlueSTARR dataset (Bill Majoros, Duke)](https://data.igvf.org/prediction-sets/IGVFDS2340WJRV/)                   |
-| **MPRA**   | observed data | Variant-to-genomic element edges describing **variant activity within genomic elements** tested in MPRA. | [lentiMPRA datasets (Nadav Ahituv, UCSF)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0) 
+### Coding Variant Measurements (table)
+This table presents measurements of effects of coding variants in experimental assays. Currently, this table presents IGVF data from 2 assays.
 
-## Variant Edges
+[VAMP-seq](https://www.nature.com/articles/s41588-018-0122-z) measures the effects of coding variants on protein abundance. Scores represent the weighted average of the variant across fluorescence bins. Scores are normalized to the median of the synonymous amino acid sequences at 1 and the median of the nonsense variants at 0. Lower scores indicate reduced abundance of the variant protein versus the wild type protein.
 
-| Source                | Edge Description                                                                                       | Datasets                                                                                                                                                                                                 |
-|---------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **TopLD**                 | Variant-to-variant edges describing variants in **linkage disequilibrium (LD)**.                  | [TopLD](http://topld.genetics.unc.edu/)                                                                                                                                                                            |
-| **caQTL**                   | Variant-to-genomic element edges describing **variants associated with chromatin accessibility**. | [ENCODE](http://encodeproject.org/ENCFF103XRK), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                         |
-| **eQTL**                    | Variant-to-gene edges describing **variants associated with gene expression**.                   | [EBI eQTL](https://www.ebi.ac.uk/eqtl/), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                |
-| **sQTL**                    | Variant-to-gene edges describing **variants associated with alternative splicing**.               | [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                                                        |
-| **Variant-EFFECTS**         | Variant-to-gene edges describing **causal effects of variants on endogenous gene expression** from genome editing experiments. | [Variant-EFFECTS datasets (Jesse Engreitz, Stanford)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=Variant-EFFECTS&samples.classifications=cell+line&lab.title=Jesse+Engreitz%2C+Stanford) |
-| **STARR-seq**                | Variant-to-biosample edges describing **allele-specific regulatory activity** in the K562 cell line. | [STARR-seq datasets (Tim Reddy, Duke)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=STARR-seq&lab.title=Tim+Reddy%2C+Duke&collections=IGVF_catalog_v1.0)                   |
-| **BlueSTARR**              | Variant-to-genomic element edges describing **predicted regulatory activity** in ENCODE cCRE sequences using a STARR-seq–trained model. | [BlueSTARR dataset (Bill Majoros, Duke)](https://data.igvf.org/prediction-sets/IGVFDS2340WJRV/)                   |
-| **MPRA**                   | Variant-to-genomic element edges describing **variant activity within genomic elements** tested in MPRA. | [lentiMPRA datasets (Nadav Ahituv, UCSF)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0)   
+[SGE](https://www.nature.com/articles/s41586-018-0461-z) (saturation genome editing) measures the effects of single nucleotide variants and 3-base pair deletions on cell fitness. Scores are the estimated log2 fold change in relative variant abundance per day. Scores are normalized to the median synonymous score at 0. Lower scores represent reduced cell fitness for the specified variant in comparison to synonymous variants.
 
-## Enhancer-Gene Model Prediction Table
+| Column | Description |
+|--------|-------------|
+| Assay | Experimental assay of variant effects |
+| Score | Functional Score|
+| Source | Link to source data |
+
+### Coding Variant Predictions (table)
+This table presents predictions of general coding variants effects (pathogenicity, deleteriousness). Currently, this table presents IGVF predictions by 2 methods.
+
+MutPred2 predicts pathogenicity/deleteriousness of coding variants. Scores closer to 1 indicate higher deleteriousness/pathogenicity.
+
+ESM-1v predicts deleteriousness of coding variants. More negative scores indicate higher deleteriousness.
+
+| Column | Description |
+|--------|-------------|
+| Method | Predictive model of variant effects |
+| Score | Model score |
+| Source | Link to source data |
+
+## Gene Regulation
+
+### Biosample Evidence (table)
+
+This table shows experimental evidence per biosample for this variant.
+
+| Column | Description |
+|--------|-------------|
+| Biosample | Biosample name (click for biosample details) |
+| Synonyms | Alternative names for the biosample |
+| Description | Description of the biosample |
+| Method | Experimental method used |
+| Label | Evidence label or type |
+| Input Counts | Input counts for reference and alternate alleles |
+| Output Counts | Output counts for reference and alternate alleles |
+| Variant SPDI | SPDI notation for the variant |
+| Post. Prob. Effect | Posterior probability of effect |
+| log2 Fold Change | Log2 fold change measurement |
+| 95% Confidence Interval | Confidence interval for the measurement |
+| Source | Source of the experimental evidence |
+
+### Enhancer-Gene Model Predictions (table)
 
 This table shows which genes are predicted to be regulated by enhancers overlapping the variant you're viewing.
 
@@ -50,83 +73,11 @@ This table shows which genes are predicted to be regulated by enhancers overlapp
 | Model | Predictive model. Currently: ENCODE-rE2G |
 | Variant-Gene Distance | Genomic distance between the variant and gene body |
 
-Score ranges from 0 (no prediction) to 1 (confident prediction). Currently, this table includes predictions from the ENCODE-rE2G model across 1700 ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+Score ranges from 0 (no prediction) to 1 (confident prediction). Only element-gene pairs with scores above the default model threshold are shown. Currently, this table includes predictions from the ENCODE-rE2G model across 1700 ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full)).
 
 The table is initially sorted by Score in descending order, showing the strongest predictions first.
 
-## Variants in Linkage Disequilibrium
-
-This table lists variants in linkage disequilibrium with the query variant, and summarizes functional evidence about those variants. Each row reports one variant in one ancestry. LD information is sourced from 1000 Genomes Phase 3 queried from Ensembl.
-
-| Column | Description |
-|--------|-------------|
-| rsID | The reference SNP ID (click for variant details) |
-| LD (r²) | Measure of linkage disequilibrium (correlation coefficient) |
-| LD (D') | Measure of linkage disequilibrium (D prime statistic) |
-| Cell Types w/ pred. EG link | Cell types with predicted enhancer-gene links |
-| Genes w/ pred. EG link | Genes with predicted enhancer-gene links |
-| QTL Types | Types of QTL associations |
-| Genes w/ QTLs | Genes with QTL associations |
-| Ancestry | The population ancestry for the LD information |
-| Most Severe Consequence | The predicted functional impact |
-
-You can filter this table by ancestry using the dropdown menu above the table.
-
-## GWAS Association
-
-This table shows phenotypes (traits or diseases) associated with the variant through genome-wide association studies (GWAS).
-
-| Column | Description |
-|--------|-------------|
-| Lead Variant | Lead variant identifier for the association |
-| Study ID | Identifier for the GWAS study |
-| Trait | The associated phenotype or trait |
-| Lead Variant P-value | Statistical significance of the association |
-| Beta | Effect size and direction |
-| 95% Confidence Interval | Confidence interval for the effect size |
-| PMID | PubMed ID for the study (click to view publication) |
-| Author (Year) | First author and publication year |
-| Study N | Sample size of the study |
-| LD (r²) | Linkage disequilibrium with the lead variant |
-
-## Coding Variant Prediction
-
-This table provides predictions about the variant's impact on protein function if it affects a protein-coding region.
-
-| Column | Description |
-|--------|-------------|
-| Name | Name identifier for the coding variant |
-| Reference | Reference allele |
-| Alternate | Alternate allele |
-| Protein Name | Name of the affected protein |
-| Gene Name | Name of the affected gene (click for gene details) |
-| Transcript ID | Transcript identifier (click for transcript details) |
-| Amino Acid Position | Position of the amino acid change |
-| HGVS Protein | HGVS notation for the protein change |
-| HGVS | HGVS notation for the variant |
-| Reference Codon | Reference codon sequence |
-| Codon Position | Position within the codon |
-| SIFT Score | SIFT deleteriousness prediction score |
-| SIFT4G Score | SIFT4G deleteriousness prediction score |
-| Polyphen2 HDIV Score | PolyPhen-2 HumDiv prediction score |
-| Polyphen2 HVAR Score | PolyPhen-2 HumVar prediction score |
-| VEST4 Score | VEST4 pathogenicity prediction score |
-| M-CAP Score | M-CAP pathogenicity prediction score |
-| REVEL Score | REVEL pathogenicity prediction score |
-| MutPred Score | MutPred pathogenicity prediction score |
-| BayesDel addAF Score | BayesDel with allele frequency score |
-| BayesDel noAF Score | BayesDel without allele frequency score |
-| VARITY R Score | VARITY residue-level score |
-| VARITY ER Score | VARITY ensemble residue-level score |
-| VARITY R LOO Score | VARITY residue-level leave-one-out score |
-| VARITY ER LOO Score | VARITY ensemble residue-level leave-one-out score |
-| ESM-1b Score | ESM-1b evolutionary scale modeling score |
-| EVE Score | EVE (Evolutionary model of Variant Effect) score |
-| AlphaMissense Score | AlphaMissense pathogenicity prediction score |
-| CADD Raw Score | CADD raw deleteriousness score |
-| Source | Source of the prediction data (click for details) |
-
-## Allelic effect(s) on transcription factor binding
+### Allelic effect(s) on transcription factor binding (table)
 
 This table shows effects of the variant on allelic binding in transcription factor (TF) ChIP-seq experiments.
 
@@ -146,70 +97,65 @@ This table shows effects of the variant on allelic binding in transcription fact
 | Motif Strand | Strand orientation of the motif |
 | Source | Source of the binding data |
 
-## pQTL
+## Molecular Networks
 
-This table shows protein quantitative trait loci (pQTL) associated with this variant.
+Coming soon!
 
-| Column | Description |
-|--------|-------------|
-| Gene | Gene associated with the protein (click for gene details) |
-| Protein | Protein affected by the variant (click for protein details) |
-| Biosample | Biological sample or tissue type |
-| Beta | Effect size of the variant on protein levels |
-| P-value | Statistical significance of the association |
-| Source | Source of the pQTL data (click for source details) |
+## QTLs
 
-## QTL
+### Molecular QTLs (table)
 
-This table shows quantitative trait loci (QTL) associated with this variant.
+This table shows quantitative trait loci (QTL) associated with this variant. Currently, these data include expression QTLs (eQTLs), splice QTLs (sQTLs) and chromatin accessibility QTLs (caQTLs) derived from the [eQTL Catalogue](https://www.ebi.ac.uk/eqtl/) and the [African Functional Genomics Resource](https://github.com/smontgomlab/AFGR).
 
 | Column | Description |
 |--------|-------------|
-| QTL Type | Type of QTL (eQTL, sQTL, etc.) |
+| QTL Type | Type of QTL (eQTL, sQTL, caQTL, etc.) |
 | Gene | Target gene (click for gene details) |
-| Tissue | Tissue or cell type where the QTL was detected |
+| Cell Type or Tissue | Tissue or cell type where the QTL was detected |
 | Effect Size | Magnitude of the variant's effect |
 | P-value | Statistical significance of the association |
 
-## Associated Genes and Protein
+## Phenotypes
 
-This table shows genes and proteins associated with this variant through various mechanisms including eQTLs and motif binding.
+### GWAS Association (table)
 
-| Column | Description |
-|--------|-------------|
-| Name | Name of the associated gene or protein (click for details) |
-| Type | Whether the entity is a Gene or Protein |
-| Association Type | Type of association (eQTL, motif binding, etc.) |
-| Source | Source of the association data |
-| Context/Motif | Biological context or motif information |
-| P-value | Statistical significance of the association |
-
-## Associated Genes (QTLs)
-
-This table shows genes associated with this variant via eQTL or sQTL evidence.
+This table shows phenotypes (traits or diseases) associated with the variant through genome-wide association studies (GWAS).
 
 | Column | Description |
 |--------|-------------|
-| Gene | Associated gene name (click for gene details) |
-| Type | Type of QTL association |
-| P-value (-log10) | Statistical significance (-log10 transformed) |
-| Effect Size | Magnitude of the variant's effect on gene expression |
-| Biological Context | Tissue or cell type context |
-| Source | Source of the QTL data (click for source details) |
+| Lead Variant | Lead variant identifier for the association |
+| Study ID | Identifier for the GWAS study |
+| Trait | The associated phenotype or trait |
+| Lead Variant P-value | Statistical significance of the association |
+| Beta | Effect size and direction |
+| 95% Confidence Interval | Confidence interval for the effect size |
+| PMID | PubMed ID for the study (click to view publication) |
+| Author (Year) | First author and publication year |
+| Study N | Sample size of the study |
+| LD (r²) | Linkage disequilibrium with the lead variant |
 
-## Associated Drug
 
-This table shows drugs associated with this variant from PharmGKB.
+## Population Data
+
+### Variants in Linkage Disequilibrium (table)
+
+This table lists variants in linkage disequilibrium with the query variant, and summarizes functional evidence about those variants. Each row reports one variant in one ancestry. LD information is sourced from 1000 Genomes Phase 3 queried from Ensembl.
 
 | Column | Description |
 |--------|-------------|
-| Drug | Drug identifier (click for drug details) |
-| Gene Symbols | Genes associated with the drug response |
-| PMID | PubMed ID supporting the association (click to view publication) |
-| Phenotype Categories | Categories of phenotypic effects |
-| Source | Source of the drug association data (click for source details) |
+| rsID | The reference SNP ID (click for variant details) |
+| LD (r²) | Measure of linkage disequilibrium (correlation coefficient) |
+| LD (D') | Measure of linkage disequilibrium (D prime statistic) |
+| Cell Types w/ pred. EG link | Cell types with predicted enhancer-gene links |
+| Genes w/ pred. EG link | Genes with predicted enhancer-gene links |
+| QTL Types | Types of QTL associations |
+| Genes w/ QTLs | Genes with QTL associations |
+| Ancestry | The population ancestry for the LD information |
+| Most Severe Consequence | The predicted functional impact |
 
-## Associated Disease
+You can filter this table by ancestry using the dropdown menu above the table.
+
+### Associated Disease (table)
 
 This table shows diseases associated with this variant from ClinGen.
 
@@ -221,48 +167,19 @@ This table shows diseases associated with this variant from ClinGen.
 | PMIDs | PubMed IDs supporting the association |
 | Source | Source of the disease association data (click for source details) |
 
-## Biosample Evidence
 
-This table shows experimental evidence per biosample for this variant.
+## Summary of data variant edges in the Knowledge Graph
 
-| Column | Description |
-|--------|-------------|
-| Biosample | Biosample name (click for biosample details) |
-| Synonyms | Alternative names for the biosample |
-| Description | Description of the biosample |
-| Method | Experimental method used |
-| Label | Evidence label or type |
-| Input Counts | Input counts for reference and alternate alleles |
-| Output Counts | Output counts for reference and alternate alleles |
-| Variant SPDI | SPDI notation for the variant |
-| Post. Prob. Effect | Posterior probability of effect |
-| log2 Fold Change | Log2 fold change measurement |
-| 95% Confidence Interval | Confidence interval for the measurement |
-| Source | Source of the experimental evidence |
-
-## Linkage Disequilibrium Detail
-
-This table provides detailed pairwise linkage disequilibrium information for this variant.
-
-| Column | Description |
-|--------|-------------|
-| Linked Variant (rsID) | rsID of the variant in LD (click for variant details) |
-| Position | Genomic position of the linked variant |
-| Base Pair Change | Nucleotide change for the linked variant |
-| SPDI | SPDI notation for the linked variant |
-| HGVS | HGVS notation for the linked variant |
-| Context Variant Base Pair | Base pair change for the query variant |
-| Context Variant (rsID) | rsID of the query variant (click for variant details) |
-| Context Position | Genomic position of the query variant |
-| Context SPDI | SPDI notation for the query variant |
-| Context HGVS | HGVS notation for the query variant |
-| LD (r²) | Linkage disequilibrium r-squared value |
-| LD (D') | Linkage disequilibrium D-prime value |
-| Ancestry | Population ancestry for the LD calculation |
-| Label | Additional label or classification |
-| Source | Source of the LD data (click for source details) |
-
-Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+| Source            | Class | Edge Description                                                                                       | Datasets                                                                                                                                                                                                 |
+|-------------------|--------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **TopLD**  | statistical assessment | Variant-to-variant edges describing variants in **linkage disequilibrium (LD)**.                  | [TopLD](http://topld.genetics.unc.edu/)                                                                                                                                                                            |
+| **caQTL**  | statistical assessment | Variant-to-genomic element edges describing **variants associated with chromatin accessibility**. | [ENCODE](http://encodeproject.org/ENCFF103XRK), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                         |
+| **eQTL**   | statistical assessment | Variant-to-gene edges describing **variants associated with gene expression**.                   | [EBI eQTL](https://www.ebi.ac.uk/eqtl/), [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                |
+| **sQTL**   | statistical assessment | Variant-to-gene edges describing **variants associated with alternative splicing**.               | [AFGR](https://github.com/smontgomlab/AFGR)                                                                                                                                                                        |
+| **Variant-EFFECTS**   | observed data | Variant-to-gene edges describing **causal effects of variants on endogenous gene expression** from genome editing experiments. | [Variant-EFFECTS datasets (Jesse Engreitz, Stanford)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=Variant-EFFECTS&samples.classifications=cell+line&lab.title=Jesse+Engreitz%2C+Stanford) |
+| **STARR-seq**  | observed data  | Variant-to-biosample edges describing **allele-specific regulatory activity** in the K562 cell line. | [STARR-seq datasets (Tim Reddy, Duke)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=STARR-seq&lab.title=Tim+Reddy%2C+Duke&collections=IGVF_catalog_v1.0)                   |
+| **BlueSTARR**  | prediction | Variant-to-genomic element edges describing **predicted regulatory activity** in ENCODE cCRE sequences using a STARR-seq–trained model. | [BlueSTARR dataset (Bill Majoros, Duke)](https://data.igvf.org/prediction-sets/IGVFDS2340WJRV/)                   |
+| **MPRA**   | observed data | Variant-to-genomic element edges describing **variant activity within genomic elements** tested in MPRA. | [lentiMPRA datasets (Nadav Ahituv, UCSF)](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0) 
 
 ## Interactive Visualizations
 
