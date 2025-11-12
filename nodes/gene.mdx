@@ -3,19 +3,52 @@ title: 'Gene'
 icon: 'dna'
 ---
 
-# Genes
+## Overview
 
-The  official gene sets of the IGVF Catalog is from the following [GENCODE](link) releases:
+The  official gene sets of the IGVF Catalog are from the following GENCODE releases:
 * **Human:** [GENCODE v43](https://www.gencodegenes.org/human/release_43.html)
 * **Mouse:** [GENCODE vM36](https://www.gencodegenes.org/mouse/release_M36.html)
 
 Gene and Transcripts and Gene Structure (UTRs, Exons etc.)  are loaded from the comprehensive annotation file as nodes.
-This includes all protein-coding, lncRNA and all other gene types annotated by GENCODE
+This includes all protein-coding, lncRNA and all other gene types annotated by GENCODE.
 
-## Coding Variant Functional and Prediction scores
+## Protein Function
 
-[protein page]
+### Coding Variant Effects 
 
+This table lists all coding variants in this gene with predictions or measurements. Predictions: MutPred2 and ESM-1v. Measurements: VAMP-seq and SGE.
+
+## Gene Regulation
+
+### Enhancer-Gene Prediction
+
+This table reports predicted enhancers for this gene from the ENCODE-rE2G model and their relevant cell types. Each row reports one predicted enhancer and cell type.
+
+| Column | Description |
+|--------|-------------|
+| Cell Type | Cell type in which the enhancer is predicted to regulate the gene |
+| Score | Strength of the prediction (range: 0 to 1, higher indicates a more confident prediction) |
+| Start | Genomic start coordinate of the enhancer |
+| End | Genomic end coordinate of the enhancer |
+| Dataset | Source dataset (click for more details) |
+| Model | Predictive model. Currently: ENCODE-rE2G |
+| Distance (Enhancer to Gene) | Genomic distance between the enhancer and gene body |
+
+Score ranges from 0 (no prediction) to 1 (confident prediction). Currently, this table includes predictions from the ENCODE-rE2G model across 1700 ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+
+The table is initially sorted by Score in descending order, showing the strongest predictions first.
+
+
+### Variants Table
+
+Variants are linked to genes via both functional characterization experiments and QTLs.
+[IGVFDS4359OODY](https://data.igvf.org/analysis-sets/IGVFDS4359OODY/) shows the effect of 183 variants in the PPIF promoter 
+measured _via_ a CRISPR method called Variant-EFFECTS.  
+eQTLs and splice-QTLs are encoded as gene-variant edges.  Datasets have been loaded from the EBI [eQTL catalogue](https://www.ebi.ac.uk/eqtl/).  
+Additional QTLs have been loaded from the [African Functional Genomics; AFGR](https://github.com/smontgomlab/AFGR) resource.
+
+
+{/* 
 ## Proteins Table
 
 This table displays information about proteins associated with the gene.
@@ -38,33 +71,48 @@ This table shows different transcripts (RNA versions) of the gene. Genes are lin
 | Transcript Name | Name of the transcript (click for more information) |
 | Gene Name | Name of the gene this transcript belongs to (click for gene details) |
 | Source | Origin of the transcript information (click for source details if available) |
-| Version | Version number of the transcript information |
+| Version | Version number of the transcript information | */}
 
-## Variants Table.  
-Variants are linked to genes via both functional characterization experiments and QTLs.
-[IGVFDS4359OODY](https://data.igvf.org/analysis-sets/IGVFDS4359OODY/) shows the effect of 183 variants in the PPIF promoter 
-measured _via_ a CRISPR method called Variant-EFFECTS.  
-eQTLs and splice-QTLs are encoded as gene-variant edges.  Datasets have been loaded from the EBI [eQTL catalogue](https://www.ebi.ac.uk/eqtl/).  
-Additional QTLs have been loaded from the [African Functional Genomics; AFGR](https://github.com/smontgomlab/AFGR) resource.
+## Molecular Networks
 
-## Enhancer-Gene Prediction
+Perturb-seq and other CRISPR data coming soon!
 
-This table reports predicted enhancers for this gene from the ENCODE-rE2G model and their relevant cell types. Each row reports one predicted enhancer and cell type.
+
+## QTLs
+
+
+### Related Variant
+
+This table shows variants that are related to this gene through various evidence sources including eQTL, sQTL, and other regulatory mechanisms.
 
 | Column | Description |
 |--------|-------------|
-| Cell Type | Cell type in which the enhancer is predicted to regulate the gene |
-| Score | Strength of the prediction (range: 0 to 1, higher indicates a more confident prediction) |
-| Start | Genomic start coordinate of the enhancer |
-| End | Genomic end coordinate of the enhancer |
-| Dataset | Source dataset (click for more details) |
-| Model | Predictive model. Currently: ENCODE-rE2G |
-| Distance (Enhancer to Gene) | Genomic distance between the enhancer and gene body |
+| rsID | Reference SNP ID(s) for the variant (click for variant details) |
+| Chromosome | Chromosome where the variant is located |
+| Position | Genomic position of the variant |
+| Ref | Reference allele |
+| Alt | Alternative allele |
+| HGVS | HGVS notation for the variant |
+| Evidence Sources | Types of evidence linking the variant to this gene |
+| Biological Context | Biological contexts where the relationship is observed |
+| Max -log10(p-value) | Maximum -log10(p-value) across all evidence sources |
 
-Score ranges from 0 (no prediction) to 1 (confident prediction). Currently, this table includes predictions from the ENCODE-rE2G model across 1700 ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+## Phenotypes
 
-The table is initially sorted by Score in descending order, showing the strongest predictions first.
+### Disease Associations (ClinGen, Orphanet)
+This table displays diseases associated with this gene from ClinGen and Orphanet databases.
 
+| Column | Description |
+|--------|-------------|
+| Disease | Name of the disease (click for details) |
+| Ontology term ID | Unique identifier for the disease ontology term |
+| Gene name | Name of the associated gene (click for gene details) |
+| PMIDs | PubMed IDs supporting the association |
+| Association type | Type of gene-disease association |
+| Association status | Status of the gene-disease association |
+| Source | Source of the disease association (ClinGen, Orphanet) |
+
+{/* 
 ## Pathways Enrichment
 
 Pathways and the genes containing them are loaded from [Reactome](https://reactome.org/). 
@@ -90,8 +138,9 @@ This table provides detailed structural information about this gene including ex
 | Start | Genomic start coordinate |
 | End | Genomic end coordinate |
 | Strand | Strand orientation (+ or -) |
-| Source | Origin of the structural information (click for source details) |
+| Source | Origin of the structural information (click for source details) | */}
 
+{/* 
 ## Gene Interactions & Coexpression
 
 This table displays genes that interact with or are coexpressed with this gene.
@@ -105,24 +154,9 @@ This table displays genes that interact with or are coexpressed with this gene.
 | Detection (BioGRID) | Detection method used in BioGRID |
 | PMIDs | PubMed IDs supporting the interaction |
 | BioGRID Confidence | Confidence score from BioGRID database |
-| IntAct Confidence | Confidence score from IntAct database |
+| IntAct Confidence | Confidence score from IntAct database | */}
 
-## Related Variant
-
-This table shows variants that are related to this gene through various evidence sources including eQTL, sQTL, and other regulatory mechanisms.
-
-| Column | Description |
-|--------|-------------|
-| rsID | Reference SNP ID(s) for the variant (click for variant details) |
-| Chromosome | Chromosome where the variant is located |
-| Position | Genomic position of the variant |
-| Ref | Reference allele |
-| Alt | Alternative allele |
-| HGVS | HGVS notation for the variant |
-| Evidence Sources | Types of evidence linking the variant to this gene |
-| Biological Context | Biological contexts where the relationship is observed |
-| Max -log10(p-value) | Maximum -log10(p-value) across all evidence sources |
-
+{/* 
 ## Related Genes & Protein
 
 This table displays genes and proteins that are related to this gene through various biological relationships.
@@ -134,9 +168,9 @@ This table displays genes and proteins that are related to this gene through var
 | Location | Genomic location (for genes) or N/A (for proteins) |
 | Description | Description or alternative names for the entity |
 
-Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results.
+Each table can be sorted by clicking on the column headers. You can also use the search box above each table to filter the results. */}
 
-## Interactive Visualizations
+## Other Visualizations
 
 The gene page includes several interactive visualization components that provide rich insights into gene function, variants, and relationships.
 
@@ -152,7 +186,7 @@ An interactive histogram showing the distribution of functional/predictive score
 - Y-axis shows count of variants
 
 This visualization helps identify patterns in variant pathogenicity predictions and the overall functional landscape of the gene.
-
+{/* 
 ### Biobank OR Plot
 
 A forest plot visualization showing odds ratios (OR) from biobank studies for different variant classifications.
@@ -167,7 +201,7 @@ A forest plot visualization showing odds ratios (OR) from biobank studies for di
 - Vertical dashed line at logOR = 0 for reference
 - Interactive legend on the right side
 
-Each row represents a different variant classification (e.g., "Pathogenic Very Strong", "Likely Pathogenic") with its associated odds ratio from biobank data.
+Each row represents a different variant classification (e.g., "Pathogenic Very Strong", "Likely Pathogenic") with its associated odds ratio from biobank data. */}
 
 ### Coding Variants Preview
 
@@ -185,6 +219,7 @@ An interactive, horizontally scrollable browser for exploring coding variants wi
 - **Score Visualization**: Each score is displayed with a progress bar and numerical value
 
 This component allows efficient exploration of the functional impact across all coding variants in the gene.
+
 
 ### Gene Interaction Network
 
@@ -227,6 +262,7 @@ A hierarchical tree visualization showing pathway associations organized by biol
 
 This visualization helps understand the biological processes and pathways this gene participates in.
 
+{/* 
 ### Biobank OR Plot Details
 
 The Biobank OR Plot specifically shows:
@@ -239,4 +275,4 @@ The Biobank OR Plot specifically shows:
 **Interpretation:**
 - Points to the right of the reference line (logOR > 0) suggest increased disease risk
 - Confidence intervals show statistical uncertainty
-- Multiple data sources provide complementary evidence for variant impact
+- Multiple data sources provide complementary evidence for variant impact */}
