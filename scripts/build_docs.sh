@@ -8,4 +8,4 @@ python3 scripts/build_field_lineage.py
 if [[ "${1:-}" == "--with-samples" ]]; then
   python3 scripts/sample_responses.py
 fi
-echo "Done. Run 'mintlify dev' to preview."
+echo "Done. Run 'mintlify dev' to preview (requires docs.json)."
