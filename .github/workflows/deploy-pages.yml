@@ -2,7 +2,7 @@ name: Deploy documentation to GitHub Pages
 
 on:
   push:
-    branches: [main, DSERV-1227-api-checks, DSERV-1227-check-API]
+    branches: [main, DSERV-1314-api-docs]
   workflow_dispatch:
 
 permissions:
