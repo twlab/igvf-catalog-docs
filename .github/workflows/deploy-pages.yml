@@ -41,7 +41,7 @@ jobs:
         run: mintlify validate
 
       - name: Export static site
-        run: mint export --output site.zip
+        run: mintlify export --output site.zip
 
       - name: Prepare Pages artifact
         run: |
