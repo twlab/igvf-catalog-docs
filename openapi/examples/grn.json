@@ -1,0 +1,20 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/gene-regulatory-network?regulator_gene_id=ENSG00000143190&page=0",
+  "sample": {
+    "response_gene": "TSPAN6",
+    "genomic_element": {
+      "chr": "chr1",
+      "start": 167219886,
+      "end": 167221387,
+      "regulator_gene": "POU2F1"
+    },
+    "crispr_modality": "activation",
+    "class": "observed data",
+    "method": "Perturb-seq",
+    "source": "IGVF",
+    "biological_context": "CD8-positive, alpha-beta memory T cell",
+    "files_filesets": "files_filesets/IGVFFI3069QCRA",
+    "score": -0.234479624412565,
+    "p_value": 1
+  }
+}

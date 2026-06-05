@@ -1,0 +1,14 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/variants?coding_variant_name=OR4F5_ENST00000641515_p.Gly30Ser_c.88G-A&page=0",
+  "sample": {
+    "chr": "chr1",
+    "pos": 69114,
+    "ref": "G",
+    "alt": "A",
+    "rsid": null,
+    "spdi": "NC_000001.11:69114:G:A",
+    "hgvs": "NC_000001.11:g.69115G>A",
+    "ca_id": "CA338196944",
+    "_id": "NC_000001.11:69114:G:A"
+  }
+}

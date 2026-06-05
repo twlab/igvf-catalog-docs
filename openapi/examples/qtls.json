@@ -1,0 +1,36 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/qtls?gene_id=ENSG00000259943&page=0",
+  "sample": {
+    "variant": {
+      "chr": "chr1",
+      "pos": 40206735,
+      "spdi": "NC_000001.11:40206735:G:A",
+      "rsid": [
+        "rs2184905"
+      ],
+      "ca_id": "CA10947570"
+    },
+    "gene": {
+      "name": "ZMPSTE24-DT",
+      "id": "ENSG00000259943"
+    },
+    "protein_complex": null,
+    "genomic_element": null,
+    "source": "EBI",
+    "method": "eQTL",
+    "regulatory_type": null,
+    "gene_consequence": null,
+    "biological_context": "CD4+ TCM cell",
+    "neg_log10_pvalue": null,
+    "effect_size": -0.205247,
+    "posterior_inclusion_probability": 0.00896403766753995,
+    "intron_chr": null,
+    "intron_start": null,
+    "intron_end": null,
+    "study": {
+      "id": "QTS000038",
+      "pmid": "35389779"
+    },
+    "files_filesets": null
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "accessions": [
+    {
+      "accession": "ENCFF004PFU",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCFF004PFU/",
+      "title": "ENCFF004PFU",
+      "file_format": "bed",
+      "output_type": "thresholded element gene links",
+      "assay_title": "",
+      "status": "released",
+      "lab": "Jesse Engreitz, Stanford",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "31"
+    },
+    {
+      "accession": "ENCFF103XRK",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCFF103XRK/",
+      "title": "ENCFF103XRK",
+      "file_format": "bed",
+      "output_type": "dsQTLs",
+      "assay_title": "",
+      "status": "archived",
+      "lab": "J. Michael Cherry, Stanford",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "31"
+    },
+    {
+      "accession": "ENCFF475FKV",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCFF475FKV/",
+      "title": "ENCFF475FKV",
+      "file_format": "bed",
+      "output_type": "element quantifications",
+      "assay_title": "MPRA",
+      "status": "released",
+      "lab": "Nadav Ahituv, UCSF",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "31"
+    },
+    {
+      "accession": "ENCFF705MLV",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCFF705MLV/",
+      "title": "ENCFF705MLV",
+      "file_format": "bed",
+      "output_type": "thresholded element gene links",
+      "assay_title": "",
+      "status": "released",
+      "lab": "Jesse Engreitz, Stanford",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "31"
+    },
+    {
+      "accession": "ENCFF968BZL",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCFF968BZL/",
+      "title": "ENCFF968BZL",
+      "file_format": "tsv",
+      "output_type": "element quantifications",
+      "assay_title": "",
+      "status": "released",
+      "lab": "Jesse Engreitz, Stanford",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "31"
+    },
+    {
+      "accession": "ENCSR203UFY",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCSR203UFY/",
+      "title": "ENCSR203UFY",
+      "file_format": "",
+      "output_type": "",
+      "assay_title": "MPRA",
+      "status": "released",
+      "lab": "Nadav Ahituv, UCSF",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "13"
+    },
+    {
+      "accession": "ENCSR336MKI",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCSR336MKI/",
+      "title": "ENCSR336MKI",
+      "file_format": "",
+      "output_type": "",
+      "assay_title": "MPRA",
+      "status": "released",
+      "lab": "Nadav Ahituv, UCSF",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "13"
+    },
+    {
+      "accession": "ENCSR359DFW",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCSR359DFW/",
+      "title": "ENCSR359DFW",
+      "file_format": "",
+      "output_type": "",
+      "assay_title": "",
+      "status": "released",
+      "lab": "Jesse Engreitz, Stanford",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "40"
+    },
+    {
+      "accession": "ENCSR405QCT",
+      "portal": "encode",
+      "portal_link": "https://www.encodeproject.org/ENCSR405QCT/",
+      "title": "ENCSR405QCT",
+      "file_format": "",
+      "output_type": "",
+      "assay_title": "MPRA",
+      "status": "released",
+      "lab": "Nadav Ahituv, UCSF",
+      "file_format_specification": "",
+      "file_format_specification_link": "",
+      "schema_version": "13"
+    },
+    {
+      "accession": "IGVFDS2340WJRV",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFDS2340WJRV",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFDS4359OODY",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFDS4359OODY",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI0183ELIK",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI0183ELIK",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI0332UGDD",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI0332UGDD",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI1323RCIE",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI1323RCIE",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI2574RDFO",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI2574RDFO",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI3069QCRA",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI3069QCRA",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI3157HIUW",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI3157HIUW",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI4731NANO",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI4731NANO",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI5749WPVK",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI5749WPVK",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI6044LKYT",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI6044LKYT",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI6537JARB",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI6537JARB",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI6893ZOAA",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI6893ZOAA",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI6972ORPG",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI6972ORPG",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI7781XWZY",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI7781XWZY",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI7903VFKP",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI7903VFKP",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI8105TNNO",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI8105TNNO",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI8551EYSR",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI8551EYSR",
+      "error": "fetch_failed"
+    },
+    {
+      "accession": "IGVFFI9602ILPC",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI9602ILPC",
+      "error": "fetch_failed"
+    }
+  ],
+  "count": 28
+}

@@ -1,0 +1,175 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes-proteins/genes-proteins?query=ATF1&page=0",
+  "sample": {
+    "protein": {
+      "_id": "ENSP00000262053",
+      "name": "ATF1",
+      "uniprot_names": [
+        "ATF1_HUMAN"
+      ]
+    },
+    "related": [
+      {
+        "_id": "ENSP00000217244",
+        "name": "CSNK2A1",
+        "uniprot_names": [
+          "CSK21_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000236995",
+        "name": "CREB1",
+        "uniprot_names": [
+          "CREB1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000264110",
+        "name": "ATF2",
+        "uniprot_names": [
+          "ATF2_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000305815",
+        "name": "RBPJ",
+        "uniprot_names": [
+          "SUH_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000339247",
+        "name": "CSNK2A1",
+        "uniprot_names": [
+          "CSK21_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000345206",
+        "name": "RBPJ",
+        "uniprot_names": [
+          "SUH_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000347659",
+        "name": "RBPJ",
+        "uniprot_names": [
+          "SUH_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000376327",
+        "name": "ATF2",
+        "uniprot_names": [
+          "ATF2_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000377021",
+        "name": "FHL2",
+        "uniprot_names": [
+          "FHL2_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000386633",
+        "name": "FHL2",
+        "uniprot_names": [
+          "FHL2_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000394721",
+        "name": "ESR1",
+        "uniprot_names": [
+          "ESR1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000400188",
+        "name": "CSNK2B",
+        "uniprot_names": [
+          "CSK2B_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000405330",
+        "name": "ESR1",
+        "uniprot_names": [
+          "ESR1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000410802",
+        "name": "CSNK2B",
+        "uniprot_names": [
+          "CSK2B_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000413469",
+        "name": "CSNK2B",
+        "uniprot_names": [
+          "CSK2B_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000450449",
+        "name": "MIA2",
+        "uniprot_names": [
+          "MIA2_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000466489",
+        "name": "NFATC1",
+        "uniprot_names": [
+          "NFAC1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000467181",
+        "name": "NFATC1",
+        "uniprot_names": [
+          "NFAC1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000478114",
+        "name": "BRCA1",
+        "uniprot_names": [
+          "BRCA1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000495439",
+        "name": "CSNK2A1",
+        "uniprot_names": [
+          "CSK21_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000495998",
+        "name": "CSNK2A1",
+        "uniprot_names": [
+          "CSK21_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000498906",
+        "name": "BRCA1",
+        "uniprot_names": [
+          "BRCA1_HUMAN"
+        ]
+      },
+      {
+        "_id": "ENSP00000500642",
+        "name": "CAMK2A",
+        "uniprot_names": [
+          "KCC2A_HUMAN"
+        ]
+      }
+    ]
+  }
+}

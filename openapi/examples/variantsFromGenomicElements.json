@@ -1,0 +1,41 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genomic-elements/variants?region=chr1%3A976210-976314&page=0",
+  "sample": {
+    "variant": {
+      "chr": "chr1",
+      "pos": 975028,
+      "ref": "T",
+      "alt": "C",
+      "rsid": [
+        "rs28536514"
+      ],
+      "spdi": "NC_000001.11:975028:T:C",
+      "hgvs": "NC_000001.11:g.975029T>C",
+      "ca_id": "CA10980719",
+      "_id": "NC_000001.11:975028:T:C"
+    },
+    "name": "modulates accessibility of",
+    "label": "caQTL",
+    "method": "caQTL",
+    "class": "observed data",
+    "log2FC": null,
+    "neg_log10_pvalue": 5.057424508825282,
+    "beta": -0.47241,
+    "files_filesets": null,
+    "biological_context": "lymphoblastoid cell line",
+    "biosample_term": "ontology_terms/EFO_0005292",
+    "source": "AFGR",
+    "source_url": "https://github.com/smontgomlab/AFGR",
+    "genomic_element": {
+      "_id": "accessible_dna_element_1_975872_976361_GRCh38_AFGR",
+      "name": "accessible_dna_element_1_975872_976361_GRCh38_AFGR",
+      "chr": "chr1",
+      "start": 975872,
+      "end": 976361,
+      "type": "accessible dna elements",
+      "source_annotation": null,
+      "source": "AFGR",
+      "source_url": "https://github.com/smontgomlab/AFGR"
+    }
+  }
+}

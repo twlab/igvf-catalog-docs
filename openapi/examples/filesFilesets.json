@@ -1,0 +1,39 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/files-filesets?file_fileset_id=ENCFF004PFU&page=0",
+  "sample": {
+    "_id": "ENCFF004PFU",
+    "file_set_id": "ENCSR359DFW",
+    "lab": "jesse-engreitz",
+    "preferred_assay_titles": [
+      "DNase-seq"
+    ],
+    "assay_term_ids": [
+      "OBI:0001853"
+    ],
+    "method": "ENCODE-rE2G",
+    "class": "prediction",
+    "software": [
+      "Distal regulation ENCODE-rE2G"
+    ],
+    "collections": [
+      "genomic_elements",
+      "genomic_elements_genes"
+    ],
+    "samples": [
+      "ontology_terms/UBERON_0002167"
+    ],
+    "sample_ids": null,
+    "simple_sample_summaries": [
+      "right lung from ENCDO605ZCF"
+    ],
+    "donors": [
+      "donors/ENCDO605ZCF"
+    ],
+    "source": "ENCODE",
+    "source_url": "https://www.encodeproject.org/files/ENCFF004PFU/",
+    "download_link": "https://www.encodeproject.org/files/ENCFF004PFU/@@download/ENCFF004PFU.bed.gz",
+    "cell_annotation": null,
+    "genome_browser_link": "https://www.encodeproject.org/files/ENCFF301DVM/@@download/ENCFF301DVM.bigInteract",
+    "crispr_modality": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/phenotypes?coding_variant_name=XRCC2_ENST00000359321__NC_000007.14%3Ag.152660700C-T_splicing&page=0",
+  "sample": {
+    "coding_variant": {
+      "_id": "XRCC2_ENST00000359321__NC_000007.14:g.152660700C-T_splicing",
+      "aapos": -1,
+      "hgvsp": null,
+      "protein_name": "XRCC2_HUMAN",
+      "gene_name": "XRCC2",
+      "ref": null,
+      "alt": null
+    },
+    "phenotype": {
+      "phenotype_id": "NCIT_C16407",
+      "phenotype_name": "cell survival"
+    },
+    "score": -0.166405,
+    "method": "SGE",
+    "class": "observed data",
+    "label": "protein variant effect",
+    "files_filesets": "files_filesets/IGVFFI1361XVSO",
+    "source": "IGVF",
+    "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO",
+    "variant": {
+      "chr": "chr7",
+      "pos": 152660699,
+      "ref": "C",
+      "alt": "T",
+      "rsid": null,
+      "spdi": "NC_000007.14:152660699:C:T",
+      "hgvs": "NC_000007.14:g.152660700C>T",
+      "ca_id": "CA370199391",
+      "_id": "NC_000007.14:152660699:C:T"
+    }
+  }
+}

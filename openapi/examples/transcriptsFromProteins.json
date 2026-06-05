@@ -1,0 +1,23 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/proteins/transcripts?verbose=true&page=0",
+  "sample": {
+    "source": "GENCODE",
+    "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",
+    "protein": "proteins/ENSP00000288025",
+    "transcript": {
+      "_id": "ENST00000288025",
+      "transcript_type": "protein_coding",
+      "chr": "chr16",
+      "start": 69343249,
+      "end": 69351786,
+      "strand": "-",
+      "name": "TMED6-201",
+      "gene_name": "TMED6",
+      "MANE_Select": true,
+      "source": "GENCODE",
+      "version": "v43",
+      "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz"
+    },
+    "name": "translated from"
+  }
+}

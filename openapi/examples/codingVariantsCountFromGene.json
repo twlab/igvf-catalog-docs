@@ -1,0 +1,7 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/phenotypes-count?gene_id=ENSG00000165841",
+  "sample": {
+    "method": "functional effect prediction on scope of genome-wide using ESM-1v variant scoring workflow v1.0.0",
+    "count": 25911
+  }
+}

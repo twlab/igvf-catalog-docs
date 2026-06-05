@@ -1,0 +1,19 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/complexes?complex_id=CPX-11&page=0",
+  "sample": {
+    "_id": "CPX-11",
+    "name": "SMAD2 homotrimer",
+    "alias": [],
+    "molecules": [
+      "Q15796(3)"
+    ],
+    "evidence_code": "ECO:0000353(physical interaction evidence used in manual assertion)",
+    "experimental_evidence": "intact:EBI-25772094",
+    "description": "In the absence of Smad4, R-Smad phosphorylation results in homotrimerization, however, this complex does not appear to import into the nucleus and is assumed to be transcriptionally inactive.",
+    "complex_assembly": "Homotrimer",
+    "complex_source": "psi-mi:\"MI:0469\"(IntAct)",
+    "reactome_xref": [],
+    "source": "EBI",
+    "source_url": "https://www.ebi.ac.uk/complexportal/"
+  }
+}

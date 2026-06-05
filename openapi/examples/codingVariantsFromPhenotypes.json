@@ -1,0 +1,36 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/phenotypes/coding-variants?phenotype_name=protein+stability&page=0",
+  "sample": {
+    "coding_variant": {
+      "_id": "CYP2C19_ENST00000371321_p.Ala103=_c.309T-G",
+      "aapos": 103,
+      "hgvsp": "p.Ala103=",
+      "protein_name": "CP2CJ_HUMAN",
+      "gene_name": "CYP2C19",
+      "ref": "A",
+      "alt": "A"
+    },
+    "phenotype": {
+      "phenotype_id": "OBA_0000128",
+      "phenotype_name": "protein stability"
+    },
+    "score": 1.00216665235178,
+    "method": "VAMP-seq",
+    "class": "observed data",
+    "label": "protein variant effect",
+    "files_filesets": "files_filesets/IGVFFI0629IIQU",
+    "source": "IGVF",
+    "source_url": "https://data.igvf.org/tabular-files/IGVFFI0629IIQU",
+    "variant": {
+      "chr": "chr10",
+      "pos": 94775197,
+      "ref": "T",
+      "alt": "G",
+      "rsid": null,
+      "spdi": "NC_000010.11:94775197:T:G",
+      "hgvs": "NC_000010.11:g.94775198T>G",
+      "ca_id": "CA470987381",
+      "_id": "NC_000010.11:94775197:T:G"
+    }
+  }
+}

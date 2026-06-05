@@ -1,0 +1,18 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/gene-products/go-terms?query=ENSP00000384707&page=0",
+  "sample": {
+    "gene_product_id": "proteins/ENSP00000384707",
+    "gene_product_name": "CTCF",
+    "go_term_name": "negative regulation of transcription by rna polymerase ii",
+    "source": "Gene Ontology",
+    "gene_product_type": "protein",
+    "gene_product_symbol": "CTCF",
+    "qualifier": [
+      "involved_in"
+    ],
+    "organism": "Homo sapiens",
+    "evidence": "IDA",
+    "go_id": "GO:0000122",
+    "name": "involved in"
+  }
+}

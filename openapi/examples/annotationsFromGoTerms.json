@@ -1,0 +1,18 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/go-terms/gene-products?go_term_id=GO_1990590&page=0",
+  "sample": {
+    "gene_product_id": "proteins/ENSP00000262053",
+    "gene_product_name": "ATF1",
+    "go_term_name": "atf1-atf4 transcription factor complex",
+    "source": "Gene Ontology",
+    "gene_product_type": "protein",
+    "gene_product_symbol": "ATF1",
+    "qualifier": [
+      "part_of"
+    ],
+    "organism": "Homo sapiens",
+    "evidence": "IDA",
+    "go_id": "GO:1990590",
+    "name": "contains"
+  }
+}

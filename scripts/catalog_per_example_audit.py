@@ -26,42 +26,44 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 SWAGGER_INIT_DEFAULT = (
-    "https://catalog-api-dserv-1227-swagger.demo.igvf.org/swagger-ui-init.js"
+    "https://catalog-api-dev.demo.igvf.org/swagger-ui-init.js"
 )
 
-
-def load_spec(swagger_init_url: str) -> dict[str, Any]:
-    text = urllib.request.urlopen(swagger_init_url, timeout=120).read().decode("utf-8")
-    key = '"swaggerDoc":'
-    i = text.find(key)
-    if i < 0:
-        raise RuntimeError("swaggerDoc not found")
-    i += len(key)
-    while i < len(text) and text[i] in " \n\t":
-        i += 1
-    if text[i] != "{":
-        raise RuntimeError("expected { after swaggerDoc")
-    depth = 0
-    start = i
-    for j in range(i, len(text)):
-        c = text[j]
-        if c == '"':
-            j += 1
-            while j < len(text):
-                if text[j] == "\\":
-                    j += 2
-                    continue
-                if text[j] == '"':
-                    break
+try:
+    from openapi_utils import load_spec_from_swagger_init as load_spec
+except ImportError:
+    def load_spec(swagger_init_url: str) -> dict[str, Any]:
+        text = urllib.request.urlopen(swagger_init_url, timeout=120).read().decode("utf-8")
+        key = '"swaggerDoc":'
+        i = text.find(key)
+        if i < 0:
+            raise RuntimeError("swaggerDoc not found")
+        i += len(key)
+        while i < len(text) and text[i] in " \n\t":
+            i += 1
+        if text[i] != "{":
+            raise RuntimeError("expected { after swaggerDoc")
+        depth = 0
+        start = i
+        for j in range(i, len(text)):
+            c = text[j]
+            if c == '"':
                 j += 1
-            continue
-        if c == "{":
-            depth += 1
-        elif c == "}":
-            depth -= 1
-            if depth == 0:
-                return json.loads(text[start : j + 1])
-    raise RuntimeError("unclosed swaggerDoc JSON")
+                while j < len(text):
+                    if text[j] == "\\":
+                        j += 2
+                        continue
+                    if text[j] == '"':
+                        break
+                    j += 1
+                continue
+            if c == "{":
+                depth += 1
+            elif c == "}":
+                depth -= 1
+                if depth == 0:
+                    return json.loads(text[start : j + 1])
+        raise RuntimeError("unclosed swaggerDoc JSON")
 
 
 def strip_html(s: str) -> str:

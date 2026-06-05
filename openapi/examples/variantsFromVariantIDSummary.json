@@ -1,0 +1,25 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/variant-ld/summary?variant_id=NC_000001.11%3A954257%3AG%3AC&page=0",
+  "sample": {
+    "ancestry": "EUR",
+    "d_prime": 0.987,
+    "r2": 0.447,
+    "sequence variant": {
+      "chr": "chr1",
+      "pos": 940262,
+      "ref": "C",
+      "alt": "G",
+      "rsid": [
+        "rs7411115"
+      ],
+      "spdi": "NC_000001.11:940262:C:G",
+      "hgvs": "NC_000001.11:g.940263C>G",
+      "ca_id": "CA10829548",
+      "_id": "NC_000001.11:940262:C:G"
+    },
+    "predictions": {
+      "qtls": [],
+      "tf_binding": []
+    }
+  }
+}

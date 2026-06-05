@@ -1,0 +1,20 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/pathways?id=R-HSA-164843&page=0",
+  "sample": {
+    "_id": "R-HSA-164843",
+    "name": "2-LTR circle formation",
+    "organism": "Homo sapiens",
+    "source": "Reactome",
+    "source_url": "https://reactome.org/",
+    "id_version": "R-HSA-164843.4",
+    "is_in_disease": true,
+    "name_aliases": [
+      "2-LTR circle formation"
+    ],
+    "is_top_level_pathway": false,
+    "disease_ontology_terms": [
+      "ontology_terms/DOID_526"
+    ],
+    "go_biological_process": null
+  }
+}

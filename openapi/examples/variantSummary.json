@@ -1,0 +1,86 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/summary?variant_id=NC_000020.11%3A3658947%3AA%3AG",
+  "sample": {
+    "summary": {
+      "rsid": [
+        "rs6139176"
+      ],
+      "spdi": "NC_000020.11:3658947:A:G",
+      "hgvs": "NC_000020.11:g.3658948A>G",
+      "ca_id": "CA14803886",
+      "ref": "A",
+      "alt": "G"
+    },
+    "allele_frequencies_gnomad": {
+      "total": 0.229546,
+      "male": 0.2274,
+      "female": 0.231563,
+      "raw": 0.229791,
+      "african": {
+        "total": 0.347651,
+        "male": 0.345831,
+        "female": 0.349201
+      },
+      "amish": {
+        "total": 0.161111,
+        "male": 0.153488,
+        "female": 0.168085
+      },
+      "ashkenazi_jewish": {
+        "total": 0.167268,
+        "male": 0.164533,
+        "female": 0.169694
+      },
+      "east_asian": {
+        "total": 0.158114,
+        "male": 0.143198,
+        "female": 0.175451
+      },
+      "finnish": {
+        "total": 0.185146,
+        "male": 0.184468,
+        "female": 0.1873
+      },
+      "native_american": {
+        "total": 0.217302,
+        "male": 0.214599,
+        "female": 0.220847
+      },
+      "non_finnish_european": {
+        "total": 0.172498,
+        "male": 0.173724,
+        "female": 0.171607
+      },
+      "other": {
+        "total": 0.229302,
+        "male": 0.239048,
+        "female": 0.22
+      },
+      "south_asian": {
+        "total": 0.181131,
+        "male": 0.176352,
+        "female": 0.202128
+      }
+    },
+    "cadd_scores": {
+      "raw": -0.093485,
+      "phread": 1.044
+    },
+    "nearest_genes": {
+      "nearestCodingGene": {
+        "gene_name": "GFRA4",
+        "id": "ENSG00000125861",
+        "start": 3659247,
+        "end": 3663399,
+        "distance": 300
+      },
+      "nearestGene": {
+        "gene_name": "GFRA4",
+        "id": "ENSG00000125861",
+        "start": 3659247,
+        "end": 3663399,
+        "distance": 300
+      }
+    }
+  }
+}

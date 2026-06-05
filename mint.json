@@ -19,7 +19,21 @@
     "name": "Catalog",
     "url": "https://catalog.igvf.org"
   },
+  "api": {
+    "openapi": "openapi/catalog-dev.openapi.json",
+    "playground": {
+      "display": "interactive"
+    },
+    "examples": {
+      "languages": ["curl", "python", "javascript"],
+      "defaults": "required"
+    }
+  },
   "tabs": [
+    {
+      "name": "Documentation",
+      "url": "introduction"
+    },
     {
       "name": "API Reference",
       "url": "api-reference"
@@ -40,7 +54,8 @@
         "nodes/variant",
         "nodes/protein",
         "nodes/transcript",
-        "nodes/disease"
+        "nodes/disease",
+        "nodes/ontologies"
       ]
     },
     {
@@ -48,6 +63,21 @@
       "pages": [
         "region/region-page",
         "region/variant-dashboard"
+      ]
+    },
+    {
+      "group": "Data Sources",
+      "pages": [
+        "data-sources/index",
+        "data-sources/files-filesets",
+        "data-sources/field-lineage/index"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "openapi": "openapi/catalog-dev.openapi.json",
+      "pages": [
+        "api-reference/introduction"
       ]
     }
   ]

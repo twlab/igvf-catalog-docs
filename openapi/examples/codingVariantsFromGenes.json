@@ -1,0 +1,1563 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes/coding-variants/scores?gene_id=ENSG00000196584&page=0",
+  "sample": {
+    "protein_change": {
+      "protein_id": "ENSP00000352271",
+      "protein_name": "XRCC2_HUMAN",
+      "transcript_id": "ENST00000359321",
+      "hgvsp": "p.Met1?",
+      "aapos": 1,
+      "ref": "M",
+      "alt": "I"
+    },
+    "variants": [
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "C",
+          "alt": "A",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:C:A",
+          "hgvs": "NC_000007.14:g.152676077C>A",
+          "ca_id": "CA370199649",
+          "_id": "NC_000007.14:152676076:C:A"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.575130081176758,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9165084594220334,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.142612,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "C",
+          "alt": "G",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:C:G",
+          "hgvs": "NC_000007.14:g.152676077C>G",
+          "ca_id": "CA370199650",
+          "_id": "NC_000007.14:152676076:C:G"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.575130081176758,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9165084594220334,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.111594,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "C",
+          "alt": "T",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:C:T",
+          "hgvs": "NC_000007.14:g.152676077C>T",
+          "ca_id": "CA370199651",
+          "_id": "NC_000007.14:152676076:C:T"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.575130081176758,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9165084594220334,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.169903,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "AC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:AC",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsAC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:AC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "AG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:AG",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsAG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:AG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.58380823135376,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.940778281550647,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "AT",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:AT",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsAT",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:AT"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.029918384552002,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9717155726784296,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "GC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:GC",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsGC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:GC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "GG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:GG",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsGG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:GG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.58380823135376,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.940778281550647,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "GT",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:GT",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsGT",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:GT"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.029918384552002,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9717155726784296,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "TC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:TC",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsTC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:TC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "TG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:TG",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsTG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:TG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.58380823135376,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.940778281550647,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CA",
+          "alt": "TT",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CA:TT",
+          "hgvs": "NC_000007.14:g.152676077_152676078delinsTT",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CA:TT"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.586592960357666,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9695225733731404,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AAA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AAA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAAA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AAA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.348305511474609,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9567756561982512,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AAC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AAC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAAC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AAC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.1592061042785646,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9336363315261972,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AAG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AAG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAAG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AAG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ACA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ACA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsACA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ACA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.556287431716919,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9620417483424994,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ACC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ACC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsACC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ACC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2315413475036627,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.959651463922766,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ACG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ACG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsACG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ACG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AGA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AGA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAGA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AGA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AGC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AGC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAGC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AGC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2937654495239257,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9612264108159614,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "AGG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:AGG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsAGG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:AGG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.611211633682251,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9738754572179928,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ATA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ATA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsATA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ATA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.297581386566162,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9687111035543868,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ATC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ATC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsATC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ATC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.734049034118653,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9766603422060912,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "ATG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:ATG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsATG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:ATG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.323605537414551,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9695346479918432,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GAA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GAA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGAA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GAA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.348305511474609,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9567756561982512,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GAC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GAC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGAC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GAC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.1592061042785646,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9336363315261972,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GAG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GAG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGAG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GAG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GCA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GCA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGCA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GCA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.556287431716919,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9620417483424994,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GCC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GCC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGCC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GCC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2315413475036627,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.959651463922766,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GCG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GCG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGCG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GCG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GGA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GGA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGGA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GGA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GGC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GGC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGGC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GGC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2937654495239257,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9612264108159614,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GGG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GGG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGGG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GGG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.611211633682251,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9738754572179928,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GTA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GTA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGTA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GTA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.297581386566162,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9687111035543868,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GTC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GTC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGTC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GTC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.734049034118653,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9766603422060912,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "GTG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:GTG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsGTG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:GTG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.323605537414551,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9695346479918432,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TAA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TAA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTAA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TAA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TAC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TAC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTAC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TAC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.1592061042785646,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9336363315261972,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TAG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TAG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTAG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TAG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TCC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TCC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTCC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TCC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2315413475036627,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.959651463922766,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TCG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TCG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTCG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TCG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TGA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TGA",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTGA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TGA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TGC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TGC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTGC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TGC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2937654495239257,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9612264108159614,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TGG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TGG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTGG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TGG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.611211633682251,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9738754572179928,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TTC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TTC",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTTC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TTC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.514329671859741,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9638703460578962,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676076,
+          "ref": "CAT",
+          "alt": "TTG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676076:CAT:TTG",
+          "hgvs": "NC_000007.14:g.152676077_152676079delinsTTG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676076:CAT:TTG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.710553359985352,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9598044039188456,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "A",
+          "alt": "C",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:A:C",
+          "hgvs": "NC_000007.14:g.152676078A>C",
+          "ca_id": "CA370199652",
+          "_id": "NC_000007.14:152676077:A:C"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.153255,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "A",
+          "alt": "G",
+          "rsid": [
+            "rs1064793295"
+          ],
+          "spdi": "NC_000007.14:152676077:A:G",
+          "hgvs": "NC_000007.14:g.152676078A>G",
+          "ca_id": "CA16618441",
+          "_id": "NC_000007.14:152676077:A:G"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.58380823135376,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.940778281550647,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.141216,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "A",
+          "alt": "T",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:A:T",
+          "hgvs": "NC_000007.14:g.152676078A>T",
+          "ca_id": "CA370199653",
+          "_id": "NC_000007.14:152676077:A:T"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.586592960357666,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9695225733731404,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.142646,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "CA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:CA",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsCA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:CA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -4.9093852043151855,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.971644117281073,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "CC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:CC",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsCC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:CC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2315413475036627,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.959651463922766,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "CG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:CG",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsCG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:CG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.294021844863892,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9735063729490484,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "GA",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:GA",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsGA",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:GA"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.735006618499756,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.922350437883816,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "GC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:GC",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsGC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:GC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.2937654495239257,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9612264108159614,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "GG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:GG",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsGG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:GG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.611211633682251,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9738754572179928,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "TC",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:TC",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsTC",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:TC"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.514329671859741,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9638703460578962,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676077,
+          "ref": "AT",
+          "alt": "TG",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676077:AT:TG",
+          "hgvs": "NC_000007.14:g.152676078_152676079delinsTG",
+          "ca_id": null,
+          "_id": "NC_000007.14:152676077:AT:TG"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.710553359985352,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9598044039188456,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676078,
+          "ref": "T",
+          "alt": "A",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676078:T:A",
+          "hgvs": "NC_000007.14:g.152676079T>A",
+          "ca_id": "CA370199654",
+          "_id": "NC_000007.14:152676078:T:A"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.168239,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676078,
+          "ref": "T",
+          "alt": "C",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676078:T:C",
+          "hgvs": "NC_000007.14:g.152676079T>C",
+          "ca_id": "CA370199655",
+          "_id": "NC_000007.14:152676078:T:C"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -3.1592061042785646,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9336363315261972,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.106988,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr7",
+          "pos": 152676078,
+          "ref": "T",
+          "alt": "G",
+          "rsid": null,
+          "spdi": "NC_000007.14:152676078:T:G",
+          "hgvs": "NC_000007.14:g.152676079T>G",
+          "ca_id": "CA370199656",
+          "_id": "NC_000007.14:152676078:T:G"
+        },
+        "scores": [
+          {
+            "method": "ESM-1v",
+            "score": -2.5975333213806158,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.9220635676203166,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+          },
+          {
+            "method": "SGE",
+            "score": -0.0930603,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI1361XVSO"
+          }
+        ]
+      }
+    ]
+  }
+}

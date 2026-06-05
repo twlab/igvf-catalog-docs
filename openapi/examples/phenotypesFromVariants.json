@@ -1,0 +1,28 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/phenotypes?ca_id=CA10655131&page=0",
+  "sample": {
+    "phenotype_id": "ontology_terms/EFO_0004339",
+    "phenotype_term": "body height",
+    "study": "studies/GCST007841",
+    "neg_log10_pvalue": 11.698970004336019,
+    "p_val": 2e-12,
+    "beta": 0,
+    "beta_ci_lower": 0,
+    "beta_ci_upper": 0,
+    "oddsr_ci_lower": 0,
+    "oddsr_ci_upper": 0,
+    "lead_chrom": "1",
+    "lead_pos": 1023572,
+    "lead_ref": "A",
+    "lead_alt": "G",
+    "direction": "",
+    "source": "OpenTargets",
+    "source_url": "https://data.igvf.org/reference-files/IGVFFI1309WDQG",
+    "class": "observed data",
+    "method": "GWAS",
+    "label": "GWAS",
+    "version": "October 2022 (22.10)",
+    "name": "associated with",
+    "variant": "variants/NC_000001.11:1023572:A:G"
+  }
+}

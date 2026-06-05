@@ -1,0 +1,879 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/motifs/proteins?verbose=true&page=0",
+  "sample": {
+    "source": "HOCOMOCOv11",
+    "protein": {
+      "_id": "ENSP00000242057",
+      "name": "AHR",
+      "uniprot_names": [
+        "AHR_HUMAN"
+      ],
+      "uniprot_full_names": [
+        "Aryl hydrocarbon receptor"
+      ],
+      "uniprot_ids": [
+        "P35869"
+      ],
+      "dbxrefs": [
+        {
+          "name": "AGR",
+          "id": "HGNC:348"
+        },
+        {
+          "name": "AlphaFoldDB",
+          "id": "P35869"
+        },
+        {
+          "name": "Antibodypedia",
+          "id": "3909"
+        },
+        {
+          "name": "Bgee",
+          "id": "ENSG00000106546"
+        },
+        {
+          "name": "BindingDB",
+          "id": "P35869"
+        },
+        {
+          "name": "BioGRID",
+          "id": "106699"
+        },
+        {
+          "name": "BioGRID-ORCS",
+          "id": "196"
+        },
+        {
+          "name": "BioMuta",
+          "id": "AHR"
+        },
+        {
+          "name": "CCDS",
+          "id": "CCDS5366.1"
+        },
+        {
+          "name": "CDD",
+          "id": "cd11436"
+        },
+        {
+          "name": "CDD",
+          "id": "cd00130"
+        },
+        {
+          "name": "CORUM",
+          "id": "P35869"
+        },
+        {
+          "name": "CTD",
+          "id": "196"
+        },
+        {
+          "name": "ChEMBL",
+          "id": "CHEMBL3201"
+        },
+        {
+          "name": "ChiTaRS",
+          "id": "AHR"
+        },
+        {
+          "name": "DIP",
+          "id": "DIP-946N"
+        },
+        {
+          "name": "DMDM",
+          "id": "3041653"
+        },
+        {
+          "name": "DNASU",
+          "id": "196"
+        },
+        {
+          "name": "DisGeNET",
+          "id": "196"
+        },
+        {
+          "name": "DisProt",
+          "id": "DP00381"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB08624"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB01076"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB06732"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB12328"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB13009"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB08995"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB07715"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB12116"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB00499"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB01404"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB16862"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB12379"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB02052"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB11937"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB01097"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB00379"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB00393"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB00338"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB04216"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB02709"
+        },
+        {
+          "name": "DrugBank",
+          "id": "DB06083"
+        },
+        {
+          "name": "DrugCentral",
+          "id": "P35869"
+        },
+        {
+          "name": "ELM",
+          "id": "P35869"
+        },
+        {
+          "name": "EMBL",
+          "id": "D16354"
+        },
+        {
+          "name": "EMBL",
+          "id": "BAA03857.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "L19872"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA16210.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "AC003075"
+        },
+        {
+          "name": "EMBL",
+          "id": "CH236948"
+        },
+        {
+          "name": "EMBL",
+          "id": "EAL24281.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "CH471073"
+        },
+        {
+          "name": "EMBL",
+          "id": "EAW93686.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "BC069390"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAH69390.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "BC070080"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAH70080.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28063"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U27656"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U27657"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28060"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28061"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28062"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92082.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28064"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92083.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28066"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92084.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "U28065"
+        },
+        {
+          "name": "EMBL",
+          "id": "AAA92084.1"
+        },
+        {
+          "name": "EMBL",
+          "id": "D38044"
+        },
+        {
+          "name": "EMBL",
+          "id": "BAA07235.1"
+        },
+        {
+          "name": "EMDB",
+          "id": "EMD-14971"
+        },
+        {
+          "name": "EPD",
+          "id": "P35869"
+        },
+        {
+          "name": "Ensembl",
+          "id": "ENST00000242057.9"
+        },
+        {
+          "name": "Ensembl",
+          "id": "ENST00000463496.1"
+        },
+        {
+          "name": "ExpressionAtlas",
+          "id": "P35869"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0034751"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0000785"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0005737"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0005829"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0034752"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0034753"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0005654"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0005634"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0032991"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0005667"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0000987"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0003677"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0003700"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0000981"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0070888"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0051879"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0004879"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0046982"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0042803"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0061629"
+        },
+        {
+          "name": "GO",
+          "id": "GO:1990837"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0017025"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0001094"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0000976"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0001223"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0006915"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0001568"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0019933"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0007049"
+        },
+        {
+          "name": "GO",
+          "id": "GO:1904613"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0071320"
+        },
+        {
+          "name": "GO",
+          "id": "GO:1904322"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0071219"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0032922"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0045892"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0050728"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0002841"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0045893"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0045944"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0002819"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0030888"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0006355"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0010468"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0006357"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0009636"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0009410"
+        },
+        {
+          "name": "GO",
+          "id": "GO:0006805"
+        },
+        {
+          "name": "Gene3D",
+          "id": "4.10.280.10"
+        },
+        {
+          "name": "Gene3D",
+          "id": "3.30.450.20"
+        },
+        {
+          "name": "GeneCards",
+          "id": "AHR"
+        },
+        {
+          "name": "GeneID",
+          "id": "196"
+        },
+        {
+          "name": "GeneTree",
+          "id": "ENSGT00940000154486"
+        },
+        {
+          "name": "GeneWiki",
+          "id": "Aryl_hydrocarbon_receptor"
+        },
+        {
+          "name": "GenomeRNAi",
+          "id": "196"
+        },
+        {
+          "name": "GuidetoPHARMACOLOGY",
+          "id": "2951"
+        },
+        {
+          "name": "HGNC",
+          "id": "HGNC:348"
+        },
+        {
+          "name": "HOGENOM",
+          "id": "CLU_010044_1_1_1"
+        },
+        {
+          "name": "HPA",
+          "id": "ENSG00000106546"
+        },
+        {
+          "name": "InParanoid",
+          "id": "P35869"
+        },
+        {
+          "name": "IntAct",
+          "id": "P35869"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR039091"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR033348"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR011598"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR036638"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR001610"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR000014"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR035965"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR013767"
+        },
+        {
+          "name": "InterPro",
+          "id": "IPR013655"
+        },
+        {
+          "name": "KEGG",
+          "id": "hsa:196"
+        },
+        {
+          "name": "MANE-Select",
+          "id": "ENST00000242057.9"
+        },
+        {
+          "name": "MANE-Select",
+          "id": "ENSP00000242057.4"
+        },
+        {
+          "name": "MANE-Select",
+          "id": "NM_001621.5"
+        },
+        {
+          "name": "MANE-Select",
+          "id": "NP_001612.1"
+        },
+        {
+          "name": "MIM",
+          "id": "600253"
+        },
+        {
+          "name": "MIM",
+          "id": "618345"
+        },
+        {
+          "name": "MalaCards",
+          "id": "AHR"
+        },
+        {
+          "name": "MassIVE",
+          "id": "P35869"
+        },
+        {
+          "name": "MaxQB",
+          "id": "P35869"
+        },
+        {
+          "name": "OMA",
+          "id": "GCDAKGQ"
+        },
+        {
+          "name": "OpenTargets",
+          "id": "ENSG00000106546"
+        },
+        {
+          "name": "Orphanet",
+          "id": "791"
+        },
+        {
+          "name": "OrthoDB",
+          "id": "5360131at2759"
+        },
+        {
+          "name": "PANTHER",
+          "id": "PTHR10649"
+        },
+        {
+          "name": "PANTHER",
+          "id": "PTHR10649:SF9"
+        },
+        {
+          "name": "PDB",
+          "id": "5NJ8"
+        },
+        {
+          "name": "PDB",
+          "id": "7ZUB"
+        },
+        {
+          "name": "PDB",
+          "id": "8QMO"
+        },
+        {
+          "name": "PDBsum",
+          "id": "5NJ8"
+        },
+        {
+          "name": "PDBsum",
+          "id": "7ZUB"
+        },
+        {
+          "name": "PDBsum",
+          "id": "8QMO"
+        },
+        {
+          "name": "PIR",
+          "id": "S59514"
+        },
+        {
+          "name": "PRO",
+          "id": "PR:P35869"
+        },
+        {
+          "name": "PROSITE",
+          "id": "PS50888"
+        },
+        {
+          "name": "PROSITE",
+          "id": "PS50112"
+        },
+        {
+          "name": "PathwayCommons",
+          "id": "P35869"
+        },
+        {
+          "name": "PaxDb",
+          "id": "9606-ENSP00000242057"
+        },
+        {
+          "name": "PeptideAtlas",
+          "id": "P35869"
+        },
+        {
+          "name": "Pfam",
+          "id": "PF00010"
+        },
+        {
+          "name": "Pfam",
+          "id": "PF00989"
+        },
+        {
+          "name": "Pfam",
+          "id": "PF08447"
+        },
+        {
+          "name": "PharmGKB",
+          "id": "PA24641"
+        },
+        {
+          "name": "Pharos",
+          "id": "P35869"
+        },
+        {
+          "name": "PhosphoSitePlus",
+          "id": "P35869"
+        },
+        {
+          "name": "PhylomeDB",
+          "id": "P35869"
+        },
+        {
+          "name": "Proteomes",
+          "id": "UP000005640"
+        },
+        {
+          "name": "ProteomicsDB",
+          "id": "55159"
+        },
+        {
+          "name": "Pumba",
+          "id": "P35869"
+        },
+        {
+          "name": "RNAct",
+          "id": "P35869"
+        },
+        {
+          "name": "Reactome",
+          "id": "R-HSA-1989781"
+        },
+        {
+          "name": "Reactome",
+          "id": "R-HSA-211945"
+        },
+        {
+          "name": "Reactome",
+          "id": "R-HSA-211976"
+        },
+        {
+          "name": "Reactome",
+          "id": "R-HSA-211981"
+        },
+        {
+          "name": "Reactome",
+          "id": "R-HSA-8937144"
+        },
+        {
+          "name": "RefSeq",
+          "id": "NP_001612.1"
+        },
+        {
+          "name": "RefSeq",
+          "id": "NM_001621.4"
+        },
+        {
+          "name": "SIGNOR",
+          "id": "P35869"
+        },
+        {
+          "name": "SMART",
+          "id": "SM00353"
+        },
+        {
+          "name": "SMART",
+          "id": "SM00086"
+        },
+        {
+          "name": "SMART",
+          "id": "SM00091"
+        },
+        {
+          "name": "SMR",
+          "id": "P35869"
+        },
+        {
+          "name": "STRING",
+          "id": "9606.ENSP00000242057"
+        },
+        {
+          "name": "SUPFAM",
+          "id": "SSF47459"
+        },
+        {
+          "name": "SUPFAM",
+          "id": "SSF55785"
+        },
+        {
+          "name": "SignaLink",
+          "id": "P35869"
+        },
+        {
+          "name": "TreeFam",
+          "id": "TF352074"
+        },
+        {
+          "name": "UCSC",
+          "id": "uc011jxz.2"
+        },
+        {
+          "name": "VEuPathDB",
+          "id": "HostDB:ENSG00000106546"
+        },
+        {
+          "name": "eggNOG",
+          "id": "KOG3560"
+        },
+        {
+          "name": "iPTMnet",
+          "id": "P35869"
+        },
+        {
+          "name": "jPOST",
+          "id": "P35869"
+        },
+        {
+          "name": "neXtProt",
+          "id": "NX_P35869"
+        }
+      ],
+      "MANE_Select": true,
+      "organism": "Homo sapiens",
+      "source": "GENCODE",
+      "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz"
+    },
+    "motif": "AHR_HUMAN_HOCOMOCOv11_ENSP00000242057",
+    "name": "is used by"
+  }
+}

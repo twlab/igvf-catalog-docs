@@ -1,0 +1,43 @@
+---
+title: 'Disease'
+icon: 'disease'
+description: 'Disease nodes and disease-related edges in the IGVF Catalog'
+---
+
+# Disease
+
+The IGVF Catalog represents **disease** concepts using public ontologies (MONDO, Orphanet, NCIT, Oncotree, and others). Disease nodes connect to genes and variants through curated and literature-supported associations.
+
+## Data sources
+
+| Source | Edge type | Description |
+|--------|-----------|-------------|
+| [Orphanet](https://www.orpha.net/) | Disease–gene | Rare disease gene associations |
+| [ClinGen](https://clinicalgenome.org/) | Variant–disease | Clinical variant interpretations |
+| [ClinVar / ClinGen](https://clinicalgenome.org/) | Variant–disease–gene | Pathogenicity assertions |
+
+## UI tables
+
+On disease ontology term pages you will find:
+
+- **Disease–gene** association tables (Orphanet)
+- **Variant–disease** tables (ClinGen) with assertion, gene, and PMID
+
+For ontology term hierarchy and cross-ontology details, see [Ontology Terms](/nodes/ontologies).
+
+## API endpoints
+
+| Endpoint | Purpose |
+|----------|---------|
+| `GET /diseases/genes` | Disease–gene pairs (Orphanet) |
+| `GET /diseases/variants` | Variants and genes for a disease (ClinGen) |
+| `GET /genes/diseases` | Diseases linked to a gene |
+| `GET /variants/diseases` | Disease associations for a variant |
+| `GET /ontology-terms` | Search disease and phenotype ontology terms |
+
+See the [API Reference](/api-reference/introduction) for filters and examples.
+
+## Related documentation
+
+- [Data Sources](/data-sources/index) — portal file provenance for IGVF and ENCODE datasets
+- [Ontology Terms](/nodes/ontologies) — full ontology inventory

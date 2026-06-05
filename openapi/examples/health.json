@@ -1,0 +1,6 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/health",
+  "sample": {
+    "status": "ok"
+  }
+}

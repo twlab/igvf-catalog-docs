@@ -1,0 +1,9 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/autocomplete?term=TP53&page=0",
+  "sample": {
+    "term": "TP53",
+    "type": "gene",
+    "name": "TP53",
+    "uri": "/genes/ENSG00000141510"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/phenotypes/score-summary?variant_id=NC_000018.10%3A31546002%3ACA%3AGT",
+  "sample": {
+    "variant_id": "variants/NC_000018.10:31546002:CA:GT",
+    "hgvsp": "p.Gln873Val",
+    "gene_name": "DSG2",
+    "transcript_id": "ENST00000261590",
+    "dataType": "MutPred2",
+    "score": 0.362,
+    "portalLink": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
+  }
+}

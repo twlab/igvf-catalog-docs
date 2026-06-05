@@ -1,0 +1,57 @@
+---
+title: 'API Introduction'
+description: 'IGVF Catalog REST API — development environment'
+icon: 'code'
+---
+
+<Warning>
+This API reference documents the **development** Catalog API at `https://catalog-api-dev.demo.igvf.org/api`. The base URL will change when production is published; see [openapi/config.json](https://github.com/IGVF-DACC/igvf-catalog-docs/blob/main/openapi/config.json) in the repository.
+</Warning>
+
+# IGVF Catalog REST API
+
+The IGVF Catalog exposes an OpenAPI-compliant REST API for querying the genomics knowledge graph: variants, genes, proteins, regulatory elements, QTLs, pathways, drugs, and more.
+
+## Base URL
+
+```
+https://catalog-api-dev.demo.igvf.org/api
+```
+
+Interactive Swagger UI: [catalog-api-dev.demo.igvf.org](https://catalog-api-dev.demo.igvf.org/)
+
+## Pagination
+
+- **`page`** — 0-based page index (default `0`)
+- **`limit`** — page size; maximum **500** on most endpoints
+
+Example: `GET /variants?region=chr1:1157520-1158189&page=0`
+
+## Coordinates
+
+The database uses **0-based, half-open** genomic coordinates on **GRCh38** (human) and **GRCm39** (mouse).
+
+## Query patterns
+
+Most endpoints accept **one primary filter** plus optional refinements. Examples in each endpoint description are tested individually (see [audit results](https://github.com/IGVF-DACC/igvf-catalog-docs/tree/main/scripts)).
+
+### Variant identifiers
+
+Variants can be queried by any of:
+
+| Parameter | Example |
+|-----------|---------|
+| `variant_id` / `spdi` | `NC_000020.11:3658947:A:G` |
+| `hgvs` | `NC_000020.11:g.3658948A>G` |
+| `rsid` | `rs58658771` |
+| `ca_id` | `CA739473472` |
+| `region` | `chr1:1157520-1158189` (max 10 kb) |
+
+### Dataset provenance (`files_fileset`)
+
+Many edges are tagged with a **`files_fileset`** accession (e.g. `IGVFFI9602ILPC`, `ENCFF968BZL`) linking Catalog results to source files on the [IGVF Portal](https://data.igvf.org) or [ENCODE Portal](https://encodeproject.org). See [Data Sources](/data-sources/index) and [Field lineage](/data-sources/field-lineage/index) for file metadata and column-to-API field mappings.
+
+## Related resources
+
+- [IGVF Catalog MCP](https://github.com/IGVF-DACC/igvf-catalog-mcp) — higher-level graph queries for agents
+- [Live Catalog UI](https://catalog.igvf.org)

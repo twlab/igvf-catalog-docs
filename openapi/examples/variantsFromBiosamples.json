@@ -1,0 +1,27 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/biosamples/variants?biosample_id=EFO_0002067&page=0",
+  "sample": {
+    "variant": "variants/-0zC9SZc9EuXdHykM9cj25eMeYG49x5d",
+    "biosample": "ontology_terms/EFO_0002067",
+    "genomic_element": null,
+    "strand": null,
+    "log2FoldChange": 0.0416425071657764,
+    "DNA_count_ref": 0.1570879202912553,
+    "DNA_count_alt": 0,
+    "RNA_count_ref": 0.2664310452000458,
+    "RNA_count_alt": 0.1828702259155912,
+    "postProbEffect": 0.247,
+    "CI_lower_95": 0.49388,
+    "CI_upper_95": 4.53037,
+    "significant": false,
+    "neg_log10_pvalue": null,
+    "fdr": null,
+    "label": "variant effect on regulatory element activity",
+    "method": "STARR-seq",
+    "class": "observed data",
+    "source": "IGVF",
+    "source_url": "https://data.igvf.org/tabular-files/IGVFFI7903VFKP/",
+    "name": "modulates expression in",
+    "files_filesets": "files_filesets/IGVFFI7903VFKP"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/region-summary?region=chr1%3A1157520-1158520",
+  "sample": {
+    "method": "ADASTRA",
+    "count": 8
+  }
+}
