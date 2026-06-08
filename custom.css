@@ -1,0 +1,90 @@
+/* IGVF Catalog — site-wide custom styles (Mintlify auto-loads this file) */
+
+:root {
+  --igvf-primary: #0d9373;
+  --igvf-primary-light: #07c983;
+  --igvf-surface: #f4faf8;
+  --igvf-border: #d1e7e0;
+  --igvf-muted: #5c6b66;
+}
+
+/* Slightly roomier body text in documentation pages */
+article p,
+article li {
+  line-height: 1.75;
+}
+
+article a:not([class]) {
+  color: var(--igvf-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+article a:not([class]):hover {
+  color: var(--igvf-primary-light);
+}
+
+/* Data-source and API reference tables */
+article table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1.25rem 0;
+}
+
+article table th,
+article table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--igvf-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+article table th {
+  background: var(--igvf-surface);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+article table tbody tr:nth-child(even) {
+  background: rgba(13, 147, 115, 0.04);
+}
+
+article table tbody tr:hover {
+  background: rgba(13, 147, 115, 0.08);
+}
+
+/* Hero image on the introduction page */
+.igvf-hero img {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px rgba(13, 147, 115, 0.12);
+}
+
+/* Optional lead paragraph style for MDX: className="igvf-lead" */
+.igvf-lead {
+  font-size: 1.125rem;
+  color: var(--igvf-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Dark mode adjustments (Mintlify toggles .dark on html) */
+html.dark {
+  --igvf-surface: #1a2421;
+  --igvf-border: #2d3d38;
+  --igvf-muted: #a8b5b0;
+}
+
+html.dark article table tbody tr:nth-child(even) {
+  background: rgba(7, 201, 131, 0.06);
+}
+
+html.dark article table tbody tr:hover {
+  background: rgba(7, 201, 131, 0.1);
+}
+
+html.dark .igvf-hero img {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}

@@ -38,7 +38,7 @@ mintlify dev
 
 Open http://localhost:3000
 
-Configuration lives in [`docs.json`](docs.json) (Mintlify v4).
+Configuration lives in [`docs.json`](docs.json) (Mintlify v4). Site-wide styling overrides are in [`custom.css`](custom.css).
 
 ## Build scripts
 
