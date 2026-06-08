@@ -47,6 +47,8 @@ jobs:
         run: |
           mkdir -p _site
           unzip -q site.zip -d _site
+          python3 scripts/patch_github_pages_basepath.py _site --base-path /igvf-catalog-docs
+          touch _site/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

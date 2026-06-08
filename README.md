@@ -40,6 +40,8 @@ Open http://localhost:3000
 
 Configuration lives in [`docs.json`](docs.json) (Mintlify v4). Site-wide styling overrides are in [`custom.css`](custom.css).
 
+GitHub Pages serves this repo at `/igvf-catalog-docs/`; the deploy workflow runs [`scripts/patch_github_pages_basepath.py`](scripts/patch_github_pages_basepath.py) after export so Mintlify asset URLs resolve correctly.
+
 ## Build scripts
 
 | Script | Purpose |
