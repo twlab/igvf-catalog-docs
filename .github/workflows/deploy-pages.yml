@@ -47,7 +47,9 @@ jobs:
         run: |
           mkdir -p _site
           unzip -q site.zip -d _site
+          cp -R openapi _site/openapi
           python3 scripts/patch_github_pages_basepath.py _site --base-path /igvf-catalog-docs
+          rm -rf _site/scripts _site/.gitignore _site/.DS_Store _site/serve.js _site/"Start Docs.command" _site/"Start Docs.bat"
           touch _site/.nojekyll
 
       - name: Upload Pages artifact

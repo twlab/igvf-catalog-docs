@@ -62,7 +62,12 @@
       {
         "tab": "API Reference",
         "openapi": "openapi/catalog-dev.openapi.json",
-        "pages": ["api-reference/introduction"]
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["api-reference/introduction"]
+          }
+        ]
       }
     ]
   }
