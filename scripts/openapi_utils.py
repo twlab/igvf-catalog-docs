@@ -3,8 +3,40 @@
 from __future__ import annotations
 
 import json
+import re
 import urllib.request
 from typing import Any
+
+BR_TAG_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
+WHITESPACE_RE = re.compile(r"[ \t]+")
+
+
+def normalize_html_description(text: str) -> str:
+    """Convert Swagger HTML line breaks to Markdown-friendly paragraphs."""
+    if not text or "<br" not in text.lower():
+        return text
+    text = BR_TAG_RE.sub("\n", text)
+    lines = [WHITESPACE_RE.sub(" ", line).strip() for line in text.split("\n")]
+    lines = [line for line in lines if line]
+    return "\n\n".join(lines)
+
+
+def normalize_openapi_spec(spec: dict[str, Any]) -> dict[str, Any]:
+    """Rewrite operation/parameter descriptions that use HTML <br> tags."""
+
+    def walk(node: Any) -> None:
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if key in ("description", "summary") and isinstance(value, str):
+                    node[key] = normalize_html_description(value)
+                else:
+                    walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    walk(spec)
+    return spec
 
 
 def load_spec_from_swagger_init(swagger_init_url: str, timeout: float = 120) -> dict[str, Any]:
