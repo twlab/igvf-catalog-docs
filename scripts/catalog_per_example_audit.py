@@ -26,12 +26,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 SWAGGER_INIT_DEFAULT = (
-    "https://catalog-api-dev.demo.igvf.org/swagger-ui-init.js"
+    "https://catalog-api-dserv-1293-example.demo.igvf.org/swagger-ui-init.js"
 )
 
 try:
-    from openapi_utils import load_spec_from_swagger_init as load_spec
+    from openapi_utils import load_config, load_spec_from_swagger_init as load_spec
 except ImportError:
+    load_config = None  # type: ignore[misc, assignment]
+
     def load_spec(swagger_init_url: str) -> dict[str, Any]:
         text = urllib.request.urlopen(swagger_init_url, timeout=120).read().decode("utf-8")
         key = '"swaggerDoc":'
@@ -247,9 +249,18 @@ def fetch_row(row: dict[str, Any], timeout: float) -> dict[str, Any]:
     return row
 
 
+def default_swagger_init_url() -> str:
+    if load_config is not None:
+        try:
+            return load_config()["swagger_init_url"]
+        except (OSError, KeyError):
+            pass
+    return SWAGGER_INIT_DEFAULT
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--swagger-init", default=SWAGGER_INIT_DEFAULT)
+    ap.add_argument("--swagger-init", default=default_swagger_init_url())
     ap.add_argument("--output", default="scripts/catalog_per_example_audit_results.tsv")
     ap.add_argument("--timeout", type=float, default=35.0)
     ap.add_argument("--workers", type=int, default=12)

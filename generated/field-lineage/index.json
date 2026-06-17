@@ -72,13 +72,6 @@
         },
         {
           "adapter": "AFGR_eqtl_adapter.py",
-          "arango_or_api_field": "log10pvalue",
-          "adapter_expression": "(computed)",
-          "portal_column": "",
-          "notes": ""
-        },
-        {
-          "adapter": "AFGR_eqtl_adapter.py",
           "arango_or_api_field": "p_value",
           "adapter_expression": "(computed)",
           "portal_column": "",
@@ -142,13 +135,6 @@
           "adapter": "AFGR_sqtl_adapter.py",
           "arango_or_api_field": "biological_context",
           "adapter_expression": "(computed)",
-          "portal_column": "",
-          "notes": ""
-        },
-        {
-          "adapter": "AFGR_sqtl_adapter.py",
-          "arango_or_api_field": "log10pvalue",
-          "adapter_expression": "log_pvalue",
           "portal_column": "",
           "notes": ""
         },
@@ -269,6 +255,62 @@
         "IGVFFI1663LKVQ",
         "IGVFFI3351LASN",
         "IGVFFI5288RAAV"
+      ]
+    },
+    "DUAL_IPA_coding_variant_scores_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI6224HZMG"
       ]
     },
     "ESM_coding_variants_adapter.py": {
@@ -1344,13 +1386,6 @@
         },
         {
           "adapter": "eqtl_catalog_adapter.py",
-          "arango_or_api_field": "log10pvalue",
-          "adapter_expression": "log_pvalue",
-          "portal_column": "",
-          "notes": ""
-        },
-        {
-          "adapter": "eqtl_catalog_adapter.py",
           "arango_or_api_field": "effect_size",
           "adapter_expression": "(computed)",
           "portal_column": "",
@@ -1596,6 +1631,13 @@
           "adapter": "gwas_adapter.py",
           "arango_or_api_field": "source",
           "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "pvalue",
           "portal_column": "",
           "notes": ""
         },
@@ -1992,7 +2034,7 @@
         {
           "adapter": "proteins_interaction_adapter.py",
           "arango_or_api_field": "source",
-          "adapter_expression": "row[...]",
+          "adapter_expression": "source",
           "portal_column": "",
           "notes": ""
         },
@@ -2068,6 +2110,55 @@
       ],
       "mentioned_files": []
     },
+    "scE2G_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "score",
+          "adapter_expression": "score",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "collection_class",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'regulates'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI3412RLDF"
+      ]
+    },
     "topld_adapter.py": {
       "mappings": [
         {
@@ -2132,6 +2223,9 @@
     ],
     "IGVFFI5288RAAV": [
       "BlueSTARR_variants_biosamples_adapter.py"
+    ],
+    "IGVFFI6224HZMG": [
+      "DUAL_IPA_coding_variant_scores_adapter.py"
     ],
     "IGVFFI8105TNNO": [
       "ESM_coding_variants_adapter.py"
@@ -2424,6 +2518,9 @@
     ],
     "IGVFFI4317VDGK": [
       "proteins_interaction_adapter.py"
+    ],
+    "IGVFFI3412RLDF": [
+      "scE2G_adapter.py"
     ]
   }
 }
