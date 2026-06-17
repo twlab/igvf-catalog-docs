@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/phenotypes/score-summary?variant_id=NC_000018.10%3A31546002%3ACA%3AGT",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/phenotypes/score-summary?variant_id=NC_000018.10%3A31546002%3ACA%3AGT",
   "sample": {
     "variant_id": "variants/NC_000018.10:31546002:CA:GT",
     "hgvsp": "p.Gln873Val",

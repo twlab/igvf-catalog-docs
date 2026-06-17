@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/motifs?tf_name=STAT3_HUMAN&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/motifs?tf_name=STAT3_HUMAN&page=0",
   "sample": {
     "name": "STAT3_HUMAN_HOCOMOCOv11",
     "tf_name": "STAT3_HUMAN",

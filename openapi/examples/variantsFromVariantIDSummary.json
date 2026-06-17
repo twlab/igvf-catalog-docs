@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/variant-ld/summary?variant_id=NC_000001.11%3A954257%3AG%3AC&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/variant-ld/summary?variant_id=NC_000001.11%3A954257%3AG%3AC&page=0",
   "sample": {
     "ancestry": "EUR",
     "d_prime": 0.987,

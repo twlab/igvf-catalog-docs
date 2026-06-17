@@ -1,36 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/phenotypes/coding-variants?phenotype_name=protein+stability&page=0",
-  "sample": {
-    "coding_variant": {
-      "_id": "CYP2C19_ENST00000371321_p.Ala103=_c.309T-G",
-      "aapos": 103,
-      "hgvsp": "p.Ala103=",
-      "protein_name": "CP2CJ_HUMAN",
-      "gene_name": "CYP2C19",
-      "ref": "A",
-      "alt": "A"
-    },
-    "phenotype": {
-      "phenotype_id": "OBA_0000128",
-      "phenotype_name": "protein stability"
-    },
-    "score": 1.00216665235178,
-    "method": "VAMP-seq",
-    "class": "observed data",
-    "label": "protein variant effect",
-    "files_filesets": "files_filesets/IGVFFI0629IIQU",
-    "source": "IGVF",
-    "source_url": "https://data.igvf.org/tabular-files/IGVFFI0629IIQU",
-    "variant": {
-      "chr": "chr10",
-      "pos": 94775197,
-      "ref": "T",
-      "alt": "G",
-      "rsid": null,
-      "spdi": "NC_000010.11:94775197:T:G",
-      "hgvs": "NC_000010.11:g.94775198T>G",
-      "ca_id": "CA470987381",
-      "_id": "NC_000010.11:94775197:T:G"
-    }
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/phenotypes/coding-variants?phenotype_id=BAO_0040014+++method+%3D+DUAL-IPA+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI6224HZMG+++method+%3D+DUAL-IPA+++++++++++ESM-1v%3A+++++query+by+phenotype+identifier+++++phenotype_id+%3D+GO_0003674+++method+%3D+ESM-1v+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI8105TNNO+++method+%3D+ESM-1v+++++++++++MutPred2%3A+++++query+by+phenotype+identifier+++++phenotype_id+%3D+GO_0003674+++method+%3D+MutPred2+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI6893ZOAA+++method+%3D+MutPred2+++++++++++SGE%3A+++++query+by+phenotype+identifier+++++phenotype_id+%3D+NCIT_C16407+++method+%3D+SGE+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI2810SLAX+++method+%3D+SGE+++++++++++VAMP-seq%3A+++++query+by+phenotype+identifier+++++phenotype_id+%3D+OBA_0000128+++method+%3D+VAMP-seq+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI0629IIQU+++method+%3D+VAMP-seq&page=0",
+  "sample": []
 }

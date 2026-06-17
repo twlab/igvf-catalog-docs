@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/genes-proteins?variant_id=NC_000001.11%3A630556%3AT%3AC&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/genes-proteins?variant_id=NC_000001.11%3A630556%3AT%3AC&page=0",
   "sample": {
     "sequence_variant": {
       "_id": "NC_000001.11:630556:T:C",
@@ -28,6 +28,7 @@
           {
             "label": "eQTL",
             "source": "AFGR",
+            "neg_log10_pvalue": 6.437445,
             "biological_context": "lymphoblastoid cell line",
             "name": "modulates expression of"
           }

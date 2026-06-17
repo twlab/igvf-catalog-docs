@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/coding-variants?variant_id=NC_000001.11%3A65564%3AA%3AT&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/coding-variants?variant_id=NC_000001.11%3A65564%3AA%3AT&page=0",
   "sample": {
     "name": "OR4F5_ENST00000641515_p.Met1?_c.1A>T",
     "_id": "OR4F5_ENST00000641515_p.Met1!_c.1A-T",

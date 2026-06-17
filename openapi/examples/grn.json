@@ -1,20 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/gene-regulatory-network?regulator_gene_id=ENSG00000143190&page=0",
-  "sample": {
-    "response_gene": "TSPAN6",
-    "genomic_element": {
-      "chr": "chr1",
-      "start": 167219886,
-      "end": 167221387,
-      "regulator_gene": "POU2F1"
-    },
-    "crispr_modality": "activation",
-    "class": "observed data",
-    "method": "Perturb-seq",
-    "source": "IGVF",
-    "biological_context": "CD8-positive, alpha-beta memory T cell",
-    "files_filesets": "files_filesets/IGVFFI3069QCRA",
-    "score": -0.234479624412565,
-    "p_value": 1
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/gene-regulatory-network?regulator_gene_id=ENSG00000143190+++regulator_gene_name+%3D+POU2F1+++regulator_hgnc_id+%3D+HGNC%3A9212+++regulator_alias+%3D+OCT1+++response_gene_id+%3D+ENSG00000152284+++response_gene_name+%3D+TCF7L1+++response_hgnc_id+%3D+HGNC%3A11640+++response_alias+%3D+TCF3+++p_value+%3D+gte%3A0+++method+%3D+CRISPR+screen+++++++++Group+results+++++regulator_gene_id+%3D+ENSG00000143190+++regulator_gene_name+%3D+POU2F1+++regulator_hgnc_id+%3D+HGNC%3A9212+++regulator_alias+%3D+OCT1+++response_gene_id+%3D+ENSG00000152284+++response_gene_name+%3D+TCF7L1+++response_hgnc_id+%3D+HGNC%3A11640+++response_alias+%3D+TCF3+++p_value+%3D+gte%3A0+++method+%3D+CRISPR+screen+++++++++++Perturb-seq%3A+++++Single+result+++++regulator_gene_id+%3D+ENSG00000143190+++regulator_gene_name+%3D+POU2F1+++regulator_hgnc_id+%3D+HGNC%3A9212+++regulator_alias+%3D+OCT1+++response_gene_id+%3D+ENSG00000123685+++response_gene_name+%3D+BATF3+++response_hgnc_id+%3D+HGNC%3A28915+++response_alias+%3D+BATF3+++p_value+%3D+gte%3A0+++method+%3D+Perturb-seq+++++++++Group+results+++++regulator_gene_id+%3D+ENSG00000143190+++regulator_gene_name+%3D+POU2F1+++regulator_hgnc_id+%3D+HGNC%3A9212+++regulator_alias+%3D+OCT1+++response_gene_id+%3D+ENSG00000123685+++response_gene_name+%3D+BATF3+++response_hgnc_id+%3D+HGNC%3A28915+++response_alias+%3D+BATF3+++p_value+%3D+gte%3A0+++method+%3D+Perturb-seq&page=0",
+  "sample": []
 }

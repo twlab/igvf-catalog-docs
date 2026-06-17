@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/studies?study_id=GCST007798&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/studies?study_id=GCST007798&page=0",
   "sample": {
     "_id": "GCST007798",
     "name": "GCST007798",

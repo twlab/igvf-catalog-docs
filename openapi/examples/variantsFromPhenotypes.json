@@ -1,0 +1,4 @@
+{
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/phenotypes/variants?phenotype_id=EFO_0010325+++method+%3D+GWAS+++++++++Group+results+++++neg_log10_pvalue+%3D+gte%3A5+++method+%3D+GWAS+++++++++++SGE%3A+++++Query+by+phenotype+identifier+++++phenotype_id+%3D+NCIT_C16407+++method+%3D+SGE+++++++++Query+by+files_fileset+++++files_fileset+%3D+IGVFFI3125FMNW+++method+%3D+SGE+++++++++++cV2F%3A+++++query+by+phenotype+identifier+++++phenotype_id+%3D+GO_0003674+++method+%3D+cV2F+++++++++query+by+files_fileset+++++files_fileset+%3D+IGVFFI3063JRLI+++method+%3D+cV2F&page=0",
+  "sample": []
+}

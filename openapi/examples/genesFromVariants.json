@@ -1,23 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/genes?rsid=rs1152591&page=0",
-  "sample": {
-    "gene": "genes/ENSG00000054654",
-    "sequence_variant": "variants/NC_000014.9:64214129:A:G",
-    "effect_size": null,
-    "neg_log10_pvalue": null,
-    "posterior_inclusion_probability": 0.0196484625211173,
-    "standard_error": 0.0416457,
-    "z_score": -5.7890983309083,
-    "credible_set_min_r2": 0.354064079122,
-    "method": "splice_QTL",
-    "source": "EBI",
-    "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/susie/QTS000015/QTD000345/QTD000345.credible_sets.tsv.gz",
-    "label": "splice_QTL",
-    "p_value": 1.86586e-08,
-    "biological_context": "thyroid",
-    "biosample_term": "ontology_terms/UBERON_0002046",
-    "study": "studies/QTS000015",
-    "name": "modulates splicing of",
-    "class": "observed data"
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/genes?spdi=NC_000001.11%3A40241653%3ATGAA%3ATGAAATTGAA+++effect_size+%3D+gte%3A0.3+++method+%3D+eQTL&page=0",
+  "sample": []
 }

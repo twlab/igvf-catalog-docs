@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/proteins/genes?verbose=true&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/proteins/genes?verbose=true&page=0",
   "sample": {
     "gene": {
       "_id": "ENSG00000103064",

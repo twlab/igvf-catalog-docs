@@ -1,27 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/biosamples?variant_id=NC_000001.11%3A14772%3AC%3AT&page=0",
-  "sample": {
-    "variant": "variants/NC_000001.11:14772:C:T",
-    "biosample": "ontology_terms/EFO_0002067",
-    "genomic_element": null,
-    "strand": null,
-    "log2FoldChange": -0.0913484679746221,
-    "DNA_count_ref": 1.51095913772181,
-    "DNA_count_alt": 0,
-    "RNA_count_ref": 1.2467088356913263,
-    "RNA_count_alt": 0,
-    "postProbEffect": 0.276,
-    "CI_lower_95": 0.304441,
-    "CI_upper_95": 1.76998,
-    "significant": false,
-    "neg_log10_pvalue": null,
-    "fdr": null,
-    "label": "variant effect on regulatory element activity",
-    "method": "STARR-seq",
-    "class": "observed data",
-    "source": "IGVF",
-    "source_url": "https://data.igvf.org/tabular-files/IGVFFI4012FKNC/",
-    "name": "modulates expression in",
-    "files_filesets": "files_filesets/IGVFFI4012FKNC"
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/biosamples?spdi=NC_000001.11%3A1000161%3AC%3AA+++method+%3D+MPRA+++++++++query+by+region+++++region+%3D+chr1%3A1000160-1000163&page=0",
+  "sample": []
 }

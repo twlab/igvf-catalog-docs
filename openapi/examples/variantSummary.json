@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/summary?variant_id=NC_000020.11%3A3658947%3AA%3AG",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/summary?variant_id=NC_000020.11%3A3658947%3AA%3AG",
   "sample": {
     "summary": {
       "rsid": [

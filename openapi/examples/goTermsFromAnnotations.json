@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/gene-products/go-terms?query=ENSP00000384707&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/gene-products/go-terms?query=ENSP00000384707&page=0",
   "sample": {
     "gene_product_id": "proteins/ENSP00000384707",
     "gene_product_name": "CTCF",

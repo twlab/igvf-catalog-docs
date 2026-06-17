@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/transcripts?region=chr20%3A9537369-9839076&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/transcripts?region=chr20%3A9537369-9839076&page=0",
   "sample": {
     "_id": "ENST00000428769",
     "transcript_type": "lncRNA",

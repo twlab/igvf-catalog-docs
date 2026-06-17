@@ -1,11 +1,15 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/predictions-count?variant_id=NC_000001.11%3A1628997%3AGGG%3AGG",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/predictions-count?variant_id=NC_000001.11%3A1628997%3AGGG%3AGG",
   "sample": {
-    "cell_types": 261,
+    "cell_types": 262,
     "genes": [
       {
         "gene_name": "CDK11A",
         "id": "genes/ENSG00000008128"
+      },
+      {
+        "gene_name": "NADK",
+        "id": "genes/ENSG00000008130"
       },
       {
         "gene_name": "CFAP74",

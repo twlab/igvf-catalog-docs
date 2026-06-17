@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/drugs?drug_id=PA448497&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/drugs?drug_id=PA448497&page=0",
   "sample": {
     "_id": "PA448497",
     "name": "aspirin",

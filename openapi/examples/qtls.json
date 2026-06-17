@@ -1,36 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/qtls?gene_id=ENSG00000259943&page=0",
-  "sample": {
-    "variant": {
-      "chr": "chr1",
-      "pos": 40206735,
-      "spdi": "NC_000001.11:40206735:G:A",
-      "rsid": [
-        "rs2184905"
-      ],
-      "ca_id": "CA10947570"
-    },
-    "gene": {
-      "name": "ZMPSTE24-DT",
-      "id": "ENSG00000259943"
-    },
-    "protein_complex": null,
-    "genomic_element": null,
-    "source": "EBI",
-    "method": "eQTL",
-    "regulatory_type": null,
-    "gene_consequence": null,
-    "biological_context": "CD4+ TCM cell",
-    "neg_log10_pvalue": null,
-    "effect_size": -0.205247,
-    "posterior_inclusion_probability": 0.00896403766753995,
-    "intron_chr": null,
-    "intron_start": null,
-    "intron_end": null,
-    "study": {
-      "id": "QTS000038",
-      "pmid": "35389779"
-    },
-    "files_filesets": null
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/qtls?spdi=NC_000001.11%3A40241653%3ATGAA%3ATGAAATTGAA+++method+%3D+eQTL+++++++++Group+results+++++gene_id+%3D+ENSG00000259943+++method+%3D+eQTL+++++++++++spliceQTL%3A+++++query+by+variant+identifier+++++variant_id+%3D+NC_000001.11%3A898757%3AAAAAAA%3AAAAAAAA+++method+%3D+spliceQTL+++++++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000131236+++method+%3D+spliceQTL+++++++++++pQTL%3A+++++query+by+variant+identifier+++++variant_id+%3D+NC_000002.12%3A27508072%3AT%3AC+++method+%3D+pQTL+++++++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000084734+++method+%3D+pQTL+++++++++++caQTL%3A+++++Single+result+++++variant_id+%3D+NC_000001.11%3A40241653%3ATGAA%3ATGAAATTGAA+++method+%3D+caQTL+++++++++Group+results+++++region+%3D+chr1%3A40232650-40241654+++method+%3D+caQTL&page=0",
+  "sample": []
 }

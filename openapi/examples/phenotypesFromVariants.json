@@ -1,28 +1,4 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/phenotypes?ca_id=CA10655131&page=0",
-  "sample": {
-    "phenotype_id": "ontology_terms/EFO_0004339",
-    "phenotype_term": "body height",
-    "study": "studies/GCST007841",
-    "neg_log10_pvalue": 11.698970004336019,
-    "p_val": 2e-12,
-    "beta": 0,
-    "beta_ci_lower": 0,
-    "beta_ci_upper": 0,
-    "oddsr_ci_lower": 0,
-    "oddsr_ci_upper": 0,
-    "lead_chrom": "1",
-    "lead_pos": 1023572,
-    "lead_ref": "A",
-    "lead_alt": "G",
-    "direction": "",
-    "source": "OpenTargets",
-    "source_url": "https://data.igvf.org/reference-files/IGVFFI1309WDQG",
-    "class": "observed data",
-    "method": "GWAS",
-    "label": "GWAS",
-    "version": "October 2022 (22.10)",
-    "name": "associated with",
-    "variant": "variants/NC_000001.11:1023572:A:G"
-  }
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/phenotypes?spdi=NC_000001.11%3A5277210%3AG%3AA+++neg_log10_pvalue+%3D+gte%3A5+++method+%3D+GWAS+++++++++query+by+region+++++region+%3D+chr1%3A5277208-5277214+++method+%3D+GWAS+++++++++++SGE%3A+++++query+by+variant+identifier+++++spdi+%3D+NC_000007.14%3A152660654%3AT%3AA+++method+%3D+SGE+++++++++query+by+region+++++region+%3D+chr1%3A5270208-5279214+++method+%3D+SGE+++++++++++cV2F%3A+++++query+by+variant+identifier+++++spdi+%3D+NC_000001.11%3A91420%3AT%3AC+++method+%3D+cV2F+++++++++query+by+region+++++region+%3D+chr1%3A91418-91424+++method+%3D+cV2F&page=0",
+  "sample": []
 }

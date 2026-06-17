@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/complexes?complex_id=CPX-11&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/complexes?complex_id=CPX-11&page=0",
   "sample": {
     "_id": "CPX-11",
     "name": "SMAD2 homotrimer",

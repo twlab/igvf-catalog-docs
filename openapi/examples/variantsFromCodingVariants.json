@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/variants?coding_variant_name=OR4F5_ENST00000641515_p.Gly30Ser_c.88G-A&page=0",
+  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/coding-variants/variants?coding_variant_name=OR4F5_ENST00000641515_p.Gly30Ser_c.88G-A&page=0",
   "sample": {
     "chr": "chr1",
     "pos": 69114,
