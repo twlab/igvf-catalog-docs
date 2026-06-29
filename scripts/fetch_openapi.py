@@ -9,7 +9,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from openapi_utils import load_config, load_spec_from_swagger_init, normalize_openapi_spec  # noqa: E402
+from openapi_utils import (  # noqa: E402
+    assign_operation_summaries,
+    load_config,
+    load_spec_from_swagger_init,
+    normalize_openapi_spec,
+)
 
 
 def main() -> int:
@@ -22,6 +27,7 @@ def main() -> int:
     url = cfg["swagger_init_url"]
     spec = load_spec_from_swagger_init(url)
     spec = normalize_openapi_spec(spec)
+    spec = assign_operation_summaries(spec)
 
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)

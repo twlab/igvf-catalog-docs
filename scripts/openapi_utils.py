@@ -10,6 +10,55 @@ from typing import Any
 BR_TAG_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
 WHITESPACE_RE = re.compile(r"[ \t]+")
 
+HTTP_METHODS = ("get", "post", "put", "delete", "patch", "options", "head")
+
+# Expand or fix the casing of path words that don't title-case cleanly.
+TITLE_WORD_OVERRIDES = {
+    "freq": "Frequency",
+    "ld": "Linkage Disequilibrium",
+    "qtl": "QTL",
+    "qtls": "QTLs",
+    "go": "GO",
+    "gnomad": "gnomAD",
+    "llm": "LLM",
+    "id": "ID",
+    "ids": "IDs",
+}
+
+
+def _title_word(word: str) -> str:
+    return TITLE_WORD_OVERRIDES.get(word.lower(), word.capitalize())
+
+
+def title_from_path(path: str) -> str:
+    """Build a human-readable English title from an API path.
+
+    Path parameters (``{...}`` segments) are skipped, remaining segments are
+    split on hyphens and title-cased, e.g. ``/variants/freq`` -> "Variants
+    Frequency".
+    """
+    words: list[str] = []
+    for segment in path.split("/"):
+        if not segment or segment.startswith("{"):
+            continue
+        for part in segment.split("-"):
+            if part:
+                words.append(_title_word(part))
+    return " ".join(words)
+
+
+def assign_operation_summaries(spec: dict[str, Any]) -> dict[str, Any]:
+    """Set a readable ``summary`` (page title) on each operation lacking one."""
+    for path, operations in (spec.get("paths") or {}).items():
+        if not isinstance(operations, dict):
+            continue
+        for method, operation in operations.items():
+            if method.lower() not in HTTP_METHODS or not isinstance(operation, dict):
+                continue
+            if not operation.get("summary"):
+                operation["summary"] = title_from_path(path)
+    return spec
+
 
 def normalize_html_description(text: str) -> str:
     """Convert Swagger HTML line breaks to Markdown-friendly paragraphs."""

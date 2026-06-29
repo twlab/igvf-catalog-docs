@@ -355,7 +355,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants"
       }
     },
     "/variants/freq": {
@@ -736,7 +737,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Frequency"
       }
     },
     "/variants/genes": {
@@ -1475,7 +1477,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Genes"
       }
     },
     "/variants/drugs": {
@@ -1718,7 +1721,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Drugs"
       }
     },
     "/variants/summary": {
@@ -1912,7 +1916,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Summary"
       }
     },
     "/variants/proteins": {
@@ -2452,7 +2457,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Proteins"
       }
     },
     "/variants/diseases": {
@@ -2718,7 +2724,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Diseases"
       }
     },
     "/variants/variant-ld": {
@@ -3170,7 +3177,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Variant Linkage Disequilibrium"
       }
     },
     "/variants/phenotypes": {
@@ -3738,7 +3746,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Phenotypes"
       }
     },
     "/variants/biosamples": {
@@ -4301,7 +4310,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Biosamples"
       }
     },
     "/variants/predictions": {
@@ -4490,7 +4500,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Predictions"
       }
     },
     "/variants/genes/summary": {
@@ -4651,7 +4662,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Genes Summary"
       }
     },
     "/variants/nearest-genes": {
@@ -4762,7 +4774,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Nearest Genes"
       }
     },
     "/variants/genes-proteins": {
@@ -5033,7 +5046,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Genes Proteins"
       }
     },
     "/variants/region-summary": {
@@ -5093,7 +5107,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Region Summary"
       }
     },
     "/variants/gnomad-alleles": {
@@ -5145,7 +5160,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants gnomAD Alleles"
       }
     },
     "/variants/coding-variants": {
@@ -5376,7 +5392,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Coding Variants"
       }
     },
     "/variants/genomic-elements": {
@@ -5647,7 +5664,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Genomic Elements"
       }
     },
     "/variants/predictions-count": {
@@ -5721,7 +5739,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Predictions Count"
       }
     },
     "/variants/variant-ld/summary": {
@@ -5985,7 +6004,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Variant Linkage Disequilibrium Summary"
       }
     },
     "/variants/phenotypes/score-summary": {
@@ -6070,7 +6090,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Phenotypes Score Summary"
       }
     },
     "/variants/genomic-elements/cell-gene-predictions": {
@@ -6234,7 +6255,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Variants Genomic Elements Cell Gene Predictions"
       }
     },
     "/coding-variants": {
@@ -6528,7 +6550,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Coding Variants"
       }
     },
     "/coding-variants/variants": {
@@ -6702,7 +6725,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Coding Variants Variants"
       }
     },
     "/coding-variants/phenotypes": {
@@ -6951,7 +6975,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Coding Variants Phenotypes"
       }
     },
     "/coding-variants/phenotypes-count": {
@@ -7006,7 +7031,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Coding Variants Phenotypes Count"
       }
     },
     "/coding-variants/phenotypes/score-summary": {
@@ -7091,7 +7117,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Coding Variants Phenotypes Score Summary"
       }
     },
     "/genes": {
@@ -7372,7 +7399,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes"
       }
     },
     "/genes/genes": {
@@ -7847,7 +7875,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Genes"
       }
     },
     "/genes/proteins": {
@@ -8118,7 +8147,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Proteins"
       }
     },
     "/genes/variants": {
@@ -8841,7 +8871,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Variants"
       }
     },
     "/genes/diseases": {
@@ -9194,7 +9225,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Diseases"
       }
     },
     "/genes/pathways": {
@@ -9466,7 +9498,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Pathways"
       }
     },
     "/genes-structure": {
@@ -9674,7 +9707,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Structure"
       }
     },
     "/genes/transcripts": {
@@ -9943,7 +9977,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Transcripts"
       }
     },
     "/genes/genomic-elements": {
@@ -10270,7 +10305,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Genomic Elements"
       }
     },
     "/genes-proteins/variants": {
@@ -10541,7 +10577,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Proteins Variants"
       }
     },
     "/genes/coding-variants/scores": {
@@ -10766,7 +10803,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Coding Variants Scores"
       }
     },
     "/genes-proteins/genes-proteins": {
@@ -10956,7 +10994,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Proteins Genes Proteins"
       }
     },
     "/genes/coding-variants/all-scores": {
@@ -11029,7 +11068,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genes Coding Variants All Scores"
       }
     },
     "/gene-products/go-terms": {
@@ -11152,7 +11192,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Gene Products GO Terms"
       }
     },
     "/transcripts": {
@@ -11333,7 +11374,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Transcripts"
       }
     },
     "/transcripts/genes": {
@@ -11642,7 +11684,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Transcripts Genes"
       }
     },
     "/transcripts/proteins": {
@@ -11944,7 +11987,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Transcripts Proteins"
       }
     },
     "/proteins": {
@@ -12110,7 +12154,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins"
       }
     },
     "/proteins/genes": {
@@ -12389,7 +12434,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Genes"
       }
     },
     "/proteins/motifs": {
@@ -12723,7 +12769,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Motifs"
       }
     },
     "/proteins/variants": {
@@ -13255,7 +13302,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Variants"
       }
     },
     "/proteins/proteins": {
@@ -14211,7 +14259,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Proteins"
       }
     },
     "/proteins/complexes": {
@@ -14535,7 +14584,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Complexes"
       }
     },
     "/proteins/transcripts": {
@@ -14805,7 +14855,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Proteins Transcripts"
       }
     },
     "/genomic-elements": {
@@ -14991,7 +15042,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genomic Elements"
       }
     },
     "/genomic-elements/genes": {
@@ -15330,7 +15382,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genomic Elements Genes"
       }
     },
     "/genomic-elements/variants": {
@@ -15572,7 +15625,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genomic Elements Variants"
       }
     },
     "/genomic-elements/biosamples": {
@@ -15842,7 +15896,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Genomic Elements Biosamples"
       }
     },
     "/diseases/genes": {
@@ -16178,7 +16233,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Diseases Genes"
       }
     },
     "/diseases/variants": {
@@ -16412,7 +16468,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Diseases Variants"
       }
     },
     "/phenotypes/variants": {
@@ -16952,7 +17009,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Phenotypes Variants"
       }
     },
     "/phenotypes/coding-variants": {
@@ -17169,7 +17227,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Phenotypes Coding Variants"
       }
     },
     "/ontology-terms": {
@@ -17315,7 +17374,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Ontology Terms"
       }
     },
     "/ontology-terms/{ontology_term_id}/parents": {
@@ -17426,7 +17486,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Ontology Terms Parents"
       }
     },
     "/ontology-terms/{ontology_term_id}/children": {
@@ -17537,7 +17598,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Ontology Terms Children"
       }
     },
     "/ontology-terms/{ontology_term_id_start}/transitive-closure/{ontology_term_id_end}": {
@@ -17651,7 +17713,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Ontology Terms Transitive Closure"
       }
     },
     "/go-terms/gene-products": {
@@ -17774,7 +17837,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "GO Terms Gene Products"
       }
     },
     "/motifs": {
@@ -17891,7 +17955,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Motifs"
       }
     },
     "/motifs/proteins": {
@@ -18205,7 +18270,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Motifs Proteins"
       }
     },
     "/studies": {
@@ -18362,7 +18428,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Studies"
       }
     },
     "/complexes": {
@@ -18493,7 +18560,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Complexes"
       }
     },
     "/complexes/proteins": {
@@ -18801,7 +18869,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Complexes Proteins"
       }
     },
     "/drugs": {
@@ -18887,7 +18956,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Drugs"
       }
     },
     "/drugs/variants": {
@@ -19285,7 +19355,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Drugs Variants"
       }
     },
     "/qtls": {
@@ -19622,7 +19693,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "QTLs"
       }
     },
     "/health": {
@@ -19653,7 +19725,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Health"
       }
     },
     "/pathways": {
@@ -19821,7 +19894,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Pathways"
       }
     },
     "/llm-query": {
@@ -19896,7 +19970,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "LLM Query"
       }
     },
     "/autocomplete": {
@@ -19960,7 +20035,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Autocomplete"
       }
     },
     "/pathways/genes": {
@@ -20240,7 +20316,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Pathways Genes"
       }
     },
     "/files-filesets": {
@@ -20631,7 +20708,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Files Filesets"
       }
     },
     "/pathways/pathways": {
@@ -20891,7 +20969,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Pathways Pathways"
       }
     },
     "/biosamples/variants": {
@@ -21422,7 +21501,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Biosamples Variants"
       }
     },
     "/gene-regulatory-network": {
@@ -21641,7 +21721,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Gene Regulatory Network"
       }
     },
     "/enhancer-gene-predictions": {
@@ -21879,7 +21960,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Enhancer Gene Predictions"
       }
     },
     "/biosamples/genomic-elements": {
@@ -22148,7 +22230,8 @@
           "default": {
             "$ref": "#/components/responses/error"
           }
-        }
+        },
+        "summary": "Biosamples Genomic Elements"
       }
     }
   },
