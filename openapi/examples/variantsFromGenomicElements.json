@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/genomic-elements/variants?region=chr1%3A976210-976314&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genomic-elements/variants?region=chr1%3A976210-976314&page=0",
   "sample": {
     "variant": {
       "chr": "chr1",

@@ -791,6 +791,12 @@
       "error": "fetch_failed"
     },
     {
+      "accession": "IGVFFI3412RLDF",
+      "portal": "igvf",
+      "portal_link": "https://data.igvf.org/IGVFFI3412RLDF",
+      "error": "fetch_failed"
+    },
+    {
       "accession": "IGVFFI4012FKNC",
       "portal": "igvf",
       "portal_link": "https://data.igvf.org/IGVFFI4012FKNC",
@@ -977,5 +983,5 @@
       "error": "fetch_failed"
     }
   ],
-  "count": 136
+  "count": 137
 }

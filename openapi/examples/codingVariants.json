@@ -1,19 +1,19 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/coding-variants?name=OR4F5_ENST00000641515_p.Met1%21_c.1A-C&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants?name=SAMD7_ENST00000335556_p.Gly253Asp_c.758_759delinsAC&page=0",
   "sample": {
-    "name": "OR4F5_ENST00000641515_p.Met1?_c.1A>C",
-    "_id": "OR4F5_ENST00000641515_p.Met1!_c.1A-C",
-    "ref": "M",
-    "alt": "L",
-    "protein_name": "A0A2U3U0J3_HUMAN",
-    "protein_id": "ENSP00000493376",
-    "gene_name": "OR4F5",
-    "transcript_id": "ENST00000641515",
-    "aapos": 1,
-    "hgvsp": "p.Met1?",
-    "hgvsc": "c.1A>C",
-    "refcodon": "ATG",
-    "codonpos": 1,
+    "name": "SAMD7_ENST00000335556_p.Gly253Asp_c.758_759delinsAC",
+    "_id": "SAMD7_ENST00000335556_p.Gly253Asp_c.758_759delinsAC",
+    "ref": "G",
+    "alt": "D",
+    "protein_name": "SAMD7_HUMAN",
+    "protein_id": "ENSP00000334668",
+    "gene_name": "SAMD7",
+    "transcript_id": "ENST00000335556",
+    "aapos": 253,
+    "hgvsp": "p.Gly253Asp",
+    "hgvsc": "c.758_759delinsAC",
+    "refcodon": "GGA",
+    "codonpos": 2,
     "SIFT_score": null,
     "SIFT4G_score": null,
     "Polyphen2_HDIV_score": null,
@@ -31,6 +31,6 @@
     "AlphaMissense_score": null,
     "CADD_raw_score": null,
     "source": "IGVF",
-    "source_url": "https://data.igvf.org/tabular-files/IGVFFI8105TNNO"
+    "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA"
   }
 }

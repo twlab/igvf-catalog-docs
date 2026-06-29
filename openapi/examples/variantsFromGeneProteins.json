@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/genes-proteins/variants?query=ATF1&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes-proteins/variants?query=ATF1&page=0",
   "sample": {
     "sequence_variant": {
       "_id": "NC_000001.11:100018596:G:A",

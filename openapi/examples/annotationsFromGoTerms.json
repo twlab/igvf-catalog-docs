@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/go-terms/gene-products?go_term_id=GO_1990590&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/go-terms/gene-products?go_term_id=GO_1990590&page=0",
   "sample": {
     "gene_product_id": "proteins/ENSP00000262053",
     "gene_product_name": "ATF1",

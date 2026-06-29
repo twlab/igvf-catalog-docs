@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/variants/variant-ld?rsid=rs60960132&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/variant-ld?rsid=rs60960132&page=0",
   "sample": {
     "chr": "chr11",
     "ancestry": "EUR",

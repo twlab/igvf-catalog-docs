@@ -14,8 +14,8 @@ Documentation for the [IGVF Catalog](https://catalog.igvf.org) data model, UI, R
 
 Documentation currently targets the **development** API:
 
-- Base URL: `https://catalog-api-dserv-1293-example.demo.igvf.org/api`
-- Swagger UI: https://catalog-api-dserv-1293-example.demo.igvf.org/
+- Base URL: `https://catalog-api-dev.demo.igvf.org/api`
+- Swagger UI: https://catalog-api-dev.demo.igvf.org/
 
 Configuration: [`openapi/config.json`](openapi/config.json)
 

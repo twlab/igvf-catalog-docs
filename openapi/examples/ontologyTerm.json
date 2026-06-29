@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/ontology-terms?term_id=Orphanet_101435&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/ontology-terms?term_id=Orphanet_101435&page=0",
   "sample": {
     "uri": "http://www.orpha.net/ORDO/Orphanet_101435",
     "term_id": "Orphanet_101435",

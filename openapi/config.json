@@ -1,7 +1,7 @@
 {
-  "swagger_init_url": "https://catalog-api-dserv-1293-example.demo.igvf.org/swagger-ui-init.js",
-  "api_base_url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api",
-  "swagger_ui_url": "https://catalog-api-dserv-1293-example.demo.igvf.org/",
-  "label": "Development (DSERV-1293 example)",
-  "banner": "This documentation targets the DSERV-1293 example Catalog API. The production base URL will replace this configuration in a future release."
+  "swagger_init_url": "https://catalog-api-dev.demo.igvf.org/swagger-ui-init.js",
+  "api_base_url": "https://catalog-api-dev.demo.igvf.org/api",
+  "swagger_ui_url": "https://catalog-api-dev.demo.igvf.org/",
+  "label": "Development (demo)",
+  "banner": "This documentation targets the development Catalog API. The production base URL will replace this configuration in a future release."
 }

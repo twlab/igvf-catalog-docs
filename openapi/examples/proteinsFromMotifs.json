@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/motifs/proteins?verbose=true&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/motifs/proteins?verbose=true&page=0",
   "sample": {
     "source": "HOCOMOCOv11",
     "protein": {

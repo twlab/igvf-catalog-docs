@@ -1106,13 +1106,6 @@
         },
         {
           "adapter": "encode_E2G_CRISPR_adapter.py",
-          "arango_or_api_field": "log10pvalue",
-          "adapter_expression": "log10pvalue",
-          "portal_column": "",
-          "notes": ""
-        },
-        {
-          "adapter": "encode_E2G_CRISPR_adapter.py",
           "arango_or_api_field": "class",
           "adapter_expression": "(computed)",
           "portal_column": "",
@@ -1697,20 +1690,6 @@
     },
     "igvf_E2G_CRISPR_adapter.py": {
       "mappings": [
-        {
-          "adapter": "igvf_E2G_CRISPR_adapter.py",
-          "arango_or_api_field": "effect_size",
-          "adapter_expression": "name_to_idx[...]",
-          "portal_column": "",
-          "notes": ""
-        },
-        {
-          "adapter": "igvf_E2G_CRISPR_adapter.py",
-          "arango_or_api_field": "p_value",
-          "adapter_expression": "(computed)",
-          "portal_column": "",
-          "notes": ""
-        },
         {
           "adapter": "igvf_E2G_CRISPR_adapter.py",
           "arango_or_api_field": "source",

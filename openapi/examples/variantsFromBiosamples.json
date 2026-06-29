@@ -1,4 +1,4 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/biosamples/variants?biosample_id=EFO_0001182+++method+%3D+MPRA+++element_id+%3D+MPRA_chr1_1000079_1000279_GRCh38_plus_IGVFFI7321WGMD+++significant+%3D+true+++++++++++STARR-seq%3A+++++query+by+biosample+identifier+++++biosample_id+%3D+EFO_0002067+++method+%3D+STARR-seq+++++++++++BlueSTARR%3A+++++query+by+biosample+identifier+++++biosample_id+%3D+EFO_0002067+++method+%3D+BlueSTARR&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/biosamples/variants?biosample_id=EFO_0001182+++method+%3D+MPRA+++element_id+%3D+MPRA_chr1_1000079_1000279_GRCh38_plus_IGVFFI7321WGMD+++significant+%3D+true+++++++++++STARR-seq%3A+++++query+by+biosample+identifier++++++biosample_id+%3D+EFO_0002067+++method+%3D+STARR-seq+++++++++++BlueSTARR%3A+++++query+by+biosample+identifier++++++biosample_id+%3D+EFO_0002067+++method+%3D+BlueSTARR&page=0",
   "sample": []
 }

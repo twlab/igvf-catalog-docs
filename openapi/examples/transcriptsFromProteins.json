@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/proteins/transcripts?verbose=true&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/proteins/transcripts?verbose=true&page=0",
   "sample": {
     "source": "GENCODE",
     "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",

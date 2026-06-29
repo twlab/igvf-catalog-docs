@@ -1,5 +1,5 @@
 {
-  "url": "https://catalog-api-dserv-1293-example.demo.igvf.org/api/genes/coding-variants/scores?gene_name=ACSF3+++method+%3D+DUAL-IPA+++++++++++ESM-1v%3A+++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000121410+++method+%3D+ESM-1v+++++++++++MutPred2%3A+++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000196584+++method+%3D+MutPred2+++++++++++SGE%3A+++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000139618+++method+%3D+SGE+++++++++++VAMP-seq%3A+++++query+by+gene+identifier+++++gene_id+%3D+ENSG00000165841+++method+%3D+VAMP-seq&page=0",
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes/coding-variants/scores?gene_name=ACSF3+++method+%3D+DUAL-IPA+++++++++++ESM-1v%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000121410+++method+%3D+ESM-1v+++++++++++MutPred2%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000196584+++method+%3D+MutPred2+++++++++++SGE%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000139618+++method+%3D+SGE+++++++++++VAMP-seq%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000165841+++method+%3D+VAMP-seq&page=0",
   "sample": {
     "protein_change": {
       "protein_id": "ENSP00000320646",
