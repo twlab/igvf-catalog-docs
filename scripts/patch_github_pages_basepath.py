@@ -20,8 +20,8 @@ from pathlib import Path
 TEXT_EXTENSIONS = {".html", ".js", ".css", ".json", ".xml", ".txt"}
 HEAD_INJECT_MARKER = "data-igvf-static-export"
 
-# Force full page loads on static GitHub Pages (no RSC server).
-STATIC_HOSTING_SCRIPT = """<script data-igvf-static-export="1">(function(){var B="/__BASE_PATH__";document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.hasAttribute("download"))return;var tgt=a.getAttribute("target");if(tgt&&tgt!=="_self")return;var href=a.getAttribute("href");if(!href||href.charAt(0)==="#"||/^(mailto:|tel:|javascript:)/i.test(href))return;var u;try{u=new URL(href,location.href)}catch(_){return}if(u.origin!==location.origin)return;if(u.pathname===B||u.pathname.indexOf(B+"/")===0){e.preventDefault();e.stopImmediatePropagation();location.assign(u.href)}},true)})();</script>"""
+# Force full page loads + fix client-side router paths on static GitHub Pages.
+STATIC_HOSTING_SCRIPT = """<script data-igvf-static-export="1">(function(){var B="/__BASE_PATH__";var ROOTS=["/api-reference","/introduction","/using-search","/nodes","/region","/data-sources"];function needsBase(p){if(!p||p===B||p.indexOf(B+"/")===0)return false;for(var i=0;i<ROOTS.length;i++){var r=ROOTS[i];if(p===r||p.indexOf(r+"/")===0)return true}return false}function withBase(path){return needsBase(path)?B+path:path}function fixHref(href){try{var u=new URL(href,location.href);if(u.origin!==location.origin)return href;u.pathname=withBase(u.pathname);return u.pathname+u.search+u.hash}catch(_){return href}}if(needsBase(location.pathname))location.replace(withBase(location.pathname)+location.search+location.hash);["pushState","replaceState"].forEach(function(m){var o=history[m];history[m]=function(s,t,u){if(typeof u==="string")u=fixHref(u);return o.apply(this,arguments.length===1?[s]:arguments.length===2?[s,t]:[s,t,u])}});function onNav(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.hasAttribute("download"))return;var tgt=a.getAttribute("target");if(tgt&&tgt!=="_self")return;var href=a.getAttribute("href");if(!href||href.charAt(0)==="#"||/^(mailto:|tel:|javascript:)/i.test(href))return;var u;try{u=new URL(href,location.href)}catch(_){return}if(u.origin!==location.origin)return;if(needsBase(u.pathname)){e.preventDefault();e.stopImmediatePropagation();location.assign(withBase(u.pathname)+u.search+u.hash);return}if(u.pathname===B||u.pathname.indexOf(B+"/")===0){e.preventDefault();e.stopImmediatePropagation();location.assign(u.href)}}document.addEventListener("click",onNav,true);document.addEventListener("pointerdown",onNav,true)})();</script>"""
 
 ROUTER_BASE_RE = re.compile(r'var b=""')
 
@@ -79,6 +79,18 @@ def patch_js(content: str, base_path: str) -> str:
     return _patch_quoted_prefixes(content, base_path, JS_PREFIXES)
 
 
+def _patch_rsc_nav_hrefs(content: str, base_path: str) -> str:
+    """Prefix internal nav hrefs in embedded RSC JSON (client router uses these)."""
+    base_path = _normalize_base_path(base_path)
+    pattern = re.compile(rf'\\"href\\":\\"(?!{re.escape(base_path)})(/[^\\]+)\\"')
+
+    def repl(match: re.Match[str]) -> str:
+        path = match.group(1)
+        return f'\\"href\\":\\"{base_path}{path}\\"'
+
+    return pattern.sub(repl, content)
+
+
 def patch_html(content: str, base_path: str) -> str:
     base_path = _normalize_base_path(base_path)
 
@@ -87,6 +99,7 @@ def patch_html(content: str, base_path: str) -> str:
     # Only rewrite JS chunk URLs inside inline RSC payloads — not nav href strings.
     content = content.replace('"/_next/', f'"{base_path}/_next/')
     content = content.replace('\\"/_next/', f'\\"{base_path}/_next/')
+    content = _patch_rsc_nav_hrefs(content, base_path)
     return inject_static_hosting_script(content, base_path)
 
 
