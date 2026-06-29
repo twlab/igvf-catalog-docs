@@ -5,10 +5,12 @@ from __future__ import annotations
 import json
 import re
 import urllib.request
+from html.parser import HTMLParser
 from typing import Any
 
-BR_TAG_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
-WHITESPACE_RE = re.compile(r"[ \t]+")
+# Matches real HTML tags (e.g. <div ...>, </p>, <br/>) but not bare "<"/"<="
+# that appear in descriptions (e.g. "lt (<), lte (<=)").
+HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>]*>")
 
 HTTP_METHODS = ("get", "post", "put", "delete", "patch", "options", "head")
 
@@ -60,14 +62,73 @@ def assign_operation_summaries(spec: dict[str, Any]) -> dict[str, Any]:
     return spec
 
 
+# Inline tags wrap their text content with the given Markdown markers.
+_INLINE_WRAP = {"strong": "**", "b": "**", "em": "*", "i": "*", "code": "`"}
+# Tags whose content is dropped entirely (interactive tab buttons can't work in
+# static docs and merely duplicate the panel headings below them).
+_DROP_TAGS = {"button"}
+# Tags that introduce a block (paragraph) boundary.
+_BLOCK_TAGS = {"p", "div", "ul", "ol"}
+
+
+class _HtmlToMarkdown(HTMLParser):
+    """Convert the small subset of HTML used in Swagger descriptions to Markdown."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self._out: list[str] = []
+        self._skip = 0
+
+    def handle_starttag(self, tag: str, attrs: list[Any]) -> None:
+        if self._skip:
+            self._skip += 1
+            return
+        if tag in _DROP_TAGS:
+            self._skip = 1
+        elif tag in _INLINE_WRAP:
+            self._out.append(_INLINE_WRAP[tag])
+        elif tag in _BLOCK_TAGS:
+            self._out.append("\n\n")
+        elif tag == "li":
+            self._out.append("\n- ")
+        elif tag == "br":
+            self._out.append("\n\n")
+
+    def handle_startendtag(self, tag: str, attrs: list[Any]) -> None:
+        if not self._skip and tag == "br":
+            self._out.append("\n\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._skip:
+            self._skip -= 1
+            return
+        if tag in _INLINE_WRAP:
+            self._out.append(_INLINE_WRAP[tag])
+        elif tag in _BLOCK_TAGS:
+            self._out.append("\n\n")
+
+    def handle_data(self, data: str) -> None:
+        if self._skip:
+            return
+        # Collapse runs of whitespace but keep existing blank-line paragraph breaks.
+        parts = [re.sub(r"\s+", " ", part) for part in re.split(r"\n[ \t]*\n", data)]
+        self._out.append("\n\n".join(parts))
+
+    def result(self) -> str:
+        text = "".join(self._out)
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r" *\n *", "\n", text)
+        text = re.sub(r"\n{3,}", "\n\n", text)
+        return text.strip()
+
+
 def normalize_html_description(text: str) -> str:
-    """Convert Swagger HTML line breaks to Markdown-friendly paragraphs."""
-    if not text or "<br" not in text.lower():
+    """Convert HTML in a Swagger description to Markdown so it renders, not escapes."""
+    if not text or not HTML_TAG_RE.search(text):
         return text
-    text = BR_TAG_RE.sub("\n", text)
-    lines = [WHITESPACE_RE.sub(" ", line).strip() for line in text.split("\n")]
-    lines = [line for line in lines if line]
-    return "\n\n".join(lines)
+    parser = _HtmlToMarkdown()
+    parser.feed(text)
+    return parser.result()
 
 
 def normalize_openapi_spec(spec: dict[str, Any]) -> dict[str, Any]:
