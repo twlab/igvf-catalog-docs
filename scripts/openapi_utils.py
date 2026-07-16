@@ -122,13 +122,30 @@ class _HtmlToMarkdown(HTMLParser):
         return text.strip()
 
 
+# MDX treats "<" and "{" as the start of JSX/expressions. When a description
+# contains them as literal text (e.g. "lt (<), lte (<=)"), MDX fails to compile
+# and Mintlify silently drops the entire description. Escape them outside of
+# inline code spans so they render literally.
+_MDX_SPECIALS_RE = re.compile(r"[<{]")
+_CODE_SPAN_RE = re.compile(r"(`+[^`]*`+)")
+
+
+def _escape_mdx_specials(text: str) -> str:
+    parts = _CODE_SPAN_RE.split(text)
+    for i in range(0, len(parts), 2):  # even indices are outside code spans
+        parts[i] = _MDX_SPECIALS_RE.sub(lambda m: "\\" + m.group(0), parts[i])
+    return "".join(parts)
+
+
 def normalize_html_description(text: str) -> str:
-    """Convert HTML in a Swagger description to Markdown so it renders, not escapes."""
-    if not text or not HTML_TAG_RE.search(text):
+    """Convert HTML in a Swagger description to Markdown and make it MDX-safe."""
+    if not text:
         return text
-    parser = _HtmlToMarkdown()
-    parser.feed(text)
-    return parser.result()
+    if HTML_TAG_RE.search(text):
+        parser = _HtmlToMarkdown()
+        parser.feed(text)
+        text = parser.result()
+    return _escape_mdx_specials(text)
 
 
 def normalize_openapi_spec(spec: dict[str, Any]) -> dict[str, Any]:

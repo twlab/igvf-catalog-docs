@@ -18,7 +18,7 @@
   "api": {
     "openapi": "openapi/catalog-dev.openapi.json",
     "playground": {
-      "display": "interactive"
+      "display": "none"
     },
     "examples": {
       "languages": ["curl", "python", "javascript"],
