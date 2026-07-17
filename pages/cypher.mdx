@@ -1,0 +1,17 @@
+---
+title: 'Cypher Query Runner'
+icon: 'terminal'
+---
+
+# `/cypher`
+
+The Cypher Query Runner is a power-user surface over the GLKB graph. It sends arbitrary Cypher to `others/_cypher_query` and displays the raw JSON response so advanced users can prototype questions before they harden them into catalog features.
+
+## Running Queries
+- The editor is preloaded with `MATCH (g:Gene) RETURN g.symbol, g.description LIMIT 5`, which is the same style of query used by the GLKB explorers.
+- Submitting executes the query in either **GET** (query string) or **POST** (JSON body) mode. Both routes hit the same API but let you work around URL length constraints.
+- Errors from the remote service bubble up through a destructive alert with the HTTP status and body for debugging.
+
+## Reading Results
+- Successful responses are shown as formatted JSON so you can inspect node labels, edge properties, or aggregation tables produced by the query.
+- Because the results are untouched, you can copy them straight into analysis notebooks or share them with data engineers when reporting issues, keeping experimentation tied to the same production graph that powers the catalog.

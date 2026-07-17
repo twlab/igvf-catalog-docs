@@ -1,0 +1,20 @@
+---
+title: 'Lexical Search'
+icon: 'search'
+---
+
+# `/lexical`
+
+The Lexical Search page fans out from a single query into multiple literature-oriented entry points that are anchored back to IGVF Catalog entities. Every query is sent to the [GLKB API](https://glkb.dcmb.med.umich.edu/api), and the results surface identifiers the catalog already understands (PubMed IDs, ontology terms, and MeSH concepts).
+
+## Query Modes
+- **Lexical** calls `search/lexical_search` and ranks PubMed articles that match the query. Each hit renders a PMID card and enriches the metadata with PubMed's E-utilities summary so you can immediately open `/PMID:*` pages inside the catalog.
+- **Semantic** calls `search/semantic_search` with either `sentence` or `abstract` scope, returning text snippets plus supporting PMIDs. Those PMIDs again link into catalog article pages, keeping discovery tied to curated biomedical metadata.
+- **Entity Name** calls `search/entity_name_search` to resolve catalog vocabulary entities (Gene, Chemical, Disease, Variant, MeSH, Vocabulary, or All). Results expose the canonical label and description, and provide outbound MeSH links when applicable.
+
+## Interaction Details
+- The toolbar lets you tune the result limit, semantic level, or entity type before results load.
+- Navigation links route directly to `/lookup`, `/browse`, and `/cypher`, which reuse the same GLKB back end for downstream exploration.
+- All result cards use catalog-aware links so selecting a PMID or ontology identifier takes you straight to the corresponding IGVF node view.
+
+Together these links collapse the gap between text mining and follow-up analysis: you can start from a disease term or gene symbol, then jump into the IGVF knowledge graph to inspect curated node data without leaving the catalog.

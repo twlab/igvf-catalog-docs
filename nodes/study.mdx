@@ -1,0 +1,21 @@
+---
+title: 'Study'
+icon: 'beaker'
+---
+
+# Study Nodes
+
+Study nodes wrap GWAS-style metadata fetched from OpenTargets. The current implementation focuses on exposing study identifiers and provenance so downstream tooling can consume the catalogue entry.
+
+## Metadata Shell
+- The node shell displays the study accession as the title (e.g., `NEALE_50_raw`) with default summary chips and external-link slots populated from the raw record.
+- Studies typically appear when traversing related tables (for example, from disease or variant associations) because a direct fetcher is still under development.
+
+## Data Availability
+- Page data tables are not wired yet, so the detail view prioritises the summary strip plus external source attribution.
+- Adjacency lookups are also stubbed, signalling that graph edges will surface in a future iteration.
+
+## External Sources
+- Attribution points to OpenTargets' GWAS studies catalogue, reflecting the underlying JSON feed that seeded the IGVF record.
+
+Even in this lightweight state the node keeps a routable placeholder so links from other pages remain live while richer study content is under development.

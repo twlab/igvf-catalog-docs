@@ -1,0 +1,17 @@
+---
+title: 'Home'
+icon: 'home'
+---
+
+# `/`
+
+The home view is the primary launch point for the IGVF Catalog. It keeps the search bar and the partner app catalog in one scrollable surface so researchers can jump from a single query into whatever exploration tool they need next.
+
+## Main Search Bar
+- The hero search component mirrors the autocomplete behaviour documented on `/search`. It inspects the query locally to route known identifiers directly to `/[node_id]`, interprets genomic coordinates as `/region/{coordinates}`, and exposes slash commands such as `/lexical`.
+- Autocomplete suggestions originate from the catalog's autocomplete service and are grouped by entity type (genes, proteins, variants, diseases, PMIDs, pathways, ontology terms, drugs, transcripts, studies). Selecting a result stores it in local search history and navigates immediately to the relevant catalog page.
+- A quick scroll-to-top affordance briefly highlights the search box so users can start another query without scanning the page.
+
+## Catalog Apps Grid
+- Scrolling to the bottom reveals curated IGVF partner links (e.g., FAVOR, MaveDB, Lipids Knowledge Portal, E2G, and the IGVF Data Portal). These links open in new tabs so users can reference external resources alongside the catalog.
+- Selecting the IGVF Catalog tile simply returns to the top of the page, reinforcing the search-first workflow and keeping the search bar as the centre of gravity for jumping between IGVF summaries and external analysis tools.

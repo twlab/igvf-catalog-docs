@@ -38,16 +38,41 @@
             "group": "Nodes",
             "pages": [
               "nodes/gene",
+              "nodes/transcript",
               "nodes/variant",
               "nodes/protein",
-              "nodes/transcript",
+              "nodes/motif",
+              "nodes/phenotype",
+              "nodes/drug",
+              "nodes/pathway",
+              "nodes/go-term",
+              "nodes/complex",
+              "nodes/pmid",
+              "nodes/ontologies",
               "nodes/disease",
-              "nodes/ontologies"
+              "nodes/study",
+              "nodes/region"
             ]
           },
           {
             "group": "Regions",
-            "pages": ["region/region-page", "region/variant-dashboard"]
+            "pages": ["region/variant-dashboard", "region/ancestry"]
+          },
+          {
+            "group": "Catalog Pages",
+            "pages": [
+              "pages/home",
+              "pages/search",
+              "pages/lexical",
+              "pages/browse",
+              "pages/apps",
+              "pages/cypher",
+              "pages/files",
+              "pages/chat",
+              "pages/glossary",
+              "pages/sources",
+              "pages/settings"
+            ]
           },
           {
             "group": "Data Sources",

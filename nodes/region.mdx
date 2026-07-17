@@ -1,9 +1,9 @@
 ---
-title: 'View Region'
-icon: 'map'
+title: 'Region'
+icon: 'anchor'
 ---
 
-# Genomic Elements
+## Overview
 The IGVF Catalog contains genomic elements, which are potential functional regions for regulating gene expression. These elements are identified/tested by functional assays (e.g., MPRA), association studies (e.g., caQTLs), and computational predictions (e.g., the [ENCODE-rE2G model](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full)).
 
 Data sources include:
@@ -11,7 +11,10 @@ Data sources include:
 
 Additional genomic elements are added when studied in specific contexts, for example accessible elements used in predictive modeels or elements tested in an MPRA experiment or CRISPR screen
 
-## Genomic Elements-Genes Edges
+## Coding Variants
+
+### Genomic Elements-Genes Edges
+
 | Source  | Class | Edge Description | Datasets |
 |---------|-------|------------------|----------|
 | ENCODE  | prediction | Biosample specific enhancer-gene predictions using [rE2G pipeline](https://www.encodeproject.org/pipelines/ENCPL835OUC/)| [ENCODE-rE2G](https://www.encodeproject.org/search/?type=Annotation&status=released&annotation_type=element+gene+regulatory+interaction+predictions&lab.title=Jesse+Engreitz%2C+Stanford)| 
@@ -19,20 +22,24 @@ Additional genomic elements are added when studied in specific contexts, for exa
 | IGVF    | observed data | CRISPRi CRISPRa CRISPRko FACS screen of CCR7 and IL7R inCD8-positive, alpha-beta memory T primary cells | [IGVF CRISPR FACS screen](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=CRISPR+FACS+screen&lab.title=Charles+Gersbach%2C+Duke&collections=IGVF_catalog_v1.0) |
 
 
-## Genomic Elements-Biosamples Edges
+## Gene Regulation
+
+### Genomic Elements-Biosamples Edges
+
 | Source  | Class | Edge Description | Datasets |
 |---------|-------|------------------|----------|
 | ENCODE  | observed data | lentiMPRA testing potential HepG2, K562, and WTC11 enhancers and promoters of all protein-coding genes. | [ENCODE lentiMPRA](https://www.encodeproject.org/search/?type=FunctionalCharacterizationExperiment&accession=ENCSR405QCT&accession=ENCSR203UFY&accession=ENCSR336MKI)| 
 | IGVF    | observed data | lentiMPRA in 5 biosamples measuring effect of element (and variants) on gene expression | [IGVF lentiMPRA](https://data.igvf.org/search/?type=AnalysisSet&status=released&preferred_assay_titles=lentiMPRA&collections=IGVF_catalog_v1.0) |
 
-## Variants-Genomic Elements Edges
+### Variants-Genomic Elements Edges
+
 (also on variants page)
 * External caQTL studies: variants associated with genomic elements function 
 from external studies ([PMID:34038741](https://pubmed.ncbi.nlm.nih.gov/34038741/), [PMID:34017130](https://pubmed.ncbi.nlm.nih.gov/34017130/)) and [AFGR](https://github.com/smontgomlab/AFGR?tab=readme-ov-file)(African Functional Genomics Resource)
 * IGVF BlueSTARR: computational model predicts variants affecting the regulatory function in ENCODE cCREs (Candidate Cis-Regulatory Elements)
 * IGVF MPRA
 
-### Table Columns:
+Table Columns:
 
 | Column | Description |
 |--------|-------------|
@@ -43,17 +50,18 @@ from external studies ([PMID:34038741](https://pubmed.ncbi.nlm.nih.gov/34038741/
 | Source | Origin of the data |
 | Source URL | Link to the original data source (clickable) |
 
-### Interacting with the Table:
+Interacting with the Table:
+
 - Click on column headers to sort the table by that column
 - Use the search box above the table to filter results
 - Adjust the number of rows displayed using the dropdown menu
 - Navigate between pages using the "Previous" and "Next" buttons
 
-## Biosample Table
+### Biosample Table
 
 The Biosample Table provides information about biological samples associated with the regulatory regions in your selected genomic coordinates.
 
-### Table Columns:
+Table Columns:
 
 | Column | Description |
 |--------|-------------|
@@ -67,3 +75,20 @@ The Biosample Table provides information about biological samples associated wit
 | Description | Detailed description of the biosample |
 | Biosample Source | Origin of the biosample |
 | Subontology | Subclassification of the biosample, if applicable |
+
+### Enhancer-Gene Prediction(s)
+
+This table reports whether the query region contains predicted enhancers from the ENCODE-rE2G model, and their target genes and cell types. Each row reports one predicted enhancer, target gene, and cell type. 
+
+| Column | Description |
+| -- | -- |
+| Cell Type | Cell type in which the enhancer is predicted to regulate the gene |
+| Target Gene | Gene predicted to be regulated by the enhancer |
+| Score | Strength of the prediction (range: 0 to 1, higher indicates a more confident prediction) |
+| Dataset | Source dataset  |
+| Model | Predictive model. Currently: ENCODE-rE2G |
+| Variant-Gene Distance | Genomic distance between the variant and gene body |
+
+Currently, this table includes predictions from the ENCODE-rE2G model across 1700+ ENCODE biosamples (see [Gschwind et al. bioRxiv 2023](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1.full))
+
+The table is initially sorted by Score in descending order, showing the strongest predictions first.

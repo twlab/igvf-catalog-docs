@@ -1,0 +1,77 @@
+---
+title: 'Phenotype'
+icon: 'eye'
+---
+
+## Overview
+
+This page provides comprehensive information about phenotypes, including genetic associations from GWAS studies, coding variant effects, and disease relationships. Phenotypes are categorized using standard ontologies and linked to their genetic determinants.
+
+## Associated Variant
+
+This table shows variants associated with this phenotype through genome-wide association studies (GWAS).
+
+| Column | Description |
+|--------|-------------|
+| Study | Study identifier (click for study details) |
+| Position | Genomic position of the lead variant (click to view region) |
+| Alleles | Reference and alternate alleles (Ref>Alt format) |
+| Beta | Effect size of the association |
+| Direction | Direction of effect (⬆️ for positive, ⬇️ for negative) |
+| 95% Confidence Interval | Confidence interval for the effect size |
+| P-value | Statistical significance of the association |
+| Source | Source of the association data |
+| Version | Version of the source data |
+
+The table is initially sorted by P-value in descending order, showing the most significant associations first.
+
+## Associated Coding Variant
+
+This table shows coding variants associated with this phenotype and their abundance scores.
+
+| Column | Description |
+|--------|-------------|
+| Coding Variant | Identifier for the coding variant (click for variant details) |
+| Abundance Score | Functional abundance score for the variant |
+| 95% Confidence Interval | Confidence interval for the abundance score |
+| Standard Deviation | Standard deviation of the abundance score |
+| Standard Error | Standard error of the abundance score |
+| Replicates | Values from individual experimental replicates |
+| Source | Source of the coding variant data (click for source details) |
+
+The table is initially sorted by Abundance Score in descending order, showing the highest scoring variants first.
+
+## Genomic Element
+
+This table shows genomic elements assayed in this biosample (if term is associated with a biosample).
+
+| Column | Description |
+|--------|-------------|
+| Coordinates | Genomic coordinates of the element (click to view region) |
+| Element ID | Identifier for the genomic element |
+| Element Type | Type/category of the genomic element |
+| Activity Score | Quantitative activity score for the element |
+| Dataset | Source dataset identifier (click for dataset details) |
+| Source | Source of the genomic element data |
+| Relationship | Type of relationship between phenotype and element |
+
+The table is initially sorted by Activity Score in descending order, showing the most active elements first.
+
+## Biosample Variant
+
+This table shows variants with experimental effect evidence in this biosample.
+
+| Column | Description |
+|--------|-------------|
+| Variant | Variant identifier (SPDI format when available, click for variant details) |
+| Position | Genomic position of the variant (click to view region) |
+| Alleles | Reference and alternate alleles (Ref>Alt format) |
+| log2FC | Log2 fold change of the effect |
+| PostProb Effect | Posterior probability of the effect |
+| 95% CI | 95% confidence interval for the effect |
+| Method | Experimental method used |
+| Label | Experimental label or condition |
+| Dataset | Source dataset identifier (click for dataset details) |
+| Source | Source of the variant effect data |
+
+The table is initially sorted by PostProb Effect in descending order, showing the variants with highest posterior probability first.

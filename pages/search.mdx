@@ -1,0 +1,20 @@
+---
+title: 'Search'
+icon: 'search'
+---
+
+# `/search`
+
+The standalone search page expands the home search bar into a focused workspace for iterating on query text and scanning autocomplete hits.
+
+## Autocomplete Service
+- Queries debounce for 500 ms before calling the catalog autocomplete API, which fans out across entities (genes, proteins, variants, diseases, PMIDs, ontology terms, drugs, transcripts, studies, lexical commands).
+- Results stream in batches and display the entity-specific icon, preferred term, and type label. Selecting a row navigates straight to the resolved route; relative URIs are normalised to `/[node_id]`.
+- Infinite scrolling requests subsequent pages when the sentinel element enters view, so long runs of hits (e.g., large ontology vocabularies) do not require manual pagination.
+
+## Interaction Details
+- The same heuristics used on the home page detect rsIDs, SPDI strings, PMIDs, and coordinate searches so users can paste identifiers without extra syntax.
+- Error states surface the message returned by the autocomplete API. Skeleton loaders keep the layout stable while new pages fetch.
+- The input state syncs to the URL (`/search?q=`), enabling sharing of tightly scoped queries inside analysis or QA conversations.
+
+These affordances give curators a latency-tuned interface for testing query phrasing, reviewing near matches, and jumping into the linked node, disease, or literature pages that capture the underlying biology.

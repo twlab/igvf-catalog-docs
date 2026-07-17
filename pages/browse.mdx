@@ -1,0 +1,22 @@
+---
+title: 'Browse Data'
+icon: 'table'
+---
+
+# `/browse`
+
+The Browse Data page gives a tabbed view into the literature-derived assets that back the Lexical search experience. Each tab streams CSV slices from `https://glkb.dcmb.med.umich.edu/api` and rewrites identifiers so they resolve inside the catalog.
+
+## Tabs and Datasets
+- **Articles** (`/files/articles`) lists PubMed entries with titles, authors, citations, and DOIs. PMIDs open the catalog article view at `/PMID:*`.
+- **Article Topics** (`/files/article_topics`) shows topic assignments that pair PMIDs with ontology identifiers. Vocabulary IDs are converted to internal routes like `/MONDO_0000001` when the prefix is recognized.
+- **Citations** (`/files/citations`) renders citing → cited PMID pairs so you can walk bibliographies without losing the catalog context.
+- **Semantic Relationships** (`/files/semantic_relationships`) surfaces text-mined links between ontology terms. Supporting PMIDs fan out as expandable lists that again link into `/PMID:*` detail pages.
+- **Vocabularies** (`/files/vocabularies`) exposes the concept registry that powers entity name search, including synonyms and descriptions, with in-catalog links for any supported ontology prefixes.
+
+## Interaction Details
+- Infinite scrolling loads additional results automatically as you approach the end of each tab.
+- Error states from the GLKB API are surfaced inline via alert banners; successful fetches show structured cards instead of raw CSV.
+- A back link returns to `/lexical`, keeping browse, search, lookup, and cypher workflows connected.
+
+That combination makes it easy to audit which publications, vocabularies, and semantic edges are already indexed and to jump straight into the matching IGVF article or ontology pages.

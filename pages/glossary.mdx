@@ -1,0 +1,18 @@
+---
+title: 'Glossary'
+icon: 'book-open'
+---
+
+# `/glossary`
+
+The Glossary page centralizes short-form definitions that appear throughout the catalog UI. Terms are stored in the remote glossary service (`https://fopkujtl7ol2pgmfheptp7vdwi0xbxcu.lambda-url.us-east-1.on.aws/`) and retrieved on the server before the page renders.
+
+## Viewing Terms
+- All terms load on mount and render inside a scrollable table so curators can scan the vocabulary in one place.
+- When a term is missing from the upstream store during development, the glossary backend can seed placeholder language automatically; in production the page simply reports the term as unavailable.
+
+## Editing Definitions
+- Selecting **Edit** opens an in-place dialog that lets authorized users update the definition. Saves call the glossary endpoint with the password entered in the dialog.
+- The UI prompts for the password every time; no credentials are persisted in the browser.
+- A companion `/glossary/edit?t=TERM` route lets contributors propose revised language without direct write access. Suggestions are stored via the glossary suggestion API and later reviewed.
+- `/glossary/edit-requests` is the moderation surface where curators approve or reject suggestions, with status updates written back through the lambda-backed service so terminology stays aligned across the catalog, docs, and downstream tooling.
