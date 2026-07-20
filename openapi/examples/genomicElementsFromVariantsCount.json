@@ -1,0 +1,81 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/predictions-count?variant_id=NC_000001.11%3A1628997%3AGGG%3AGG",
+  "sample": {
+    "cell_types": 262,
+    "genes": [
+      {
+        "gene_name": "CDK11A",
+        "id": "genes/ENSG00000008128"
+      },
+      {
+        "gene_name": "NADK",
+        "id": "genes/ENSG00000008130"
+      },
+      {
+        "gene_name": "CFAP74",
+        "id": "genes/ENSG00000142609"
+      },
+      {
+        "gene_name": "ATAD3B",
+        "id": "genes/ENSG00000160072"
+      },
+      {
+        "gene_name": "SSU72",
+        "id": "genes/ENSG00000160075"
+      },
+      {
+        "gene_name": "CALML6",
+        "id": "genes/ENSG00000169885"
+      },
+      {
+        "gene_name": "VWA1",
+        "id": "genes/ENSG00000179403"
+      },
+      {
+        "gene_name": "SLC35E2B",
+        "id": "genes/ENSG00000189339"
+      },
+      {
+        "gene_name": "MMP23B",
+        "id": "genes/ENSG00000189409"
+      },
+      {
+        "gene_name": "MIB2",
+        "id": "genes/ENSG00000197530"
+      },
+      {
+        "gene_name": "ATAD3A",
+        "id": "genes/ENSG00000197785"
+      },
+      {
+        "gene_name": "TMEM240",
+        "id": "genes/ENSG00000205090"
+      },
+      {
+        "gene_name": "TMEM88B",
+        "id": "genes/ENSG00000205116"
+      },
+      {
+        "gene_name": "SLC35E2A",
+        "id": "genes/ENSG00000215790"
+      },
+      {
+        "gene_name": "LINC01770",
+        "id": "genes/ENSG00000225285"
+      },
+      {
+        "gene_name": "FNDC10",
+        "id": "genes/ENSG00000228594"
+      },
+      {
+        "gene_name": "ANKRD65",
+        "id": "genes/ENSG00000235098"
+      },
+      {
+        "gene_name": "CDK11B",
+        "id": "genes/ENSG00000248333"
+      }
+    ],
+    "name": "regulates"
+  }
+}

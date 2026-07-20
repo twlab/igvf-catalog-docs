@@ -1,0 +1,13 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/ontology-terms?term_id=Orphanet_101435&page=0",
+  "sample": {
+    "uri": "http://www.orpha.net/ORDO/Orphanet_101435",
+    "term_id": "Orphanet_101435",
+    "name": "rare genetic eye disease",
+    "synonyms": [],
+    "description": "",
+    "source": "ORPHANET",
+    "subontology": null,
+    "source_url": "https://www.orpha.net/"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/gene-regulatory-network?regulator_gene_id=ENSG00000143190+++p_value+%3D+gte%3A0.9+++method+%3D+CRISPR+screen+++++++++Group+results++++++regulator_gene_name+%3D+POU2F1+++method+%3D+CRISPR+screen+++++++++++Perturb-seq%3A+++++Query+by+regulator+gene++++++regulator_gene_id+%3D+ENSG00000143190+++method+%3D+Perturb-seq+++++++++Query+by+response+gene++++++response_gene_name+%3D+TSPAN6+++method+%3D+Perturb-seq&page=0",
+  "sample": []
+}

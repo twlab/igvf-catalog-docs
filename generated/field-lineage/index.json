@@ -1,0 +1,2505 @@
+{
+  "adapters": {
+    "AFGR_caqtl_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "_id",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'caQTL'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "pvalue",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_caqtl_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "AFGR_eqtl_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "effect_size",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'eQTL'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates expression of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_eqtl_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "AFGR_sqtl_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "pvalue",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "effect_size",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'spliceQTL'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates splicing of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "AFGR_sqtl_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "BlueSTARR_variants_biosamples_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates regulatory activity of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "BlueSTARR_variants_biosamples_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF420VPZ",
+        "IGVFFI0818FMCC",
+        "IGVFFI1663LKVQ",
+        "IGVFFI3351LASN",
+        "IGVFFI5288RAAV"
+      ]
+    },
+    "DUAL_IPA_coding_variant_scores_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "DUAL_IPA_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI6224HZMG"
+      ]
+    },
+    "ESM_coding_variants_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'codes for'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ESM_coding_variants_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI8105TNNO"
+      ]
+    },
+    "Mutpred2_coding_variants_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'codes for'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'codes for'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Mutpred2_coding_variants_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI6893ZOAA"
+      ]
+    },
+    "SEM_motif_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "SEM_motif_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "motif_key",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_motif_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'IGVF'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF001UVU",
+        "ENCFF242PUG",
+        "IGVFFI4892QCRR",
+        "IGVFFI8823UTCQ"
+      ]
+    },
+    "SEM_prediction_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'predicted allele-specific binding'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates binding of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SEM_prediction_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'IGVF'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF001UVU",
+        "ENCFF242PUG",
+        "IGVFFI4892QCRR",
+        "IGVFFI6807FCZT",
+        "IGVFFI6923RISY"
+      ]
+    },
+    "SGE_variant_phenotype_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "SGE_variant_phenotype_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI9974PZRX"
+      ]
+    },
+    "STARR_seq_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates expression in'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "STARR_seq_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "VAMP_coding_variant_scores_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "file_fileset_obj[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "file_fileset_obj[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "VAMP_coding_variant_scores_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI0629IIQU",
+        "IGVFFI8987JRZH"
+      ]
+    },
+    "Variant_EFFECTS_variant_gene_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "effect_size",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "'observed data'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'variant effect on gene expression'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates expression of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "'Variant-EFFECTS'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "Variant_EFFECTS_variant_gene_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI9602ILPC"
+      ]
+    },
+    "adastra_asb_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "cell_gtrd_name",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'allele-specific binding'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "adastra_asb_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates binding of'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "biogrid_gene_gene_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "biogrid_gene_gene_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "row[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "biogrid_gene_gene_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'interacts with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "biogrid_gene_gene_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "collection_method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "biogrid_gene_gene_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "biogrid_gene_gene_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "cV2F_variant_phenotype_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "score",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'associated with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cV2F_variant_phenotype_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI1931RMNE",
+        "IGVFFI4594QVDO"
+      ]
+    },
+    "ccre_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "ccre_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "row[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ccre_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ccre_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'ENCODE'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "cellosaurus_ontology_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "cellosaurus_ontology_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "cellosaurus_ontology_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "clingen_variant_disease_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "clingen_variant_disease_adapter.py",
+          "arango_or_api_field": "gene_id",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "clingen_variant_disease_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'associated with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "clingen_variant_disease_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "coxpresdb_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "coxpresdb_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "coxpresdb_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'coexpressed with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "coxpresdb_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "coxpresdb_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "coxpresdb_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI3321YNBP"
+      ]
+    },
+    "dbNSFP_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "dbNSFP_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'dbNSFP 5.1a'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "dbNSFP_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'codes for'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "depmap_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "depmap_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "depmap_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'essential in'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "ebi_complex_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "ebi_complex_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "complex_row[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ebi_complex_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "encode_E2G_CRISPR_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "_id",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "score",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF968BZL"
+      ]
+    },
+    "encode_caqtl_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'caQTL'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'ENCODE'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_caqtl_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "encode_element_gene_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "file_fileset[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "file_fileset[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "score",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'ENCODE'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "encode_element_gene_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'regulates'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF006FTZ",
+        "ENCFF034GOH",
+        "ENCFF036LSB",
+        "ENCFF073KUI",
+        "ENCFF074MTS",
+        "ENCFF079SJR",
+        "ENCFF138UMI",
+        "ENCFF176YAF",
+        "ENCFF197HRR",
+        "ENCFF201SDO",
+        "ENCFF202FBA",
+        "ENCFF213WPV",
+        "ENCFF251XYE",
+        "ENCFF257ABE",
+        "ENCFF260UTE",
+        "ENCFF268SIZ",
+        "ENCFF270VCQ",
+        "ENCFF299DOF",
+        "ENCFF302YPU",
+        "ENCFF314RKK",
+        "ENCFF318HEA",
+        "ENCFF343CVG",
+        "ENCFF362RIQ",
+        "ENCFF363HJR",
+        "ENCFF383EUA",
+        "ENCFF383YLO",
+        "ENCFF390YHZ",
+        "ENCFF393MCX",
+        "ENCFF407GPD",
+        "ENCFF489MJA",
+        "ENCFF537CGJ",
+        "ENCFF546JWS",
+        "ENCFF564XCH",
+        "ENCFF573KXM",
+        "ENCFF580TON",
+        "ENCFF580UUB",
+        "ENCFF584DPV",
+        "ENCFF592OLR",
+        "ENCFF612XCP",
+        "ENCFF679GQI",
+        "ENCFF698USH",
+        "ENCFF698ZKD",
+        "ENCFF712SUP",
+        "ENCFF727IKD",
+        "ENCFF730TCG",
+        "ENCFF751BIV",
+        "ENCFF754QRZ",
+        "ENCFF772YKX",
+        "ENCFF778CUH",
+        "ENCFF804CAK",
+        "ENCFF822SZV",
+        "ENCFF843HTC",
+        "ENCFF888NZL",
+        "ENCFF893FXX",
+        "ENCFF910TJJ",
+        "ENCFF958QJL",
+        "ENCFF976SSI",
+        "ENCFF984XCI",
+        "ENCFF985UDL"
+      ]
+    },
+    "eqtl_catalog_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "biosample_term",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "biological_context",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "label",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "name",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "gene_id",
+          "adapter_expression": "gene_id",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "p_value",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "eqtl_catalog_adapter.py",
+          "arango_or_api_field": "effect_size",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "favor_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "favor_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'FAVOR'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "file_fileset_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "file_fileset_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "file_object[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "file_fileset_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "file_fileset_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "class_type",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "file_fileset_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF167FJQ",
+        "ENCFF420VPZ",
+        "ENCFF968BZL"
+      ]
+    },
+    "gaf_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gaf_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'Gene Ontology'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gencc_diseases_genes_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gencc_diseases_genes_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'associated_with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencc_diseases_genes_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gencode_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gencode_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "info[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'GENCODE'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gencode_gene_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gencode_gene_adapter.py",
+          "arango_or_api_field": "gene_id",
+          "adapter_expression": "gene_id",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_gene_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "info[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_gene_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'GENCODE'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gencode_gene_structure_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gencode_gene_structure_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_gene_structure_adapter.py",
+          "arango_or_api_field": "gene_id",
+          "adapter_expression": "gene_id_no_version",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_gene_structure_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gencode_protein_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gencode_protein_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gencode_protein_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'GENCODE'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gvatdb_asb_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "pvalue",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "log10pvalue",
+          "adapter_expression": "log10pvalue",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'allele-specific binding'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gvatdb_asb_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates binding of'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "gwas_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "study_id",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "p_value",
+          "adapter_expression": "pvalue",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "gwas_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI1309WDQG"
+      ]
+    },
+    "human_mouse_element_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "human_mouse_element_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "32",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "human_mouse_element_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "_id_human",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "human_mouse_element_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "'integrative'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF078OEX"
+      ]
+    },
+    "igvf_E2G_CRISPR_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "file_fileset[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'modulates expression of'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "igvf_E2G_CRISPR_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "mgi_human_mouse_ortholog_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "mgi_human_mouse_ortholog_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'homologous to'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mgi_human_mouse_ortholog_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'MGI'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "motif_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "motif_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "_key",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "motif_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "mouse_genomes_project_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "mouse_genomes_project_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "spdi",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mouse_genomes_project_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'MOUSE GENOMES PROJECT'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "mpra_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "element_name",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "mpra_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "ENCFF802FUV",
+        "IGVFFI1323RCIE",
+        "IGVFFI1436TRIH",
+        "IGVFFI4914OUJH",
+        "IGVFFI8207IHFY"
+      ]
+    },
+    "oncotree_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "oncotree_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "node[...]",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "oncotree_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "ontologies_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "ontologies_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "ontologies_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI0402TNDW",
+        "IGVFFI0719VRZV",
+        "IGVFFI1298JRGV",
+        "IGVFFI2369NSDT",
+        "IGVFFI4219OZTA",
+        "IGVFFI6182DQZM",
+        "IGVFFI7115PAJX",
+        "IGVFFI7985BGYI",
+        "IGVFFI8306RHIV",
+        "IGVFFI8953HXRQ",
+        "IGVFFI9789TIWM"
+      ]
+    },
+    "orphanet_disease_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "orphanet_disease_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'associated_with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "orphanet_disease_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "pQTL_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'pQTL'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "log10pvalue",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "biological_context",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "biosample_term",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pQTL_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'associated with levels of'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "pharmgkb_drug_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "pharmgkb_drug_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "drug_name",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "pharmgkb_drug_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "proteins_interaction_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "proteins_interaction_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "source",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "proteins_interaction_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'physically interacts with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "proteins_interaction_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "collection_method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "proteins_interaction_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "detection_method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "proteins_interaction_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI1165YVBA",
+        "IGVFFI4317VDGK"
+      ]
+    },
+    "reactome_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "reactome_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'Reactome'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "reactome_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'belongs to'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "reactome_pathway_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "reactome_pathway_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "name",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "reactome_pathway_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'Reactome'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    },
+    "scE2G_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "score",
+          "adapter_expression": "score",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "method",
+          "adapter_expression": "method",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "class",
+          "adapter_expression": "collection_class",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "scE2G_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'regulates'",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": [
+        "IGVFFI3412RLDF"
+      ]
+    },
+    "topld_adapter.py": {
+      "mappings": [
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "r2",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "d_prime",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "label",
+          "adapter_expression": "'linkage disequilibrum'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "name",
+          "adapter_expression": "'correlated with'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "source",
+          "adapter_expression": "'TopLD'",
+          "portal_column": "",
+          "notes": ""
+        },
+        {
+          "adapter": "topld_adapter.py",
+          "arango_or_api_field": "variant_id",
+          "adapter_expression": "(computed)",
+          "portal_column": "",
+          "notes": ""
+        }
+      ],
+      "mentioned_files": []
+    }
+  },
+  "file_mentions": {
+    "ENCFF420VPZ": [
+      "BlueSTARR_variants_biosamples_adapter.py",
+      "file_fileset_adapter.py"
+    ],
+    "IGVFFI0818FMCC": [
+      "BlueSTARR_variants_biosamples_adapter.py"
+    ],
+    "IGVFFI1663LKVQ": [
+      "BlueSTARR_variants_biosamples_adapter.py"
+    ],
+    "IGVFFI3351LASN": [
+      "BlueSTARR_variants_biosamples_adapter.py"
+    ],
+    "IGVFFI5288RAAV": [
+      "BlueSTARR_variants_biosamples_adapter.py"
+    ],
+    "IGVFFI6224HZMG": [
+      "DUAL_IPA_coding_variant_scores_adapter.py"
+    ],
+    "IGVFFI8105TNNO": [
+      "ESM_coding_variants_adapter.py"
+    ],
+    "IGVFFI6893ZOAA": [
+      "Mutpred2_coding_variants_adapter.py"
+    ],
+    "ENCFF001UVU": [
+      "SEM_motif_adapter.py",
+      "SEM_prediction_adapter.py"
+    ],
+    "ENCFF242PUG": [
+      "SEM_motif_adapter.py",
+      "SEM_prediction_adapter.py"
+    ],
+    "IGVFFI4892QCRR": [
+      "SEM_motif_adapter.py",
+      "SEM_prediction_adapter.py"
+    ],
+    "IGVFFI8823UTCQ": [
+      "SEM_motif_adapter.py"
+    ],
+    "IGVFFI6807FCZT": [
+      "SEM_prediction_adapter.py"
+    ],
+    "IGVFFI6923RISY": [
+      "SEM_prediction_adapter.py"
+    ],
+    "IGVFFI9974PZRX": [
+      "SGE_variant_phenotype_adapter.py"
+    ],
+    "IGVFFI0629IIQU": [
+      "VAMP_coding_variant_scores_adapter.py"
+    ],
+    "IGVFFI8987JRZH": [
+      "VAMP_coding_variant_scores_adapter.py"
+    ],
+    "IGVFFI9602ILPC": [
+      "Variant_EFFECTS_variant_gene_adapter.py"
+    ],
+    "IGVFFI1931RMNE": [
+      "cV2F_variant_phenotype_adapter.py"
+    ],
+    "IGVFFI4594QVDO": [
+      "cV2F_variant_phenotype_adapter.py"
+    ],
+    "IGVFFI3321YNBP": [
+      "coxpresdb_adapter.py"
+    ],
+    "ENCFF968BZL": [
+      "encode_E2G_CRISPR_adapter.py",
+      "file_fileset_adapter.py"
+    ],
+    "ENCFF006FTZ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF034GOH": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF036LSB": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF073KUI": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF074MTS": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF079SJR": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF138UMI": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF176YAF": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF197HRR": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF201SDO": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF202FBA": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF213WPV": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF251XYE": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF257ABE": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF260UTE": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF268SIZ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF270VCQ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF299DOF": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF302YPU": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF314RKK": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF318HEA": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF343CVG": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF362RIQ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF363HJR": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF383EUA": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF383YLO": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF390YHZ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF393MCX": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF407GPD": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF489MJA": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF537CGJ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF546JWS": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF564XCH": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF573KXM": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF580TON": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF580UUB": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF584DPV": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF592OLR": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF612XCP": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF679GQI": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF698USH": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF698ZKD": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF712SUP": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF727IKD": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF730TCG": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF751BIV": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF754QRZ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF772YKX": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF778CUH": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF804CAK": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF822SZV": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF843HTC": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF888NZL": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF893FXX": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF910TJJ": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF958QJL": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF976SSI": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF984XCI": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF985UDL": [
+      "encode_element_gene_adapter.py"
+    ],
+    "ENCFF167FJQ": [
+      "file_fileset_adapter.py"
+    ],
+    "IGVFFI1309WDQG": [
+      "gwas_adapter.py"
+    ],
+    "ENCFF078OEX": [
+      "human_mouse_element_adapter.py"
+    ],
+    "ENCFF802FUV": [
+      "mpra_adapter.py"
+    ],
+    "IGVFFI1323RCIE": [
+      "mpra_adapter.py"
+    ],
+    "IGVFFI1436TRIH": [
+      "mpra_adapter.py"
+    ],
+    "IGVFFI4914OUJH": [
+      "mpra_adapter.py"
+    ],
+    "IGVFFI8207IHFY": [
+      "mpra_adapter.py"
+    ],
+    "IGVFFI0402TNDW": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI0719VRZV": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI1298JRGV": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI2369NSDT": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI4219OZTA": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI6182DQZM": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI7115PAJX": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI7985BGYI": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI8306RHIV": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI8953HXRQ": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI9789TIWM": [
+      "ontologies_adapter.py"
+    ],
+    "IGVFFI1165YVBA": [
+      "proteins_interaction_adapter.py"
+    ],
+    "IGVFFI4317VDGK": [
+      "proteins_interaction_adapter.py"
+    ],
+    "IGVFFI3412RLDF": [
+      "scE2G_adapter.py"
+    ]
+  }
+}

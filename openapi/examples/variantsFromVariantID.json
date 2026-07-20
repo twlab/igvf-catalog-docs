@@ -1,0 +1,24 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/variant-ld?rsid=rs60960132&page=0",
+  "sample": {
+    "chr": "chr11",
+    "ancestry": "EUR",
+    "d_prime": 0.608,
+    "r2": 0.315,
+    "label": "linkage disequilibrum",
+    "variant_1_base_pair": "C:T",
+    "variant_1_rsid": "rs537097834",
+    "variant_2_base_pair": "A:T",
+    "variant_2_rsid": "rs60960132",
+    "variant_1_pos": 8102410,
+    "variant_1_spdi": "NC_000011.10:8102410:C:G",
+    "variant_1_hgvs": "NC_000011.10:g.8102411C>G",
+    "variant_2_pos": 9083634,
+    "variant_2_spdi": "NC_000011.10:9083634:A:T",
+    "variant_2_hgvs": "NC_000011.10:g.9083635A>T",
+    "source": "TopLD",
+    "source_url": "http://topld.genetics.unc.edu/",
+    "sequence_variant": "NC_000011.10:8102410:C:G",
+    "name": "correlated with"
+  }
+}

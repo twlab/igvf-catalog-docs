@@ -1,0 +1,4 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/phenotypes?spdi=NC_000001.11%3A5277210%3AG%3AA+++neg_log10_pvalue+%3D+gte%3A5+++method+%3D+GWAS+++++++++query+by+region++++++region+%3D+chr1%3A5270008-5277214+++method+%3D+GWAS+++++++++++SGE%3A+++++query+by+variant+identifier++++++spdi+%3D+NC_000007.14%3A152660654%3AT%3AA+++method+%3D+SGE+++++++++query+by+region++++++region+%3D+chr7%3A152655654-152664654+++method+%3D+SGE+++++++++++cV2F%3A+++++query+by+variant+identifier++++++spdi+%3D+NC_000001.11%3A91420%3AT%3AC+++method+%3D+cV2F+++++++++query+by+region++++++region+%3D+chr1%3A91418-91424+++method+%3D+cV2F&page=0",
+  "sample": []
+}

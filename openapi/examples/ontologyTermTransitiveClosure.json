@@ -1,0 +1,10 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/ontology-terms/UBERON_0003663/transitive-closure/UBERON_0014892",
+  "sample": [
+    {
+      "from": "UBERON_0003663",
+      "to": "UBERON_0014892",
+      "name": "subclass"
+    }
+  ]
+}

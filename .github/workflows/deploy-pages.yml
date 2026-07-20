@@ -1,0 +1,69 @@
+name: Deploy documentation to GitHub Pages
+
+on:
+  push:
+    branches: [main, DSERV-1314-api-docs]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Mintlify CLI
+        run: npm install -g mintlify@latest
+
+      - name: Refresh OpenAPI and generated docs
+        run: |
+          python3 scripts/fetch_openapi.py
+          python3 scripts/build_source_index.py
+          python3 scripts/build_field_lineage.py
+
+      - name: Validate Mintlify site
+        run: mintlify validate
+
+      - name: Export static site
+        run: mintlify export --output site.zip
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          unzip -q site.zip -d _site
+          cp -R openapi _site/openapi
+          python3 scripts/patch_github_pages_basepath.py _site --base-path /igvf-catalog-docs
+          rm -rf _site/scripts _site/.gitignore _site/.DS_Store _site/serve.js _site/"Start Docs.command" _site/"Start Docs.bat"
+          touch _site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

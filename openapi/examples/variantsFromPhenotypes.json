@@ -1,0 +1,4 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/phenotypes/variants?phenotype_id=EFO_0010325+++method+%3D+GWAS+++++++++Group+results++++++neg_log10_pvalue+%3D+gte%3A5+++method+%3D+GWAS+++++++++++SGE%3A+++++Query+by+phenotype+identifier++++++phenotype_id+%3D+NCIT_C16407+++method+%3D+SGE+++++++++Query+by+files_fileset+++Each+files_fileset+maps+to+at+most+one+method&page=0",
+  "sample": []
+}

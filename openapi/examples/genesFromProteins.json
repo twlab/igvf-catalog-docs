@@ -1,0 +1,36 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/proteins/genes?verbose=true&page=0",
+  "sample": {
+    "gene": {
+      "_id": "ENSG00000103064",
+      "chr": "chr16",
+      "start": 68264515,
+      "end": 68301823,
+      "gene_type": "protein_coding",
+      "name": "SLC7A6",
+      "strand": "+",
+      "hgnc": "HGNC:11064",
+      "entrez": "ENTREZ:9057",
+      "collections": null,
+      "study_sets": null,
+      "source": "GENCODE",
+      "version": "v43",
+      "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",
+      "synonyms": [
+        "y(+)L-type amino acid transporter 2",
+        "solute carrier family 7 member 6",
+        "LAT3",
+        "y+LAT-2",
+        "cationic amino acid transporter, y+ system",
+        "amino acid permease",
+        "solute carrier family 7 (amino acid transporter light chain, y+L system), member 6",
+        "Y+L amino acid transporter 2",
+        "LAT-2",
+        "y+LAT2",
+        "solute carrier family 7 (cationic amino acid transporter, y+ system), member 6",
+        "SLC7A6"
+      ]
+    },
+    "protein": "proteins/ENSP00000454824"
+  }
+}

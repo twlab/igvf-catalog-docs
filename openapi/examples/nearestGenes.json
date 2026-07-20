@@ -1,0 +1,23 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/nearest-genes?region=chr1%3A1157520-1158189",
+  "sample": {
+    "_id": "ENSG00000223823",
+    "chr": "chr1",
+    "start": 1137016,
+    "end": 1144056,
+    "gene_type": "lncRNA",
+    "name": "LINC01342",
+    "strand": "+",
+    "hgnc": "HGNC:50551",
+    "entrez": "ENTREZ:254099",
+    "collections": null,
+    "study_sets": null,
+    "source": "GENCODE",
+    "version": "v43",
+    "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",
+    "synonyms": [
+      "LINC01342",
+      "long intergenic non-protein coding RNA 1342"
+    ]
+  }
+}

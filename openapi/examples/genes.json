@@ -1,0 +1,32 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes?organism=Homo+sapiens&page=0",
+  "sample": {
+    "_id": "ENSG00000000003",
+    "chr": "chrX",
+    "start": 100627107,
+    "end": 100639991,
+    "gene_type": "protein_coding",
+    "name": "TSPAN6",
+    "strand": "-",
+    "hgnc": "HGNC:11858",
+    "entrez": "ENTREZ:7105",
+    "collections": null,
+    "study_sets": null,
+    "source": "GENCODE",
+    "version": "v43",
+    "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/gencode.v43.chr_patch_hapl_scaff.annotation.gtf.gz",
+    "synonyms": [
+      "T245",
+      "TSPAN6",
+      "putative NF-kappa-B-activating protein 321",
+      "tetraspan TM4SF",
+      "tetraspanin TM4-D",
+      "A15 homolog",
+      "tetraspanin-6",
+      "TSPAN-6",
+      "tetraspanin 6",
+      "TM4SF6",
+      "transmembrane 4 superfamily member 6"
+    ]
+  }
+}

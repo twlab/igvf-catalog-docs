@@ -1,0 +1,18 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/genes/summary?variant_id=NC_000001.11%3A40242002%3AG%3AA&page=0",
+  "sample": {
+    "qtl_type": "eQTL",
+    "neg_log10_pvalue": 7.626903,
+    "chr": "chr1",
+    "biological_context": "lymphoblastoid cell line",
+    "effect_size": 0.3115568,
+    "gene": {
+      "gene_name": "ZMPSTE24-DT",
+      "gene_id": "ENSG00000259943",
+      "gene_start": 40256332,
+      "gene_end": 40257971
+    },
+    "name": "modulates expression of",
+    "files_filesets": null
+  }
+}

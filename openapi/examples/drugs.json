@@ -1,0 +1,10 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/drugs?drug_id=PA448497&page=0",
+  "sample": {
+    "_id": "PA448497",
+    "name": "aspirin",
+    "drug_ontology_terms": [],
+    "source": "pharmGKB",
+    "source_url": "https://www.pharmgkb.org/chemical/PA448497"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes/variants?gene_id=ENSG00000187642+++neg_log10_pvalue+%3D+gte%3A24.5+++method+%3D+eQTL+++++++++Group+results++++++alias+%3D+PERM1+++method+%3D+eQTL+++++++++++spliceQTL%3A+++++Single+result++++++gene_id+%3D+ENSG00000188976+++neg_log10_pvalue+%3D+gt%3A45+++effect_size+%3D+gt%3A0.5+++method+%3D+spliceQTL+++++++++Group+results++++++alias+%3D+NOC2L+++method+%3D+spliceQTL+++++++++++Variant-EFFECTS%3A+++++Single+result++++++gene_id+%3D+ENSG00000108179+++neg_log10_pvalue+%3D+gt%3A13.1+++method+%3D+Variant-EFFECTS+++++++++Group+results++++++alias+%3D+PPIF+++method+%3D+Variant-EFFECTS&page=0",
+  "sample": []
+}

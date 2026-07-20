@@ -1,32 +1,63 @@
-# Mintlify Starter Kit
+# IGVF Catalog Documentation
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+Documentation for the [IGVF Catalog](https://catalog.igvf.org) data model, UI, REST API, and data provenance.
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+**Published site:** https://igvf-dacc.github.io/igvf-catalog-docs/
 
-### Development
+## Contents
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+- **Nodes & regions** — genes, variants, proteins, transcripts, diseases, ontologies, and UI guides
+- **API Reference** — auto-generated from the development Catalog OpenAPI spec
+- **Data Sources** — IGVF/ENCODE portal file metadata and field lineage (portal → adapter → API)
 
+## API environment
+
+Documentation currently targets the **development** API:
+
+- Base URL: `https://catalog-api-dev.demo.igvf.org/api`
+- Swagger UI: https://catalog-api-dev.demo.igvf.org/
+
+Configuration: [`openapi/config.json`](openapi/config.json)
+
+## Local development
+
+Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify):
+
+```bash
+npm install -g mintlify
 ```
-npm i -g mintlify
-```
 
-Run the following command at the root of your documentation (where mint.json is)
+Refresh generated content and preview:
 
-```
+```bash
+python3 scripts/fetch_openapi.py
+python3 scripts/build_source_index.py
+python3 scripts/build_field_lineage.py
 mintlify dev
 ```
 
-### Publishing Changes
+Open http://localhost:3000
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+Configuration lives in [`docs.json`](docs.json) (Mintlify v4). Site-wide styling overrides are in [`custom.css`](custom.css).
 
-#### Troubleshooting
+GitHub Pages serves this repo at `/igvf-catalog-docs/`; the deploy workflow runs [`scripts/patch_github_pages_basepath.py`](scripts/patch_github_pages_basepath.py) after export so Mintlify asset URLs resolve correctly.
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## Build scripts
+
+| Script | Purpose |
+|--------|---------|
+| [`scripts/fetch_openapi.py`](scripts/fetch_openapi.py) | Download OpenAPI from dev Swagger UI |
+| [`scripts/build_source_index.py`](scripts/build_source_index.py) | Resolve IGVF/ENCODE file metadata + format specs |
+| [`scripts/build_field_lineage.py`](scripts/build_field_lineage.py) | Adapter → field mapping docs |
+| [`scripts/sample_responses.py`](scripts/sample_responses.py) | Store example API responses |
+| [`scripts/catalog_per_example_audit.py`](scripts/catalog_per_example_audit.py) | Validate doc examples against live API |
+
+## Deployment
+
+Pushes to `main` trigger [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which exports Mintlify HTML and deploys to GitHub Pages.
+
+Repository Settings → Pages → Source: **GitHub Actions** (one-time setup).
+
+## License
+
+Documentation content follows the IGVF Catalog project licenses (CC BY 4.0 for data; MIT for software where applicable).

@@ -1,0 +1,573 @@
+---
+title: 'Field Lineage'
+description: 'Portal file columns through adapters to Catalog API fields'
+icon: 'arrow-right-arrow-left'
+---
+
+# Field Lineage
+
+This page documents how fields flow from **portal files** (with [file format specifications](https://data.igvf.org)) through [KG loading adapters](https://github.com/IGVF-DACC/igvf-catalog/tree/dev/data/adapters) into **ArangoDB** and the **REST API**.
+
+For automated deep traces, use the `trace` tool in [igvf-catalog-dev-agents](https://github.com/IGVF/igvf-catalog-dev-agents).
+
+## AFGR_caqtl_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `_id` | |
+| `source` | `(computed)` | |
+| `method` | `(computed)` | |
+| `label` | `'caQTL'` | |
+| `p_value` | `pvalue` | |
+| `biosample_term` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `class` | `(computed)` | |
+
+## AFGR_eqtl_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `biological_context` | `(computed)` | |
+| `p_value` | `(computed)` | |
+| `effect_size` | `(computed)` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `label` | `'eQTL'` | |
+| `source` | `(computed)` | |
+| `name` | `'modulates expression of'` | |
+| `biosample_term` | `(computed)` | |
+
+## AFGR_sqtl_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `biological_context` | `(computed)` | |
+| `p_value` | `pvalue` | |
+| `effect_size` | `(computed)` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `label` | `'spliceQTL'` | |
+| `source` | `(computed)` | |
+| `name` | `'modulates splicing of'` | |
+| `biosample_term` | `(computed)` | |
+
+## BlueSTARR_variants_biosamples_adapter.py
+
+**Referenced files:** [ENCFF420VPZ](https://www.encodeproject.org/ENCFF420VPZ/), [IGVFFI0818FMCC](https://data.igvf.org/IGVFFI0818FMCC), [IGVFFI1663LKVQ](https://data.igvf.org/IGVFFI1663LKVQ), [IGVFFI3351LASN](https://data.igvf.org/IGVFFI3351LASN), [IGVFFI5288RAAV](https://data.igvf.org/IGVFFI5288RAAV)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+| `method` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `name` | `'modulates regulatory activity of'` | |
+| `source` | `(computed)` | |
+
+## DUAL_IPA_coding_variant_scores_adapter.py
+
+**Referenced files:** [IGVFFI6224HZMG](https://data.igvf.org/IGVFFI6224HZMG)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `name` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## ESM_coding_variants_adapter.py
+
+**Referenced files:** [IGVFFI8105TNNO](https://data.igvf.org/IGVFFI8105TNNO)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `'codes for'` | |
+| `source` | `(computed)` | |
+| `label` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+
+## Mutpred2_coding_variants_adapter.py
+
+**Referenced files:** [IGVFFI6893ZOAA](https://data.igvf.org/IGVFFI6893ZOAA)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `'codes for'` | |
+| `label` | `'codes for'` | |
+| `source` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## SEM_motif_adapter.py
+
+**Referenced files:** [ENCFF001UVU](https://www.encodeproject.org/ENCFF001UVU/), [ENCFF242PUG](https://www.encodeproject.org/ENCFF242PUG/), [IGVFFI4892QCRR](https://data.igvf.org/IGVFFI4892QCRR), [IGVFFI8823UTCQ](https://data.igvf.org/IGVFFI8823UTCQ)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `motif_key` | |
+| `source` | `'IGVF'` | |
+
+## SEM_prediction_adapter.py
+
+**Referenced files:** [ENCFF001UVU](https://www.encodeproject.org/ENCFF001UVU/), [ENCFF242PUG](https://www.encodeproject.org/ENCFF242PUG/), [IGVFFI4892QCRR](https://data.igvf.org/IGVFFI4892QCRR), [IGVFFI6807FCZT](https://data.igvf.org/IGVFFI6807FCZT), [IGVFFI6923RISY](https://data.igvf.org/IGVFFI6923RISY)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `label` | `'predicted allele-specific binding'` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `name` | `'modulates binding of'` | |
+| `source` | `'IGVF'` | |
+
+## SGE_variant_phenotype_adapter.py
+
+**Referenced files:** [IGVFFI9974PZRX](https://data.igvf.org/IGVFFI9974PZRX)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `name` | `(computed)` | |
+
+## STARR_seq_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `name` | `'modulates expression in'` | |
+| `label` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## VAMP_coding_variant_scores_adapter.py
+
+**Referenced files:** [IGVFFI0629IIQU](https://data.igvf.org/IGVFFI0629IIQU), [IGVFFI8987JRZH](https://data.igvf.org/IGVFFI8987JRZH)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `name` | `(computed)` | |
+| `method` | `file_fileset_obj[...]` | |
+| `class` | `file_fileset_obj[...]` | |
+| `label` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## Variant_EFFECTS_variant_gene_adapter.py
+
+**Referenced files:** [IGVFFI9602ILPC](https://data.igvf.org/IGVFFI9602ILPC)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `effect_size` | `(computed)` | |
+| `class` | `'observed data'` | |
+| `label` | `'variant effect on gene expression'` | |
+| `name` | `'modulates expression of'` | |
+| `method` | `'Variant-EFFECTS'` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## adastra_asb_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `biological_context` | `cell_gtrd_name` | |
+| `biosample_term` | `(computed)` | |
+| `source` | `(computed)` | |
+| `label` | `'allele-specific binding'` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `name` | `'modulates binding of'` | |
+
+## biogrid_gene_gene_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `row[...]` | |
+| `name` | `'interacts with'` | |
+| `method` | `collection_method` | |
+| `label` | `(computed)` | |
+| `class` | `(computed)` | |
+
+## cV2F_variant_phenotype_adapter.py
+
+**Referenced files:** [IGVFFI1931RMNE](https://data.igvf.org/IGVFFI1931RMNE), [IGVFFI4594QVDO](https://data.igvf.org/IGVFFI4594QVDO)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `score` | `(computed)` | |
+| `source` | `(computed)` | |
+| `name` | `'associated with'` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+
+## ccre_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `row[...]` | |
+| `method` | `(computed)` | |
+| `source` | `'ENCODE'` | |
+
+## cellosaurus_ontology_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `(computed)` | |
+| `source` | `(computed)` | |
+
+## clingen_variant_disease_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `gene_id` | `(computed)` | |
+| `name` | `'associated with'` | |
+| `source` | `(computed)` | |
+
+## coxpresdb_adapter.py
+
+**Referenced files:** [IGVFFI3321YNBP](https://data.igvf.org/IGVFFI3321YNBP)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `name` | `'coexpressed with'` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `label` | `(computed)` | |
+
+## dbNSFP_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `'dbNSFP 5.1a'` | |
+| `name` | `'codes for'` | |
+
+## depmap_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `name` | `'essential in'` | |
+
+## ebi_complex_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `complex_row[...]` | |
+| `source` | `(computed)` | |
+
+## encode_E2G_CRISPR_adapter.py
+
+**Referenced files:** [ENCFF968BZL](https://www.encodeproject.org/ENCFF968BZL/)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `_id` | |
+| `method` | `(computed)` | |
+| `source` | `(computed)` | |
+| `score` | `(computed)` | |
+| `p_value` | `(computed)` | |
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## encode_caqtl_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `label` | `'caQTL'` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `source` | `'ENCODE'` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `name` | `(computed)` | |
+
+## encode_element_gene_adapter.py
+
+**Referenced files:** [ENCFF006FTZ](https://www.encodeproject.org/ENCFF006FTZ/), [ENCFF034GOH](https://www.encodeproject.org/ENCFF034GOH/), [ENCFF036LSB](https://www.encodeproject.org/ENCFF036LSB/), [ENCFF073KUI](https://www.encodeproject.org/ENCFF073KUI/), [ENCFF074MTS](https://www.encodeproject.org/ENCFF074MTS/), [ENCFF079SJR](https://www.encodeproject.org/ENCFF079SJR/), [ENCFF138UMI](https://www.encodeproject.org/ENCFF138UMI/), [ENCFF176YAF](https://www.encodeproject.org/ENCFF176YAF/), [ENCFF197HRR](https://www.encodeproject.org/ENCFF197HRR/), [ENCFF201SDO](https://www.encodeproject.org/ENCFF201SDO/), [ENCFF202FBA](https://www.encodeproject.org/ENCFF202FBA/), [ENCFF213WPV](https://www.encodeproject.org/ENCFF213WPV/)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `method` | `file_fileset[...]` | |
+| `label` | `(computed)` | |
+| `class` | `file_fileset[...]` | |
+| `score` | `(computed)` | |
+| `source` | `'ENCODE'` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `name` | `'regulates'` | |
+
+## eqtl_catalog_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `biosample_term` | `biosample_term` | |
+| `biological_context` | `biological_context` | |
+| `label` | `label` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `source` | `(computed)` | |
+| `name` | `name` | |
+| `gene_id` | `gene_id` | |
+| `p_value` | `p_value` | |
+| `effect_size` | `(computed)` | |
+
+## favor_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `'FAVOR'` | |
+
+## file_fileset_adapter.py
+
+**Referenced files:** [ENCFF167FJQ](https://www.encodeproject.org/ENCFF167FJQ/), [ENCFF420VPZ](https://www.encodeproject.org/ENCFF420VPZ/), [ENCFF968BZL](https://www.encodeproject.org/ENCFF968BZL/)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `file_object[...]` | |
+| `method` | `method` | |
+| `class` | `class_type` | |
+| `source` | `(computed)` | |
+
+## gaf_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `'Gene Ontology'` | |
+
+## gencc_diseases_genes_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `'associated_with'` | |
+| `source` | `(computed)` | |
+
+## gencode_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `info[...]` | |
+| `source` | `'GENCODE'` | |
+
+## gencode_gene_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `gene_id` | `gene_id` | |
+| `name` | `info[...]` | |
+| `source` | `'GENCODE'` | |
+
+## gencode_gene_structure_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `(computed)` | |
+| `gene_id` | `gene_id_no_version` | |
+| `source` | `(computed)` | |
+
+## gencode_protein_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `(computed)` | |
+| `source` | `'GENCODE'` | |
+
+## gvatdb_asb_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `p_value` | `pvalue` | |
+| `log10pvalue` | `log10pvalue` | |
+| `source` | `(computed)` | |
+| `label` | `'allele-specific binding'` | |
+| `method` | `(computed)` | |
+| `class` | `(computed)` | |
+| `name` | `'modulates binding of'` | |
+
+## gwas_adapter.py
+
+**Referenced files:** [IGVFFI1309WDQG](https://data.igvf.org/IGVFFI1309WDQG)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `study_id` | |
+| `source` | `(computed)` | |
+| `p_value` | `pvalue` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `label` | `(computed)` | |
+
+## human_mouse_element_adapter.py
+
+**Referenced files:** [ENCFF078OEX](https://www.encodeproject.org/ENCFF078OEX/)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `32` | |
+| `name` | `_id_human` | |
+| `method` | `'integrative'` | |
+
+## igvf_E2G_CRISPR_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `(computed)` | |
+| `label` | `(computed)` | |
+| `class` | `file_fileset[...]` | |
+| `name` | `'modulates expression of'` | |
+| `method` | `method` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## mgi_human_mouse_ortholog_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `'homologous to'` | |
+| `source` | `'MGI'` | |
+
+## motif_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `_key` | |
+| `source` | `(computed)` | |
+
+## mouse_genomes_project_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `spdi` | |
+| `source` | `'MOUSE GENOMES PROJECT'` | |
+
+## mpra_adapter.py
+
+**Referenced files:** [ENCFF802FUV](https://www.encodeproject.org/ENCFF802FUV/), [IGVFFI1323RCIE](https://data.igvf.org/IGVFFI1323RCIE), [IGVFFI1436TRIH](https://data.igvf.org/IGVFFI1436TRIH), [IGVFFI4914OUJH](https://data.igvf.org/IGVFFI4914OUJH), [IGVFFI8207IHFY](https://data.igvf.org/IGVFFI8207IHFY)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `element_name` | |
+| `method` | `(computed)` | |
+| `source` | `(computed)` | |
+| `class` | `(computed)` | |
+| `label` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+
+## oncotree_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `node[...]` | |
+| `source` | `(computed)` | |
+
+## ontologies_adapter.py
+
+**Referenced files:** [IGVFFI0402TNDW](https://data.igvf.org/IGVFFI0402TNDW), [IGVFFI0719VRZV](https://data.igvf.org/IGVFFI0719VRZV), [IGVFFI1298JRGV](https://data.igvf.org/IGVFFI1298JRGV), [IGVFFI2369NSDT](https://data.igvf.org/IGVFFI2369NSDT), [IGVFFI4219OZTA](https://data.igvf.org/IGVFFI4219OZTA), [IGVFFI6182DQZM](https://data.igvf.org/IGVFFI6182DQZM), [IGVFFI7115PAJX](https://data.igvf.org/IGVFFI7115PAJX), [IGVFFI7985BGYI](https://data.igvf.org/IGVFFI7985BGYI), [IGVFFI8306RHIV](https://data.igvf.org/IGVFFI8306RHIV), [IGVFFI8953HXRQ](https://data.igvf.org/IGVFFI8953HXRQ), [IGVFFI9789TIWM](https://data.igvf.org/IGVFFI9789TIWM)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `(computed)` | |
+| `source` | `(computed)` | |
+
+## orphanet_disease_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `'associated_with'` | |
+| `source` | `(computed)` | |
+
+## pQTL_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `label` | `'pQTL'` | |
+| `class` | `(computed)` | |
+| `method` | `(computed)` | |
+| `log10pvalue` | `(computed)` | |
+| `biological_context` | `(computed)` | |
+| `biosample_term` | `(computed)` | |
+| `source` | `(computed)` | |
+| `name` | `'associated with levels of'` | |
+
+## pharmgkb_drug_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `drug_name` | |
+| `source` | `(computed)` | |
+
+## proteins_interaction_adapter.py
+
+**Referenced files:** [IGVFFI1165YVBA](https://data.igvf.org/IGVFFI1165YVBA), [IGVFFI4317VDGK](https://data.igvf.org/IGVFFI4317VDGK)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `source` | |
+| `name` | `'physically interacts with'` | |
+| `method` | `collection_method` | |
+| `label` | `detection_method` | |
+| `class` | `(computed)` | |
+
+## reactome_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `source` | `'Reactome'` | |
+| `name` | `'belongs to'` | |
+
+## reactome_pathway_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `name` | `name` | |
+| `source` | `'Reactome'` | |
+
+## scE2G_adapter.py
+
+**Referenced files:** [IGVFFI3412RLDF](https://data.igvf.org/IGVFFI3412RLDF)
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `score` | `score` | |
+| `label` | `(computed)` | |
+| `method` | `method` | |
+| `class` | `collection_class` | |
+| `source` | `(computed)` | |
+| `name` | `'regulates'` | |
+
+## topld_adapter.py
+
+| Arango / API field | Adapter expression | Notes |
+|--------------------|--------------------|-------|
+| `r2` | `(computed)` | |
+| `d_prime` | `(computed)` | |
+| `label` | `'linkage disequilibrum'` | |
+| `name` | `'correlated with'` | |
+| `source` | `'TopLD'` | |
+| `variant_id` | `(computed)` | |
+

@@ -1,0 +1,37 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes-proteins/variants?query=ATF1&page=0",
+  "sample": {
+    "sequence_variant": {
+      "_id": "NC_000001.11:100018596:G:A",
+      "chr": "chr1",
+      "pos": 100018596,
+      "rsid": [
+        "rs493353"
+      ],
+      "ref": "G",
+      "alt": "A",
+      "spdi": "NC_000001.11:100018596:G:A",
+      "hgvs": "NC_000001.11:g.100018597G>A",
+      "ca_id": "CA27552842"
+    },
+    "related": [
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000262053",
+          "name": "ATF1",
+          "uniprot_names": [
+            "ATF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/ATF1_SEMpl",
+            "source": "IGVF",
+            "name": "binding modulated by",
+            "files_filesets": "files_filesets/IGVFFI0183ELIK"
+          }
+        ]
+      }
+    ]
+  }
+}

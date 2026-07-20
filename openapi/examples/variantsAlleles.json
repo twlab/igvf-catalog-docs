@@ -1,0 +1,15 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/gnomad-alleles?region=chr1%3A1157520-1158520",
+  "sample": [
+    "chr",
+    "pos",
+    "afr",
+    "ami",
+    "amr",
+    "asj",
+    "eas",
+    "fin",
+    "nfe",
+    "sas"
+  ]
+}

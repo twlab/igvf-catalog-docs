@@ -1,0 +1,99 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "IGVF Catalog",
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Catalog",
+      "href": "https://catalog.igvf.org"
+    }
+  },
+  "api": {
+    "openapi": "openapi/catalog-dev.openapi.json",
+    "playground": {
+      "display": "none"
+    },
+    "examples": {
+      "languages": ["curl", "python", "javascript"],
+      "defaults": "required"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "using-search"]
+          },
+          {
+            "group": "Nodes",
+            "pages": [
+              "nodes/gene",
+              "nodes/transcript",
+              "nodes/variant",
+              "nodes/protein",
+              "nodes/motif",
+              "nodes/phenotype",
+              "nodes/drug",
+              "nodes/pathway",
+              "nodes/go-term",
+              "nodes/complex",
+              "nodes/pmid",
+              "nodes/ontologies",
+              "nodes/disease",
+              "nodes/study",
+              "nodes/region"
+            ]
+          },
+          {
+            "group": "Regions",
+            "pages": ["region/variant-dashboard", "region/ancestry"]
+          },
+          {
+            "group": "Catalog Pages",
+            "pages": [
+              "pages/home",
+              "pages/search",
+              "pages/lexical",
+              "pages/browse",
+              "pages/apps",
+              "pages/cypher",
+              "pages/files",
+              "pages/chat",
+              "pages/glossary",
+              "pages/sources",
+              "pages/settings"
+            ]
+          },
+          {
+            "group": "Data Sources",
+            "pages": [
+              "data-sources/index",
+              "data-sources/files-filesets",
+              "data-sources/field-lineage/index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "openapi": "openapi/catalog-dev.openapi.json",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["api-reference/introduction"]
+          }
+        ]
+      }
+    ]
+  }
+}

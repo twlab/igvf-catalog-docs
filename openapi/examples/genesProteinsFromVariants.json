@@ -1,0 +1,423 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/genes-proteins?variant_id=NC_000001.11%3A630556%3AT%3AC&page=0",
+  "sample": {
+    "sequence_variant": {
+      "_id": "NC_000001.11:630556:T:C",
+      "chr": "chr1",
+      "pos": 630556,
+      "rsid": [
+        "rs7417504"
+      ],
+      "ref": "T",
+      "alt": "C",
+      "spdi": "NC_000001.11:630556:T:C",
+      "hgvs": "NC_000001.11:g.630557T>C",
+      "ca_id": "CA16774863"
+    },
+    "related": [
+      {
+        "gene": {
+          "_id": "genes/ENSG00000169972",
+          "chr": "chr1",
+          "gene_id": "ENSG00000169972.13",
+          "hgnc": "HGNC:26914",
+          "name": "PUSL1",
+          "organism": "Homo sapiens"
+        },
+        "sources": [
+          {
+            "label": "eQTL",
+            "source": "AFGR",
+            "neg_log10_pvalue": 6.437445,
+            "biological_context": "lymphoblastoid cell line",
+            "name": "modulates expression of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000215057",
+          "name": "MZF1",
+          "uniprot_names": [
+            "MZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/MZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000262965",
+          "name": "TCF3",
+          "uniprot_names": [
+            "TFE2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/TCF3_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000294339",
+          "name": "TAL1",
+          "uniprot_names": [
+            "TAL1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/TAL1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000308944",
+          "name": "HLTF",
+          "uniprot_names": [
+            "HLTF_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/HLTF_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000331614",
+          "name": "IKZF1",
+          "uniprot_names": [
+            "IKZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/IKZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000341208",
+          "name": "STAT5A",
+          "uniprot_names": [
+            "STA5A_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/STAT5A_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000345681",
+          "name": "GATA2",
+          "uniprot_names": [
+            "GATA2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/GATA2_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000352123",
+          "name": "IKZF1",
+          "uniprot_names": [
+            "IKZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/IKZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000360951",
+          "name": "TAL1",
+          "uniprot_names": [
+            "TAL1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/TAL1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000365858",
+          "name": "GATA1",
+          "uniprot_names": [
+            "GATA1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/GATA1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000376644",
+          "name": "HLTF",
+          "uniprot_names": [
+            "HLTF_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/HLTF_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000378813",
+          "name": "TCF3",
+          "uniprot_names": [
+            "TFE2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/TCF3_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000396554",
+          "name": "IKZF1",
+          "uniprot_names": [
+            "IKZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/IKZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000400259",
+          "name": "GATA2",
+          "uniprot_names": [
+            "GATA2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/GATA2_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000413025",
+          "name": "IKZF1",
+          "uniprot_names": [
+            "IKZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/IKZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000417074",
+          "name": "GATA2",
+          "uniprot_names": [
+            "GATA2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/GATA2_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000420429",
+          "name": "HLTF",
+          "uniprot_names": [
+            "HLTF_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/HLTF_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000443107",
+          "name": "STAT5A",
+          "uniprot_names": [
+            "STA5A_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/STAT5A_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000468487",
+          "name": "TCF3",
+          "uniprot_names": [
+            "TFE2_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/TCF3_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000468749",
+          "name": "STAT5A",
+          "uniprot_names": [
+            "STA5A_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/STAT5A_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000469378",
+          "name": "MZF1",
+          "uniprot_names": [
+            "MZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/MZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000469493",
+          "name": "MZF1",
+          "uniprot_names": [
+            "MZF1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/MZF1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000498550",
+          "name": "GATA1",
+          "uniprot_names": [
+            "GATA1_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/GATA1_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      },
+      {
+        "protein": {
+          "_id": "proteins/ENSP00000503262",
+          "name": "STAT5A",
+          "uniprot_names": [
+            "STA5A_HUMAN"
+          ]
+        },
+        "sources": [
+          {
+            "motif": "motifs/STAT5A_SEMpl",
+            "source": "IGVF",
+            "name": "modulates binding of"
+          }
+        ]
+      }
+    ]
+  }
+}

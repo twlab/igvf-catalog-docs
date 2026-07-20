@@ -1,0 +1,29 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/genomic-elements/cell-gene-predictions?variant_id=NC_000012.12%3A69248967%3AC%3AT",
+  "sample": {
+    "sequence variant": {
+      "_id": "NC_000012.12:69248967:C:T",
+      "chr": "chr12",
+      "pos": 69248967,
+      "rsid": [
+        "rs544450198"
+      ],
+      "ref": "C",
+      "alt": "T",
+      "spdi": "NC_000012.12:69248967:C:T",
+      "hgvs": "NC_000012.12:g.69248968C>T",
+      "ca_id": "CA238481775"
+    },
+    "predictions": {
+      "cell_types": [
+        "CD8-positive, alpha-beta T cell from ENCDO412QUR"
+      ],
+      "genes": [
+        {
+          "gene_name": "LYZ",
+          "id": "genes/ENSG00000090382"
+        }
+      ]
+    }
+  }
+}

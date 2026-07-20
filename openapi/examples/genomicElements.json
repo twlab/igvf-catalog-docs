@@ -1,0 +1,14 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genomic-elements?region=chr1%3A1157520-1158189&page=0",
+  "sample": {
+    "chr": "chr1",
+    "start": 1157436,
+    "end": 1157782,
+    "strand": null,
+    "name": "EH38E2777055",
+    "source_annotation": "dELS: distal Enhancer-like signal",
+    "type": "candidate cis regulatory element",
+    "source": "ENCODE",
+    "source_url": "https://www.encodeproject.org/files/ENCFF420VPZ"
+  }
+}

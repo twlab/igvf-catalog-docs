@@ -1,0 +1,45 @@
+---
+title: 'Files & Filesets'
+description: 'How files_fileset links Catalog data to IGVF and ENCODE portal files'
+icon: 'folder'
+---
+
+# Files & Filesets (`files_fileset`)
+
+The Catalog **`files_fileset`** collection connects knowledge-graph edges to the underlying **source files** on the [IGVF Data Portal](https://data.igvf.org) or [ENCODE Portal](https://encodeproject.org).
+
+## Accession patterns
+
+| Pattern | Portal | Example |
+|---------|--------|---------|
+| `IGVFFI…` | IGVF | `IGVFFI9602ILPC` |
+| `ENCFF…` | ENCODE | `ENCFF968BZL` |
+| `ENCSR…` / `IGVFDS…` | Fileset / dataset | Parent experiment or analysis set |
+
+## Portal metadata
+
+Each file record on the portal includes:
+
+- **`file_format`** — e.g. `tsv`, `bed`, `bigBed`
+- **`output_type`** — processed data category
+- **`file_format_specification`** — link to the document defining **column names and types** in the file (critical for tracing fields through adapters)
+- Assay, lab, biosample, and release status
+
+The Catalog loading pipeline reads these portal objects in [`file_fileset_adapter.py`](https://github.com/IGVF-DACC/igvf-catalog/blob/dev/data/adapters/file_fileset_adapter.py) when building `files_filesets` nodes.
+
+## Querying by fileset
+
+Use `files_fileset=<accession>` on many endpoints to restrict results to a single dataset, for example:
+
+```
+GET /variants/genes?files_fileset=IGVFFI9602ILPC&page=0
+GET /files-filesets?file_fileset_id=ENCFF004PFU&page=0
+```
+
+## Field lineage
+
+Column names in the raw portal file are transformed by **KG loading adapters** before appearing in API responses. See [Field lineage](/data-sources/field-lineage/index) for portal → adapter → Arango → API mappings.
+
+## Browse all indexed files
+
+See the [Data Sources index](/data-sources/index) for a table of file accessions referenced in this documentation with portal and format-spec links.

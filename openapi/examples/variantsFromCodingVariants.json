@@ -1,0 +1,14 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/coding-variants/variants?coding_variant_name=SAMD7_ENST00000335556_p.Gly253Asp_c.758_759delinsAC&page=0",
+  "sample": {
+    "chr": "chr3",
+    "pos": 169927019,
+    "ref": "GA",
+    "alt": "AC",
+    "rsid": null,
+    "spdi": "NC_000003.12:169927019:GA:AC",
+    "hgvs": "NC_000003.12:g.169927020_169927021delinsAC",
+    "ca_id": null,
+    "_id": "NC_000003.12:169927019:GA:AC"
+  }
+}

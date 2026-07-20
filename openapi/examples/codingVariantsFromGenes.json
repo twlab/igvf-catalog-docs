@@ -1,0 +1,108 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/genes/coding-variants/scores?gene_name=ACSF3+++method+%3D+DUAL-IPA+++++++++++ESM-1v%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000121410+++method+%3D+ESM-1v+++++++++++MutPred2%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000196584+++method+%3D+MutPred2+++++++++++SGE%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000139618+++method+%3D+SGE+++++++++++VAMP-seq%3A+++++query+by+gene+identifier++++++gene_id+%3D+ENSG00000165841+++method+%3D+VAMP-seq&page=0",
+  "sample": {
+    "protein_change": {
+      "protein_id": "ENSP00000320646",
+      "protein_name": "ACSF3_HUMAN",
+      "transcript_id": "ENST00000317447",
+      "hgvsp": "p.Ala17Pro",
+      "aapos": 17,
+      "ref": "A",
+      "alt": "P"
+    },
+    "variants": [
+      {
+        "variant": {
+          "chr": "chr16",
+          "pos": 89100729,
+          "ref": "G",
+          "alt": "C",
+          "rsid": [
+            "rs11547019"
+          ],
+          "spdi": "NC_000016.10:89100729:G:C",
+          "hgvs": "NC_000016.10:g.89100730G>C",
+          "ca_id": "CA289270",
+          "_id": "NC_000016.10:89100729:G:C"
+        },
+        "scores": [
+          {
+            "method": "DUAL-IPA",
+            "score": -1.2568303962626555,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6224HZMG",
+            "files_filesets": "files_filesets/IGVFFI6224HZMG"
+          },
+          {
+            "method": "MutPred2",
+            "score": 0.3863175982578106,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA",
+            "files_filesets": "files_filesets/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr16",
+          "pos": 89100729,
+          "ref": "GCG",
+          "alt": "CCA",
+          "rsid": null,
+          "spdi": "NC_000016.10:89100729:GCG:CCA",
+          "hgvs": "NC_000016.10:g.89100730_89100732delinsCCA",
+          "ca_id": null,
+          "_id": "NC_000016.10:89100729:GCG:CCA"
+        },
+        "scores": [
+          {
+            "method": "MutPred2",
+            "score": 0.3863175982578106,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA",
+            "files_filesets": "files_filesets/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr16",
+          "pos": 89100729,
+          "ref": "GCG",
+          "alt": "CCC",
+          "rsid": null,
+          "spdi": "NC_000016.10:89100729:GCG:CCC",
+          "hgvs": "NC_000016.10:g.89100730_89100732delinsCCC",
+          "ca_id": null,
+          "_id": "NC_000016.10:89100729:GCG:CCC"
+        },
+        "scores": [
+          {
+            "method": "MutPred2",
+            "score": 0.3863175982578106,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA",
+            "files_filesets": "files_filesets/IGVFFI6893ZOAA"
+          }
+        ]
+      },
+      {
+        "variant": {
+          "chr": "chr16",
+          "pos": 89100729,
+          "ref": "GCG",
+          "alt": "CCT",
+          "rsid": null,
+          "spdi": "NC_000016.10:89100729:GCG:CCT",
+          "hgvs": "NC_000016.10:g.89100730_89100732delinsCCT",
+          "ca_id": null,
+          "_id": "NC_000016.10:89100729:GCG:CCT"
+        },
+        "scores": [
+          {
+            "method": "MutPred2",
+            "score": 0.3863175982578106,
+            "source_url": "https://data.igvf.org/tabular-files/IGVFFI6893ZOAA",
+            "files_filesets": "files_filesets/IGVFFI6893ZOAA"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://catalog-api-dev.demo.igvf.org/api/variants/diseases?variant_id=NC_000012.12%3A102917129%3AT%3AC&page=0",
+  "sample": {
+    "sequence_variant": "variants/NC_000012.12:102917129:T:C",
+    "disease": "ontology_terms/MONDO_0009861",
+    "gene_id": "genes/ENSG00000171759",
+    "gene_name": "PAH",
+    "assertion": "Pathogenic",
+    "pmids": [
+      "http://pubmed.ncbi.nlm.nih.gov/2574002",
+      "http://pubmed.ncbi.nlm.nih.gov/2574002",
+      "http://pubmed.ncbi.nlm.nih.gov/9450897"
+    ],
+    "source": "ClinGen",
+    "source_url": "https://search.clinicalgenome.org/kb/downloads",
+    "name": "associated with"
+  }
+}
