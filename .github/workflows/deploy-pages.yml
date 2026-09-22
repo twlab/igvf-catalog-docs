@@ -2,7 +2,7 @@ name: Deploy documentation to GitHub Pages
 
 on:
   push:
-    branches: [main, DSERV-1314-api-docs]
+    branches: [main, DSERV-1532-production-docs]
   workflow_dispatch:
 
 permissions:
@@ -31,25 +31,13 @@ jobs:
       - name: Install Mintlify CLI
         run: npm install -g mintlify@latest
 
-      - name: Refresh OpenAPI and generated docs
+      - name: Build dev and main site trees
         run: |
-          python3 scripts/fetch_openapi.py
-          python3 scripts/build_source_index.py
-          python3 scripts/build_field_lineage.py
-
-      - name: Validate Mintlify site
-        run: mintlify validate
-
-      - name: Export static site
-        run: mintlify export --output site.zip
-
-      - name: Prepare Pages artifact
-        run: |
+          chmod +x scripts/build_static_site.sh
           mkdir -p _site
-          unzip -q site.zip -d _site
-          cp -R openapi _site/openapi
-          python3 scripts/patch_github_pages_basepath.py _site --base-path /igvf-catalog-docs
-          rm -rf _site/scripts _site/.gitignore _site/.DS_Store _site/serve.js _site/"Start Docs.command" _site/"Start Docs.bat"
+          scripts/build_static_site.sh dev _site/dev
+          SKIP_GENERATED=1 scripts/build_static_site.sh main _site/main
+          cp scripts/pages_root_index.html _site/index.html
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
