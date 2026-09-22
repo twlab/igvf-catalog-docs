@@ -1,0 +1,10 @@
+{
+  "swagger_init_url": "https://api.catalogkg.igvf.org/swagger-ui-init.js",
+  "api_base_url": "https://api.catalogkg.igvf.org/api",
+  "swagger_ui_url": "https://api.catalogkg.igvf.org/",
+  "label": "Production",
+  "banner": "This documentation targets the production Catalog API.",
+  "openapi_output": "openapi/catalog-main.openapi.json",
+  "site_name": "IGVF Catalog (Production)",
+  "pages_base_path": "/igvf-catalog-docs/main"
+}
